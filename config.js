@@ -15,7 +15,7 @@ AUTO_STATUS_MSG: process.env.AUTO_STATUS__MSG || "*Jᴜsᴛ Nᴏᴡ Sᴛᴀᴛ�
 // set the auto reply massage on status reply  
 PREFIX: process.env.PREFIX || ".",
 // add your prifix for bot   
-BOT_NAME: process.env.BOT_NAME || "STANY-TECH-TRX-ZND",
+BOT_NAME: process.env.BOT_NAME || "STANY-TECH-TXR-ZND",
 // add bot namw here for menu
 STICKER_NAME: process.env.STICKER_NAME || "𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™",
 // type sticker pack name 
