@@ -16,7 +16,7 @@
     "STICKER_NAME": {
       "description": "type your sticker pack name.",
       "required": false,
-      "value": "STANY-TRX"
+      "value": "STANY-TXR"
     }, 
       
     "PREFIX": {
@@ -73,7 +73,7 @@
     "AUTO_STATUS_MSG": {
       "description": "Type custom message on status reply",
       "required": true,
-      "value": "*Jᴜsᴛ Nᴏᴡ Sᴛᴀᴛᴜs Sᴇᴇɴ Bʏ ᯽𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷 𝚃𝚁𝚇᯽*"
+      "value": "*Jᴜsᴛ Nᴏᴡ Sᴛᴀᴛᴜs Sᴇᴇɴ Bʏ ᯽𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷 𝚃Xr᯽*"
    
      }, 
     
@@ -93,7 +93,7 @@
     "BOT_NAME": {
       "description": "Type here the bot name.",
       "required": false,
-      "value": "STANY-TRX-ZMD"
+      "value": "STANY-TXR-ZMD"
 
       }, 
 
