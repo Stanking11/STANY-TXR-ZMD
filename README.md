@@ -38,7 +38,7 @@ Start by forking this repository to your own GitHub account. Click the button be
   
 ### 2. Get Session ID 
 
-You will need a session ID to run the STANY-TECH-XMD. Click the button below to obtain your session ID.if any error in loading site try vpn:
+You will need a session ID to run the STANY-TXR-ZMD. Click the button below to obtain your session ID.if any error in loading site try vpn:
 
 > **1️⃣Pair Code (Session ID)**
 
