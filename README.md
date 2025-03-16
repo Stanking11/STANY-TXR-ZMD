@@ -9,13 +9,14 @@
 
 
 
-
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&size=50&pause=4800color=RRGGBB&lines=true&vCenter=true&width=815&height=100&lines=DEVELOPER-STANLEY+🇹🇿+𝟮𝟬𝟮𝟱)](https://git.io/typing-svg) 
 
 
   
 
 <p align="centre"><img src="https://files.catbox.moe/hfjbvb.jpeg" width="790" heigh="250"
+
+
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&size=50&pause=4000&color=00FF00&lines=true&vCenter=true&width=815&height=100&lines=𝗦𝗧𝗔𝗡𝗬-𝐓𝐗𝐑+𝐙𝐌𝐃+✌️+𝟮𝟬𝟮𝟱)](https://git.io/typing-svg) 
 
