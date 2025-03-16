@@ -92,4 +92,3 @@ export const handleAntilink = async (m, sock, logger, isBotAdmins, isAdmins, isC
         }
     }
 };
-                                  
