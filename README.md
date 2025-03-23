@@ -1,8 +1,6 @@
-<a href="https://chat.whatsapp.com/FDPHwoJOH56BuNF5pWKXWo"> <img src="https://raw.githubusercontent.com/shizothetechie/database/main/icon/WhatsApp.png" width="13%">
-
-   
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&size=85&pause=100000000&color=FFFF00&lines=true&vCenter=true&width=815&height=100&lines=𝐒𝐓𝐀𝐍𝐘-𝐓𝐗𝐑-𝐙𝐌𝐃)](https://git.io/typing-svg) 
   
+
 
 
 
@@ -14,9 +12,11 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&size=50&pause=4800color=RRGGBB&lines=true&vCenter=true&width=815&height=100&lines=DEVELOPER-STANLEY+🇹🇿+𝟮𝟬𝟮𝟱)](https://git.io/typing-svg) 
 
 
+
   
 
 <p align="centre"><img src="https://files.catbox.moe/hfjbvb.jpeg" width="790" heigh="250"
+
 
 
 
