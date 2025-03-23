@@ -3,7 +3,7 @@ let cm = [];
 function zokou(obj, fonctions) {
     let infoComs = obj;
     if (!obj.categorie) {
-        infoComs.categorie = "General";
+        infoComs.categorie = "menu";
     }
     if (!obj.reaction) {
         infoComs.reaction = "🐲";
