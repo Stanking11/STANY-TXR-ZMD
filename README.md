@@ -145,6 +145,10 @@ You will need a session ID to run the STANY-TXR-ZMD. Click the button below to o
 <a href='https://wa.link/pn8y0n' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-DEVELOPER-6CFF3F?style=for-the-badge&logo=WhatsApp&logoColor=white'/< width=150 height=28/p></a>
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></
 
+  
+  
+<a href="https://wa.me/25594481936"> <img src="https://raw.githubusercontent.com/shizothetechie/database/main/icon/WhatsApp.png" width="13%"> <a href="https://chat.whatsapp.com/FDPHwoJOH56BuNF5pWKXWo"> <img src="https://raw.githubusercontent.com/shizothetechie/database/main/icon/WhatsApp.png" width="13%">
+
 - **Disclaimer:** This bot is not affiliated with `WhatsApp Inc.`. Use it at your own risk.
 - Misusing the bot may result in your `WhatsApp` account being banned. Note that you can only unban your account once.
 - I am not responsible for any bans or misuse of the bot. Please keep this warning in mind before proceeding.
