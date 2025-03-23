@@ -35,7 +35,7 @@
 Start by forking this repository to your own GitHub account. Click the button below to fork:
 
   
-<a href="https://github.com/Stanking11/STANY-TXR/fork"><img title="STANYTRX-ZMD" src="https://img.shields.io/badge/FORK-STANYTECH-BOTh?color=blue&style=for-the-badge&logo=github"></a>
+<a href="https://github.com/Stanking11/STANY-TXR-ZMD/fork"><img title="STANYTRX-ZMD" src="https://img.shields.io/badge/FORK-STANYTECH-BOTh?color=blue&style=for-the-badge&logo=github"></a>
   
 ### 2. Get Session ID 
 
@@ -43,7 +43,7 @@ You will need a session ID to run the STANY-TXR-ZMD. Click the button below to o
 
 > **1️⃣Pair Code (Session ID)**
 
-<a href='https://butto-9befd6758ddd.herokuapp.com/' target="_blank">
+<a href='https://caseyrhodeshub-7kak.vercel.app' target="_blank">
   <img alt='Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-orange?style=for-the-badge&logo=opencv&logoColor=black'/>
 </a>
 <br> 
