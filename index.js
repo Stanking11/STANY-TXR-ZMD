@@ -110,7 +110,7 @@ console.log("Session downloaded ✅")
   console.log('Plugins installed successful ✅')
   console.log('Bot connected to whatsapp ✅')
   
-  let up = `*Hello there ✦ CASEY ✦ RHODES ✦ XMD ✦ User! \ud83d\udc4b\ud83c\udffb* \n\n> This is auser friendly whatsapp bot created by CASEYRHODES TECH INC. \ud83c\udf8a, Meet ✦ CASEYRHODES XMD ✦ WhatsApp Bot.\n\n *Thanks for using ✦ CASEY ✦ RHODES XMD ✦ \ud83d\udea9* \n\n> follow WhatsApp Group:- 💖\n \nhttps://chat.whatsapp.com/FDPHwoJOH56BuNF5pWKXWo\n\n- *YOUR PREFIX:* = ${prefix}\n\nDont forget to give star to repo ⬇️\n\nhttps://github.com/caseyweb/CASEYRHODES-XMD\n\n> © Powered BY ✦ CASEYRHODES ✦ XMD ✦ \ud83d\udda4`;
+  let up = `*Hello there ✦ CASEY ✦ RHODES ✦ XMD ✦ User! \ud83d\udc4b\ud83c\udffb* \n\n> This is auser friendly whatsapp bot created by CASEYRHODES TECH INC. \ud83c\udf8a, Meet ✦ CASEYRHODES XMD ✦ WhatsApp Bot.\n\n *Thanks for using ✦ CASEY ✦ RHODES XMD ✦ \ud83d\udea9* \n\n> follow WhatsApp Channel :- 💖\n \nhttps://whatsapp.com/channel/0029VakUEfb4o7qVdkwPk83E\n\n- *YOUR PREFIX:* = ${prefix}\n\nDont forget to give star to repo ⬇️\n\nhttps://github.com/caseyweb/CASEYRHODES-XMD\n\n> © Powered BY ✦ CASEYRHODES ✦ XMD ✦ \ud83d\udda4`;
   conn.sendMessage(conn.user.id, { image: { url: `https://i.ibb.co/NdGZ99mN/705f0162-de6f-4fb8-a78f-6c563969093c.jpg` }, caption: up })
   }
   })
