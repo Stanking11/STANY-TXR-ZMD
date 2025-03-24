@@ -22,7 +22,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃★│ Platform : *♲︎Heroku︎*
 ┃★│ Mode : *[${config.MODE}]*
 ┃★│ Prifix : *[${config.PREFIX}]*
-┃★│ Version : *3.0.0 Bᴇᴛᴀ☯︎*
+┃★│ Version : *1.0.0 Bᴇᴛᴀ☯︎*
 ┃★╰──────────────
 ╰━━━━━━━━━━━━━━━┈⊷
 ╭━━〔 *✪DᴏᴡɴʟᴏᴀD MᴇɴU✪* 〕━━┈⊷
