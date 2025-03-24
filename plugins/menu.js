@@ -13,7 +13,7 @@ cmd({
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
         // Menu content
-        const menuText = `
+        const menuText =`
 ╭━━━○𝐒𝐓𝐀𝐍𝐘 𝐓𝐗𝐑 𝐙𝐌𝐃○━━━┈⊷
 ┃❍⁠⁠⁠⁠╭──────────────
 ┃❍⁠⁠⁠⁠│ *Usᴇʀ* : ${config.OWNER_NAME}
@@ -45,6 +45,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃❍┃• *rєpσ*
 ┃❍└───────────┈⊷
 ╰──────────────┈⊷
+}`
 
         // Send the menu with an image
         await conn.sendMessage(from, { 
