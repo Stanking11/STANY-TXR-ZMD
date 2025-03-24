@@ -7,7 +7,7 @@ cmd({
     alias: ["help", "commands", "botmenu"],
     desc: "Displays the list of available commands",
     category: "main",
-    react: "📜",
+    react: "❤️",
     filename: __filename
 },
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
