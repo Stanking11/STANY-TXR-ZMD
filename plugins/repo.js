@@ -20,7 +20,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
 > Don't forget to frok the repo ⤵️
 
-https://github.com/Stanking11/STANY-TXR;
+https://github.com/Stanking11/STANY-TXR-ZMD;
 
         // Send image with caption
         await conn.sendMessage(from, { 
