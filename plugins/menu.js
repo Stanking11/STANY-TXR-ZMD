@@ -52,7 +52,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
-                    isForwarded: true,
+                    isForwarded: false,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363302677217436@newsletter',
                         newsletterName: 'STANY-TECH🫅🦄👻',
@@ -83,7 +83,7 @@ cmd({
     pattern: "dlmenu",
     desc: "menu the bot",
     category: "menu",
-    react: "💚",
+    react: "▶️",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
@@ -131,7 +131,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                 contextInfo: {
                     mentionedJid2: [m.sender],
                     forwardingScore: 999,
-                    isForwarded: true,
+                    isForwarded: false,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '12036330267721743@newsletter',
                         newsletterName: 'STANY-TECH💖🦄',
@@ -154,7 +154,7 @@ cmd({
     pattern: "groupmenu",
     desc: "menu the bot",
     category: "menu",
-    react: "🥰",
+    react: "🛂",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
@@ -209,7 +209,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
-                    isForwarded: true,
+                    isForwarded: false,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '12036330267721743@newsletter',
                         newsletterName: 'STANY-TECH💖🦄',
@@ -280,7 +280,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
-                    isForwarded: true,
+                    isForwarded: false,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '12036330267721743@newsletter',
                         newsletterName: 'STANY-TECH💖🦄',
@@ -303,7 +303,7 @@ cmd({
     pattern: "othermenu",
     desc: "menu the bot",
     category: "menu",
-    react: "🤖",
+    react: "🔍",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
@@ -339,7 +339,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
-                    isForwarded: true,
+                    isForwarded: false,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '12036330267721743@newsletter',
                         newsletterName: 'STANY-TECH💖🦄',
@@ -362,7 +362,7 @@ cmd({
     pattern: "mainmenu",
     desc: "menu the bot",
     category: "menu",
-    react: "🗿",
+    react: "💙",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
@@ -391,7 +391,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
-                    isForwarded: true,
+                    isForwarded: false,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '12036330267721743@newsletter',
                         newsletterName: 'STANY-TECH💖🦄',
@@ -414,7 +414,7 @@ cmd({
     pattern: "ownermenu",
     desc: "menu the bot",
     category: "menu",
-    react: "🔰",
+    react: "🔥",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
@@ -456,7 +456,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
-                    isForwarded: true,
+                    isForwarded: false,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '12036330267721743@newsletter',
                         newsletterName: 'STANY-TECH💖🦄',
@@ -505,7 +505,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
-                    isForwarded: true,
+                    isForwarded: false,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '12036330267721743@newsletter',
                         newsletterName: 'STANY-TECH💖🦄',
@@ -574,7 +574,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
-                    isForwarded: true,
+                    isForwarded: false,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '12036330267721743@newsletter',
                         newsletterName: 'STANY-TECH💖🦄',
@@ -625,9 +625,9 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
-                    isForwarded: true,
+                    isForwarded: false,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '12036330267721743@newsletter',
+                        newsletterJid: '@newsletter',
                         newsletterName: 'STANY-TECH💖🦄',
                         serverMessageId: 143
                     }
@@ -641,4 +641,4 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         reply(`${e}`);
     }
 });
-
+//Update with lord
