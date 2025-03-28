@@ -238,7 +238,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
-                    forwardingScore: 000,
+                    forwardingScore: 999,
                     isForwarded: false,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363302677217436@newsletter',
