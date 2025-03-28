@@ -9,7 +9,7 @@ cmd({
     alias: "allmenu",
     desc: "menu the bot",
     category: "menu",
-    react: "⚡",
+    react: "💙",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
@@ -234,11 +234,11 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/rmxujw.jpeg` },
+                image: { url: `https://files.catbox.moe/nghay8.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
-                    forwardingScore: 999,
+                    forwardingScore: 000,
                     isForwarded: false,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363302677217436@newsletter',
