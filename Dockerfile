@@ -14,7 +14,7 @@ RUN npm install && npm install -g qrcode-terminal pm2
 
 COPY . .
 
-EXPOSE 3000
+EXPOSE 5000
 
 
 CMD ["pm2-runtime", "start", "index.js"]
