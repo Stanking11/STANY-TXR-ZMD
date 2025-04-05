@@ -8,7 +8,7 @@ cmd({
     pattern: "menu",
     desc: "menu the bot",
     category: "menu",
-    react: "🐇",
+    react: "🌸",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
@@ -49,7 +49,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/52dotx.jpg` },
+                image: { url: `https://files.catbox.moe/goel5y.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
