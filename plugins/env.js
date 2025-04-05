@@ -52,7 +52,7 @@ async (conn, mek, m, { from, quoted, reply }) => {
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
-                    isForwarded: true,
+                    isForwarded: false,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363297843078852@newsletter',
                         newsletterName: "𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™",
