@@ -1,3 +1,5 @@
+
+
 const axios = require('axios');
 const config = require('../config');
 const { cmd, commands } = require('../command');
@@ -17,18 +19,18 @@ async (conn, mek, m, { from, q, reply }) => {
         const response = await axios.get(url);
         const data = response.data;
         const weather = `
-> 🌍 *Weather Information for ${data.name}, ${data.sys.country}* 🌍
-> 🌡️ *Temperature*: ${data.main.temp}°C
-> 🌡️ *Feels Like*: ${data.main.feels_like}°C
-> 🌡️ *Min Temp*: ${data.main.temp_min}°C
-> 🌡️ *Max Temp*: ${data.main.temp_max}°C
-> 💧 *Humidity*: ${data.main.humidity}%
-> ☁️ *Weather*: ${data.weather[0].main}
-> 🌫️ *Description*: ${data.weather[0].description}
-> 💨 *Wind Speed*: ${data.wind.speed} m/s
-> 🔽 *Pressure*: ${data.main.pressure} hPa
+🌍 *Weather Information for ${data.name}, ${data.sys.country}* 🌍
+🌡️ *Temperature*: ${data.main.temp}°C
+🌡️ *Feels Like*: ${data.main.feels_like}°C
+🌡️ *Min Temp*: ${data.main.temp_min}°C
+🌡️ *Max Temp*: ${data.main.temp_max}°C
+💧 *Humidity*: ${data.main.humidity}%
+☁️ *Weather*: ${data.weather[0].main}
+🌫️ *Description*: ${data.weather[0].description}
+💨 *Wind Speed*: ${data.wind.speed} m/s
+🔽 *Pressure*: ${data.main.pressure} hPa
 
-> *© Pᴏᴡᴇʀᴇᴅ Bʏ 𝙱.𝙼.𝙱-𝚇𝙼𝙳*
+*©𝚂𝚃𝙰𝙽𝚈 𝚃𝚇𝚁 𝚉𝙼𝙳*
 `;
         return reply(weather);
     } catch (e) {
@@ -39,4 +41,3 @@ async (conn, mek, m, { from, q, reply }) => {
         return reply("⚠️ An error occurred while fetching the weather information. Please try again later.");
     }
 });
-                 
