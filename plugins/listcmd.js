@@ -6,7 +6,7 @@ cmd({
     alias: ["listcmd","commands"],
     desc: "menu the bot",
     category: "menu",
-    react: "⚡",
+    react: "❤️",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
@@ -297,15 +297,15 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://i.ibb.co/ZJwzVrG/temp-image.jpg` },
+                image: { url: `https://files.catbox.moe/legz6z.jpeg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
-                    isForwarded: false,
+                    isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363297843078852@newsletter',
-                        newsletterName: '𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™',
+                        newsletterJid: '12036330267721743@newsletter',
+                        newsletterName: 'STANY-TECH🥰🦄',
                         serverMessageId: 143
                     }
                 }
