@@ -116,7 +116,7 @@ ${readMore}
 
         // Send an image with the formatted info as a caption and context info
         await conn.sendMessage(from, {
-            image: { url: `https://files.catbox.moe/heu4tc.png` },
+            image: { url: `https://files.catbox.moe/l3fp7g.jpg` },
             caption: formattedInfo,
             contextInfo: { 
                 mentionedJid: [m.sender],
