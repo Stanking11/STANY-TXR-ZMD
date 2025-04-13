@@ -47,14 +47,14 @@ async (conn, mek, m, { from, quoted, reply }) => {
         await conn.sendMessage(
             from,
             {
-                image: { url: 'https://cdn.ironman.my.id/i/2du3i5.jpg' }, // Image URL
+                image: { url: 'https://files.catbox.moe/7jle25.jpg' }, // Image URL
                 caption: envSettings,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363387535571563@newsletter',
+                        newsletterJid: '0029Vb5RfcrJ3jv4u0wJwd0r@newsletter',
                         newsletterName: "☇ STANY TECH⃪🤖͎᪳᪳𝆺𝅥",
                         serverMessageId: 143
                     }
