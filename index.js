@@ -99,7 +99,7 @@ console.log("Session downloaded ✅")
   if (lastDisconnect.error.output.statusCode !== DisconnectReason.loggedOut) {
   connectToWA()
   }
-  } else if (connection === 'open') {await conn.groupAcceptInvite("FDPHwoJOH56BuNF5pWKXWo");
+  } else if (connection === 'open') {
   console.log('🧬 Installing CASEYRHODES XMD Plugins')
   const path = require('path');
   fs.readdirSync("./plugins/").forEach((plugin) => {
