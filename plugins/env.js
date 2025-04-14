@@ -52,9 +52,9 @@ async (conn, mek, m, { from, quoted, reply }) => {
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
-                    isForwarded: true,
+                    isForwarded: false,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '0029Vb5RfcrJ3jv4u0wJwd0r@newsletter',
+                        newsletterJid: '1236330029VJ3@newsletter',
                         newsletterName: "☇ STANY TECH⃪🤖͎᪳᪳𝆺𝅥",
                         serverMessageId: 143
                     }
