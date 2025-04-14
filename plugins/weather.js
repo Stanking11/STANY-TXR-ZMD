@@ -30,7 +30,7 @@ async (conn, mek, m, { from, q, reply }) => {
 💨 *Wind Speed*: ${data.wind.speed} m/s
 🔽 *Pressure*: ${data.main.pressure} hPa
 
-*©𝚂𝚃𝙰𝙽𝚈 𝚃𝚇𝚁 𝚉𝙼𝙳*
+*POWERED BY STANY-TECH*
 `;
         return reply(weather);
     } catch (e) {
