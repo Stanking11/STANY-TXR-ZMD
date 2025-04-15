@@ -238,10 +238,10 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
-                    isForwarded: false,
+                    isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363302677217436@newsletter',
-                        newsletterName: 'CASEYRHODES XMD 💖🦄',
+                        newsletterJid: '120363387535571563@newsletter',
+                        newsletterName: 'STANY TECH MEDIA💖🦄',
                         serverMessageId: 143
                     }
                 }
