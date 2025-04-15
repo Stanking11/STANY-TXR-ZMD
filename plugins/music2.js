@@ -59,12 +59,12 @@ cmd({
       + `📌 *Reply with the number to download in your choice.*`;
 
     const sentMsg = await conn.sendMessage(from, {
-      image: { url: ytData.thumbnail || "https://i.ibb.co/TBpSgZjn/lordcasey.jpg" },
+      image: { url: ytData.thumbnail || "https://files.catbox.moe/7jle25.jpg" },
       caption: caption,
       contextInfo: {
         mentionedJid: [m.sender],
         forwardingScore: 999,
-        isForwarded: true,
+        isForwarded: false,
         forwardedNewsletterMessageInfo: {
           newsletterJid: "120363302677217436@newsletter",
           newsletterName: "CASEYRHODES XMD",
@@ -92,7 +92,7 @@ cmd({
           case "1":
             await conn.sendMessage(senderID, {
               video: { url: downloadLink },
-              caption: "*CASEYRHODES XMD*"
+              caption: "*STANY TXR ZMD*"
             }, { quoted: receivedMsg });
             break;
 
@@ -101,7 +101,7 @@ cmd({
               document: { url: downloadLink },
               mimetype: "video/mp4",
               fileName: `${ytData.title}.mp4`,
-              caption: "*CASEYRHODES-XMD*"
+              caption: "*STANY TXR ZMD*"
             }, { quoted: receivedMsg });
             break;
 
