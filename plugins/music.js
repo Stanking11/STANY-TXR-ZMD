@@ -17,7 +17,7 @@ cmd({
     return reply("Please provide a title or link (Spotify/YouTube)!");
   }
 
-  reply("> ᴄᴀsᴇʏʀʜᴏᴅᴇs xᴍᴅ🫅ɪs ғᴇᴛᴄʜɪɴɢ ᴀᴜᴅɪᴏ... 🎧");
+  reply("> ©𝚂𝚃𝙰𝙽𝚈 𝚃𝚇𝚁 𝚉𝙼𝙳🫅ɪs ғᴇᴛᴄʜɪɴɢ ᴀᴜᴅɪᴏ... 🎧");
 
   let spotifySent = false;
   let youtubeSent = false;
@@ -43,7 +43,7 @@ cmd({
           contextInfo: {
             externalAdReply: {
               title: spotifyTrack.title,
-              body: "ᴄᴀsᴇʏʀʜᴏᴅᴇs xᴍᴅ🫅 🥰💖: sᴘᴏᴛɪғʏ",
+              body: "𝚃𝚇𝚁 𝚉𝙼ᴅ🫅 🥰💖: sᴘᴏᴛɪғʏ",
               mediaType: 1,
               sourceUrl: spotifyTrack.url,
               renderLargerThumbnail: true
@@ -76,7 +76,7 @@ cmd({
           contextInfo: {
             externalAdReply: {
               title: youtubeVideo.title,
-              body: "ᴄᴀsᴇʏʀʜᴏᴅᴇs xᴍᴅ🫅🥰: ʏᴏᴜᴛᴜʙᴇ",
+              body: "𝚃𝚇𝚁 𝚉ᴍᴅ🫅🥰: ʏᴏᴜᴛᴜʙᴇ",
               mediaType: 1,
               sourceUrl: youtubeVideo.url,
               renderLargerThumbnail: true
@@ -99,8 +99,8 @@ cmd({
   } else if (spotifySent && youtubeSent) {
     reply("Both Spotify and YouTube audio sent successfully.");
   } else if (spotifySent) {
-    reply("ᴄᴀsᴇʏʀʜᴏᴅᴇs xᴍᴅ🫅: sᴘᴏᴛɪғʏ ᴀᴜᴅɪᴏ sᴇɴᴛ sᴜᴄᴄᴇsғᴜʟʟʏ.");
+    reply("𝚃𝚇𝚁 𝚉ᴍᴅ🫅: sᴘᴏᴛɪғʏ ᴀᴜᴅɪᴏ sᴇɴᴛ sᴜᴄᴄᴇsғᴜʟʟʏ.");
   } else if (youtubeSent) {
-    reply("ᴄᴀsᴇʏʀʜᴏᴅᴇs ᴄᴍᴅ: ʏᴏᴜᴛᴜʙᴇ ᴀᴜᴅɪᴏ sᴇɴᴛ sᴜᴄᴄᴇsғᴜʟʟʏ.");
+    reply("𝚃𝚇𝚁 𝚉ᴍᴅ: ʏᴏᴜᴛᴜʙᴇ ᴀᴜᴅɪᴏ sᴇɴᴛ sᴜᴄᴄᴇsғᴜʟʟʏ.");
   }
 });

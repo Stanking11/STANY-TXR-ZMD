@@ -25,7 +25,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         }
 
         const movieInfo = `
-🎬 *𝐌𝐨𝐯𝐢𝐞 𝐈𝐧𝐟𝐨𝐫𝐦𝐢𝐬𝐢𝐨𝐧* 🎬
+🎬 *Stanley technology Movie Information* 🎬
 
 🎥 *Title:* ${data.Title}
 📅 *Year:* ${data.Year}
@@ -50,7 +50,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         // Send the movie information along with the poster image
         await conn.sendMessage(from, {
             image: { url: imageUrl },
-            caption: `${movieInfo}\n> ©ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™`
+            caption: `${movieInfo}\n> ©2025 be active`
         }, { quoted: mek });
     } catch (e) {
         console.log(e);
