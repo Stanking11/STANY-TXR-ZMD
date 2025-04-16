@@ -7,7 +7,7 @@ const axios = require('axios');
 cmd({
     pattern: "txr",
     desc: "menu the bot",
-    category: "allmenu",
+    category: "menu",
     react: "🌸",
     filename: __filename
 }, 
