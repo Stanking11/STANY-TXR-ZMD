@@ -8,7 +8,7 @@ cmd({
     pattern: "menu",
     alias: "allmenu",
     desc: "menu the bot",
-    category: "menu",
+    category: "menu2",
     react: "👊",
     filename: __filename
 }, 
