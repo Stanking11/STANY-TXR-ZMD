@@ -5,7 +5,7 @@ const { runtime } = require('../lib/functions');
 const axios = require('axios');
 
 cmd({
-    pattern: "txr",
+    pattern: "menu",
     desc: "menu the bot",
     category: "menu",
     react: "🐇",
@@ -312,7 +312,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
     try {
         let dec = `╭━━〔 *Other Menu* 〕━━┈⊷
 ┃◈╭─────────────·๏
-┃◈┃• vv2
+┃◈┃• vv
 ┃◈┃• pair
 ┃◈┃• pair2
 ┃◈┃• fact
