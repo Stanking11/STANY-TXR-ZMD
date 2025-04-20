@@ -25,7 +25,7 @@ const {
   runtime
 } = require("../lib/functions");
 cmd({
-  'pattern': "Stan",
+  'pattern': "menu",
   'react': '🛸',
   'alias': ['panel', "commands"],
   'desc': "menu the bot",
