@@ -66,9 +66,11 @@ You will need a session ID to run the STANY-TXR-ZMD. Click the button below to o
 <h4 align="center">1.HEROKU</h4>
 <p style="text-align: center; font-size: 1.2em;">
 
+---
 
 <p align="center">
-<a href='https://stainy-tech.vercel.app/' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-heroku ‎ deploy-800080?style=for-the-badge&logo=heroku&logoColor=white'/< width=150 height=38/p></a>
+<a href='https://dashboard.heroku.com/new-app?template=https://github.com/Stanking11/STANY-TXR-ZMD' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-heroku ‎ deploy-purple?style=for-the-badge&logo=heroku&logoColor=white'/< width=250 height=45/p></a>
+
 
   [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&size=30&pause=800&color=0000FF&center=true&vCenter=true&width=815&height=60&lines=▭+▬+▭+▬+▭+▬+▭+▬+▭+▬+▭)](https://git.io/typing-svg) 
 
