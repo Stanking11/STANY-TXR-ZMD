@@ -8,7 +8,7 @@ cmd({
     alias: ["translate"],
     desc: "🌍 Translate text between languages",
     react: "⚡",
-    category: "other",
+    category: "othermenu",
     filename: __filename
 },
 async (conn, mek, m, { from, q, reply }) => {
@@ -24,7 +24,7 @@ async (conn, mek, m, { from, q, reply }) => {
         const response = await axios.get(url);
         const translation = response.data.responseData.translatedText;
 
-        const translationMessage = `> *VORTEX-XMD TRANSLATION*
+        const translationMessage = `> *STANY TXR ZMD TRANSLATION*
 
 > 🔤 *Original*: ${textToTranslate}
 
