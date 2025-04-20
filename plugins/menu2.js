@@ -26,8 +26,8 @@ const {
 } = require("../lib/functions");
 cmd({
   'pattern': "menu",
-  'react': '🛸',
-  'alias': ['panel', "commands"],
+  'react': "🛸" ,
+  'alias': "allmenu" 
   'desc': "menu the bot",
   'category': 'main'
 }, async (_0x54adbc, _0x37e6a6, _0x39d831, {
