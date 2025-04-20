@@ -302,7 +302,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
-                    isForwarded: true,
+                    isForwarded: false,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '12036330267721743@newsletter',
                         newsletterName: 'STANY-TECH🥰🦄',
@@ -315,7 +315,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
         // Send audio
         await conn.sendMessage(from, {
-            audio: { url: 'https://github.com/JawadYTX/KHAN-DATA/raw/refs/heads/main/autovoice/sigma.m4a' },
+            audio: { url: 'https://files.catbox.moe/ximgws.mp3' },
             mimetype: 'audio/mp4',
             ptt: true
         }, { quoted: mek });
