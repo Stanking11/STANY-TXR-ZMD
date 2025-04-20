@@ -79,11 +79,6 @@
       "value": "false"
     }, 
 
-    "AUTO_STATUS_REACT": {
-      "description": "make it true for automatic status reaction or like.",
-      "required": true,
-      "value": "true"
-    }, 
 
     "AUTO_STATUS__MSG": {
       "description": "Type custom message on status reply",
