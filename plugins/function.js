@@ -69,7 +69,7 @@ cmd({
     if (containsLink && config.DELETE_LINK === 'true') {
       await conn.sendMessage(from, { 'delete': m.key }, { 'quoted': m });
       await conn.sendMessage(from, {
-        'text': `*⚠️𝐋ιɴкѕ 𝐀ʀє 𝐍σт 𝐀ℓℓσωє∂ 𝐈ɴ 𝐓нιѕ 𝐆ʀσυρ.@${sender.split('@')[0]} 𝐏ℓєαѕє 𝐀νσι∂ 𝐒єɴ∂ιиg 𝐋ιɴкѕ.📛*`,
+        'text': `*⚠️Link Are 𝐍σт 𝐀ℓℓσωє∂ 𝐈ɴ 𝐓нιѕ 𝐆ʀσυρ.@${sender.split('@')[0]} 𝐏ℓєαѕє 𝐀νσι∂ 𝐒єɴ∂ιиg 𝐋ιɴкѕ.STANY-TXR-ZMD I WILL KICK YOU OUT FOR 00000.1 SECOND📛*`,
         'mentions': [sender]
       }, { 'quoted': m });
     }
