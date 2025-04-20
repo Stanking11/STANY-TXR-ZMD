@@ -8,7 +8,7 @@ cmd({
     react: "🎛️",
     alias: ["setting", "env"],
     desc: "Get bot's settings list.",
-    category: "main",
+    category: "menu",
     use: '.settings',
     filename: __filename
 }, async (conn, mek, m, {
