@@ -14,21 +14,21 @@ async (conn, mek, m, { from, quoted, reply }) => {
         const startTime = Date.now();
 
         // Add a short delay
-        await new Promise(resolve => setTimeout(resolve, 100)); // 100M/s delay
+        await new Promise(resolve => setTimeout(resolve, 100)); // 100ms delay
 
         const endTime = Date.now();
         const ping = endTime - startTime;
 
         // Send the ping result
         await conn.sendMessage(from, { 
-            text: `*STANY TXR ZMD SPEED: ${ping}M/s*`, 
+            text: `*𝐂𝐀𝐒𝐄𝐘𝐑𝐇𝐎𝐃𝐄𝐒-𝐗𝐌𝐃🚀🥰🥰: ${ping}ms*`, 
             contextInfo: {
                 mentionedJid: [m.sender],
                 forwardingScore: 999,
-                isForwarded: false,
+                isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363352087070233@newsletter',
-                    newsletterName: 'TXR-ZMD SPEED ',
+                    newsletterJid: '120363302677217436@newsletter',
+                    newsletterName: 'CASEYRHODES-XMD SPEED 🥰🥰',
                     serverMessageId: 143
                 }
             }
@@ -45,16 +45,16 @@ cmd({
     pattern: "ping2",
     desc: "Check bot's response time.",
     category: "main",
-    react: "🎃",
+    react: "💀",
     filename: __filename
 },
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
         const startTime = Date.now()
-        const message = await conn.sendMessage(from, { text: '> *SPEED...*' })
+        const message = await conn.sendMessage(from, { text: '> *PINGIIING...*' })
         const endTime = Date.now()
         const ping = endTime - startTime
-        await conn.sendMessage(from, { text: `*STANY TXR ZMD 😌😌 SPEED : ${ping}M/s*` }, { quoted: message })
+        await conn.sendMessage(from, { text: `*CASEYRHODES-XMD🚀🥰🥰 IS ALIVE : ${ping}ms*` }, { quoted: message })
     } catch (e) {
         console.log(e)
         reply(`${e}`)

@@ -1,11 +1,11 @@
-const { cmd } = require("../command");
+const { cmd, commands } = require("../command");
 const axios = require("axios");
 
 cmd({
     pattern: "img",
-    alias: ["image", "googleimage", "searchimg"],
-    react: "🦋",
-    desc: "Search and download Google images",
+    alias: ["image"],
+    react: "🚀",
+    desc: "Search and download high-quality wallpapers using the new API.",
     category: "fun",
     use: ".img <keywords>",
     filename: __filename
@@ -13,40 +13,39 @@ cmd({
     try {
         const query = args.join(" ");
         if (!query) {
-            return reply("🖼️ Please provide a search query\nExample: .img cute cats");
+            return reply("*Please provide a search query.*");
         }
 
-        await reply(`🔍 Searching images for "${query}"...`);
+        await reply(`*🔍 Fetching Images For:* ${query}...`);
 
-        const url = `https://apis.davidcyriltech.my.id/googleimage?query=${encodeURIComponent(query)}`;
+        const url = `https://sarkar-shaban.koyeb.app/download/wallpaper?text=${encodeURIComponent(query)}&page=1`;
         const response = await axios.get(url);
 
         // Validate response
-        if (!response.data?.success || !response.data.results?.length) {
-            return reply("❌ No images found. Try different keywords");
+        if (!response.data || !response.data.result || response.data.result.length === 0) {
+            return reply("*No results found. Please try another keyword.*");
         }
 
-        const results = response.data.results;
-        // Get 5 random images
-        const selectedImages = results
-            .sort(() => 0.5 - Math.random())
-            .slice(0, 5);
+        const results = response.data.result;
 
-        for (const imageUrl of selectedImages) {
-            await conn.sendMessage(
-                from,
-                { 
-                    image: { url: imageUrl },
-                    caption: `📷 Result for: ${query}\n>  ©𝚂𝚃𝙰𝙽𝚈 𝚃𝚉𝚁 𝚉𝙼𝙳 `
-                },
-                { quoted: mek }
-            );
-            // Add delay between sends to avoid rate limiting
-            await new Promise(resolve => setTimeout(resolve, 1000));
+        // Loop through results and send images
+        for (let i = 0; i < results.length; i++) {
+            const item = results[i];
+
+            if (item.image && item.image.length > 0) {
+                const imageUrl = item.image[0]; // Sending the first (highest quality) image
+                await conn.sendMessage(
+                    from,
+                    {
+                        image: { url: imageUrl },
+                        caption: `*🔹 Type:* ${item.type}\n*🌐 Source:* [Visit Website](${item.source})\n\n> *By CASEYRHODES XMD*`
+                    },
+                    { quoted: mek }
+                );
+            }
         }
-
     } catch (error) {
-        console.error('Image Search Error:', error);
-        reply(`❌ Error: ${error.message || "Failed to fetch images"}`);
+        console.error(error);
+        reply("*❌ An error occurred while processing your request. Please try again later.*");
     }
 });

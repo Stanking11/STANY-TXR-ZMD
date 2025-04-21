@@ -1,1 +1,349 @@
-const _0x170a3e=_0x9ef7;function _0x4d1d(){const _0x2a7a64=['hpy','3724812KCSUbt','mon','../command','🤷‍♂️','8=✊️==D','anger','8===✊️D\x20💦','❌\x20*Error!*\x20','hrt','tools','hand','✊🏻\x20*STARTED...*\x20💦','Displays\x20a\x20dynamic\x20edit\x20msg\x20for\x20fun.','message','8==✊️=D💦\x20💦','key','8fDDMyb','⠀⠀⠀⣠⣶⡾⠏⠉⠙⠳⢦⡀⠀⠀⠀⢠⠞⠉⠙⠲⡀⠀\x0a\x20⠀⣴⠿⠏⠀⠀⠀⠀\x20\x20\x20⠀\x20\x20⠀⢳⡀⠀⡏⠀⠀\x20\x20\x20\x20\x20\x20\x20⢷\x0a⢠⣟⣋⡀⢀⣀⣀⡀⠀⣀⡀\x20\x20\x20⣧⠀⢸⠀\x20\x20⠀\x20\x20\x20\x20\x20\x20\x20⡇\x0a⢸⣯⡭⠁⠸⣛⣟⠆⡴⣻⡲\x20\x20\x20⣿\x20\x20⣸\x20\x20\x20Nikal\x20\x20\x20⡇\x0a\x20⣟⣿⡭⠀⠀⠀⠀⠀⢱⠀\x20\x20\x20\x20\x20\x20\x20⣿\x20\x20⢹⠀\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20⡇\x0a\x20\x20⠙⢿⣯⠄⠀⠀lodu⠀⠀\x20\x20\x20⡿\x20⠀⡇⠀⠀⠀⠀\x20\x20\x20⡼\x0a⠀⠀⠀⠹⣶⠆⠀⠀⠀⠀⠀\x20\x20⡴⠃⠀\x20\x20\x20⠘⠤⣄⣠⠞⠀\x0a⠀⠀⠀⠀⢸⣷⡦⢤⡤⢤⣞⣁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\x0a⠀⢀⣤⣴⣿⣏⠁⠀⠀⠸⣏⢯⣷⣖⣦⡀⠀⠀⠀⠀⠀⠀\x0a⢀⣾⣽⣿⣿⣿⣿⠛⢲⣶⣾⢉⡷⣿⣿⠵⣿⠀⠀⠀⠀⠀⠀\x0a⣼⣿⠍⠉⣿⡭⠉⠙⢺⣇⣼⡏⠀⠀\x20⠀⣄⢸⠀','5054445JsjYFD','syd','sendMessage','6vOyKQw','11338236veCZrN','relayMessage','8==✊️=D','cunfuzed','2qGXUqh','268023rRbAss','17806890kHfkJW','8===✊️D','🌚🌝','⠀⠀⠀⣠⣶⡾⠏⠉⠙⠳⢦⡀⠀⠀⠀⢠⠞⠉⠙⠲⡀⠀\x0a\x20⠀⣴⠿⠏⠀⠀⠀⠀⠀\x20\x20\x20\x20\x20⢳⡀⠀⡏⠀⠀⠀\x20\x20\x20⠀\x20\x20⢷\x0a⢠⣟⣋⡀⢀⣀⣀⡀⠀⣀⡀\x20\x20\x20⣧⠀⢸⠀⠀⠀\x20\x20⠀\x20\x20\x20\x20⡇\x0a⢸⣯⡭⠁⠸⣛⣟⠆⡴⣻⡲\x20\x20\x20\x20\x20⣿\x20\x20⣸\x20\x20\x20Nikal\x20\x20\x20⡇\x0a\x20⣟⣿⡭⠀⠀⠀⠀⠀⢱⠀⠀\x20\x20\x20\x20\x20\x20⣿\x20\x20⢹⠀\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20⡇\x0a\x20\x20⠙⢿⣯⠄⠀⠀⠀__⠀\x20\x20\x20⠀\x20\x20\x20⡿\x20⠀⡇⠀⠀⠀⠀\x20\x20\x20\x20⡼\x0a⠀⠀⠀⠹⣶⠆⠀⠀⠀⠀⠀⡴⠃⠀\x20\x20\x20⠘⠤⣄⣠⠞⠀\x0a⠀⠀⠀⠀⢸⣷⡦⢤⡤⢤⣞⣁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\x0a⠀⢀⣤⣴⣿⣏⠁⠀⠀⠸⣏⢯⣷⣖⣦⡀⠀⠀⠀⠀⠀⠀\x0a⢀⣾⣽⣿⣿⣿⣿⠛⢲⣶⣾⢉⡷⣿⣿⠵⣿⠀⠀⠀⠀⠀⠀\x0a⣼⣿⠍⠉⣿⡭⠉⠙⢺⣇⣼⡏⠀⠀\x20⠀⣄⢸⠀⠀⠀⠀⠀⠀`','>\x20SHABAN-SOBX-MD','⠀⠀⠀⣠⣶⡾⠏⠉⠙⠳⢦⡀⠀⠀⠀⢠⠞⠉⠙⠲⡀⠀\x0a\x20⠀⣴⠿⠏⠀⠀\x20\x20\x20\x20\x20⠀\x20\x20\x20⢳⡀⠀⡏⠀⠀\x20\x20\x20\x20⠀\x20\x20⢷\x0a⢠⣟⣋⡀⢀⣀⣀⡀⠀⣀⡀\x20\x20\x20⣧⠀⢸⠀⠀⠀⠀\x20\x20\x20\x20\x20\x20⡇\x0a⢸⣯⡭⠁⠸⣛⣟⠆⡴⣻⡲\x20\x20\x20\x20⣿\x20\x20⣸\x20\x20\x20Pehli\x20\x20\x20⡇\x0a\x20⣟⣿⡭⠀⠀⠀⠀⠀⢱⠀⠀\x20\x20\x20\x20\x20⣿\x20\x20⢹⠀\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20⡇\x0a\x20\x20⠙⢿⣯⠄⠀⠀(P)⠀⠀\x20\x20\x20\x20\x20⡿\x20⠀⡇⠀⠀⠀⠀\x20\x20\x20\x20⡼\x0a⠀⠀⠀⠹⣶⠆⠀⠀⠀⠀⠀⡴⠃⠀\x20\x20\x20⠘⠤⣄⣠⠞⠀\x0a⠀⠀⠀⠀⢸⣷⡦⢤⡤⢤⣞⣁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\x0a⠀⢀⣤⣴⣿⣏⠁⠀⠀⠸⣏⢯⣷⣖⣦⡀⠀⠀⠀⠀⠀⠀\x0a⢀⣾⣽⣿⣿⣿⣿⠛⢲⣶⣾⢉⡷⣿⣿⠵⣿⠀⠀⠀⠀⠀⠀\x0a⣼⣿⠍⠉⣿⡭⠉⠙⢺⣇⣼⡏⠀⠀\x20⠀⣄⢸⠀⠀⠀⠀⠀⠀`','⠀⠀⠀⣠⣶⡾⠏⠉⠙⠳⢦⡀⠀⠀⠀⢠⠞⠉⠙⠲⡀⠀\x0a\x20⠀⣴⠿⠏⠀⠀\x20\x20\x20\x20\x20⠀\x20\x20\x20⢳⡀⠀⡏⠀⠀\x20\x20\x20\x20⠀\x20\x20⢷\x0a⢠⣟⣋⡀⢀⣀⣀⡀⠀⣀⡀\x20\x20\x20⣧⠀⢸⠀\x20\x20\x20⠀\x20\x20\x20\x20\x20⡇\x0a⢸⣯⡭⠁⠸⣛⣟⠆⡴⣻⡲\x20\x20\x20\x20⣿\x20\x20⣸\x20\x20Fursat\x20\x20⡇\x0a\x20⣟⣿⡭⠀⠀⠀⠀⠀⢱⠀\x20\x20\x20\x20\x20\x20\x20\x20⣿\x20\x20⢹⠀\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20⡇\x0a\x20\x20⠙⢿⣯⠄⠀⠀⠀__\x20⠀\x20\x20⠀\x20\x20\x20⡿\x20⠀⡇⠀⠀⠀⠀\x20\x20\x20\x20⡼\x0a⠀⠀⠀⠹⣶⠆⠀⠀⠀⠀⠀⡴⠃⠀\x20\x20\x20⠘⠤⣄⣠⠞⠀\x0a⠀⠀⠀⠀⢸⣷⡦⢤⡤⢤⣞⣁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\x0a⠀⢀⣤⣴⣿⣏⠁⠀⠀⠸⣏⢯⣷⣖⣦⡀⠀⠀⠀⠀⠀⠀\x0a⢀⣾⣽⣿⣿⣿⣿⠛⢲⣶⣾⢉⡷⣿⣿⠵⣿⠀⠀⠀⠀⠀⠀\x0a⣼⣿⠍⠉⣿⡭⠉⠙⢺⣇⣼⡏⠀⠀\x20⠀⣄⢸⠀⠀⠀⠀⠀⠀`','MUZAMIL-ZAKHMI-MD🗿','1126260JsMHPd','log','643023DSbwfO','⠀⠀⠀⣠⣶⡾⠏⠉⠙⠳⢦⡀⠀⠀⠀⢠⠞⠉⠙⠲⡀⠀\x0a\x20⠀⣴⠿⠏⠀⠀⠀⠀⠀\x20\x20\x20\x20\x20\x20⢳⡀⠀⡏⠀⠀\x20\x20\x20\x20⠀\x20\x20⢷\x0a⢠⣟⣋⡀⢀⣀⣀⡀⠀⣀⡀\x20\x20\x20⣧⠀⢸⠀⠀\x20⠀\x20\x20\x20\x20\x20\x20⡇\x0a⢸⣯⡭⠁⠸⣛⣟⠆⡴⣻⡲\x20\x20\x20\x20⣿\x20\x20⣸\x20\x20Meeee\x20\x20\x20⡇\x0a\x20⣟⣿⡭⠀⠀⠀⠀⠀⢱⠀⠀\x20\x20\x20\x20\x20\x20\x20⣿\x20\x20⢹⠀\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20⡇\x0a\x20\x20⠙⢿⣯⠄⠀⠀|__|\x20⠀\x20\x20\x20\x20⡿\x20⠀⡇⠀⠀⠀⠀\x20\x20\x20\x20⡼\x0a⠀⠀⠀⠹⣶⠆⠀⠀⠀⠀⠀⡴⠃⠀\x20\x20\x20⠘⠤⣄⣠⠞⠀\x0a⠀⠀⠀⠀⢸⣷⡦⢤⡤⢤⣞⣁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\x0a⠀⢀⣤⣴⣿⣏⠁⠀⠀⠸⣏⢯⣷⣖⣦⡀⠀⠀⠀⠀⠀⠀\x0a⢀⣾⣽⣿⣿⣿⣿⠛⢲⣶⣾⢉⡷⣿⣿⠵⣿⠀⠀⠀⠀⠀⠀\x0a⣼⣿⠍⠉⣿⡭⠉⠙⢺⣇⣼⡏⠀⠀\x20⠀⣄⢸⠀⠀⠀⠀⠀⠀`','8✊️===D'];_0x4d1d=function(){return _0x2a7a64;};return _0x4d1d();}function _0x9ef7(_0x249794,_0x125464){const _0x4d1d31=_0x4d1d();return _0x9ef7=function(_0x9ef75d,_0x544dcb){_0x9ef75d=_0x9ef75d-0x139;let _0x1287fb=_0x4d1d31[_0x9ef75d];return _0x1287fb;},_0x9ef7(_0x249794,_0x125464);}(function(_0x42fb16,_0x8b0498){const _0xefb993=_0x9ef7,_0x5f4324=_0x42fb16();while(!![]){try{const _0x11e782=parseInt(_0xefb993(0x151))/0x1*(-parseInt(_0xefb993(0x150))/0x2)+parseInt(_0xefb993(0x15c))/0x3+-parseInt(_0xefb993(0x15a))/0x4+parseInt(_0xefb993(0x148))/0x5*(parseInt(_0xefb993(0x14b))/0x6)+-parseInt(_0xefb993(0x160))/0x7+parseInt(_0xefb993(0x146))/0x8*(-parseInt(_0xefb993(0x14c))/0x9)+parseInt(_0xefb993(0x152))/0xa;if(_0x11e782===_0x8b0498)break;else _0x5f4324['push'](_0x5f4324['shift']());}catch(_0x3adbf8){_0x5f4324['push'](_0x5f4324['shift']());}}}(_0x4d1d,0xa235b));const config=require('../config'),{cmd,commands}=require(_0x170a3e(0x162));cmd({'pattern':_0x170a3e(0x140),'desc':_0x170a3e(0x142),'category':_0x170a3e(0x13f),'react':'✊','filename':__filename},async(_0x45cd83,_0x286d49,_0x19855e,{from:_0x96d404,reply:_0x47c6bc})=>{const _0xa467c8=_0x170a3e;try{const _0x1d39fa=await _0x45cd83[_0xa467c8(0x14a)](_0x96d404,{'text':_0xa467c8(0x141)}),_0x3eccb1=['8✊️===D',_0xa467c8(0x13a),_0xa467c8(0x14e),_0xa467c8(0x153),_0xa467c8(0x14e),_0xa467c8(0x13a),_0xa467c8(0x15e),_0xa467c8(0x13a),_0xa467c8(0x14e),'8===✊️D',_0xa467c8(0x14e),_0xa467c8(0x13a),'8✊️===D',_0xa467c8(0x13a),_0xa467c8(0x14e),_0xa467c8(0x153),_0xa467c8(0x14e),'8=✊️==D',_0xa467c8(0x15e),'8=✊️==D',_0xa467c8(0x14e),_0xa467c8(0x13c),_0xa467c8(0x144),'8=✊️==D\x20💦💦\x20💦'];for(const _0x406c5e of _0x3eccb1){await new Promise(_0x2b41ff=>setTimeout(_0x2b41ff,0x3e8)),await _0x45cd83[_0xa467c8(0x14d)](_0x96d404,{'protocolMessage':{'key':_0x1d39fa[_0xa467c8(0x145)],'type':0xe,'editedMessage':{'conversation':_0x406c5e}}},{});}}catch(_0x57d8ae){console['log'](_0x57d8ae),_0x47c6bc(_0xa467c8(0x13d)+_0x57d8ae['message']);}}),cmd({'pattern':_0x170a3e(0x15f),'desc':_0x170a3e(0x142),'category':_0x170a3e(0x13f),'react':'😁','filename':__filename},async(_0x353111,_0x52aa7e,_0x362309,{from:_0x3d98dd,reply:_0x46f413})=>{const _0x43f0ea=_0x170a3e;try{const _0xce6d4d=await _0x353111['sendMessage'](_0x3d98dd,{'text':'😂'}),_0x47a009=['😃','😄','😁','😊','😎','🥳','😸','😹','🌞','🌈','😃','😄','😁','😊','😎','🥳','😸','😹','🌞','🌈','😃','😄','😁','😊'];for(const _0x445d2a of _0x47a009){await new Promise(_0x3a1a76=>setTimeout(_0x3a1a76,0x320)),await _0x353111[_0x43f0ea(0x14d)](_0x3d98dd,{'protocolMessage':{'key':_0xce6d4d[_0x43f0ea(0x145)],'type':0xe,'editedMessage':{'conversation':_0x445d2a}}},{});}}catch(_0x3d2162){console[_0x43f0ea(0x15b)](_0x3d2162),_0x46f413(_0x43f0ea(0x13d)+_0x3d2162[_0x43f0ea(0x143)]);}}),cmd({'pattern':_0x170a3e(0x13e),'desc':_0x170a3e(0x142),'category':_0x170a3e(0x13f),'react':'🫀','filename':__filename},async(_0x468a9f,_0x3a7e90,_0xac39dc,{from:_0x53a037,reply:_0x542a66})=>{const _0x46066b=_0x170a3e;try{const _0x39d571=await _0x468a9f[_0x46066b(0x14a)](_0x53a037,{'text':'❤️'}),_0x52271e=['💖','💗','💕','❤️','💛','💚','🫀','💙','💜','🖤','♥️','🤍','🤎','💗','💞','💓','💘','💝','♥️','💟','🫀','❤️'];for(const _0x42a679 of _0x52271e){await new Promise(_0xc0ed08=>setTimeout(_0xc0ed08,0x1f4)),await _0x468a9f[_0x46066b(0x14d)](_0x53a037,{'protocolMessage':{'key':_0x39d571[_0x46066b(0x145)],'type':0xe,'editedMessage':{'conversation':_0x42a679}}},{});}}catch(_0x2f7fbb){console[_0x46066b(0x15b)](_0x2f7fbb),_0x542a66('❌\x20*Error!*\x20'+_0x2f7fbb['message']);}}),cmd({'pattern':_0x170a3e(0x13b),'desc':_0x170a3e(0x142),'category':_0x170a3e(0x13f),'react':'🤡','filename':__filename},async(_0x4c63a0,_0x2a2d0f,_0xfd1920,{from:_0x7c1f05,reply:_0x2fc617})=>{const _0x18ffb8=_0x170a3e;try{const _0x471762=await _0x4c63a0[_0x18ffb8(0x14a)](_0x7c1f05,{'text':'🤡'}),_0x4383e5=['😡','😠','🤬','😤','😾','😡','😠','🤬','😤','😾'];for(const _0x562bf3 of _0x4383e5){await new Promise(_0x2be7c0=>setTimeout(_0x2be7c0,0x3e8)),await _0x4c63a0['relayMessage'](_0x7c1f05,{'protocolMessage':{'key':_0x471762[_0x18ffb8(0x145)],'type':0xe,'editedMessage':{'conversation':_0x562bf3}}},{});}}catch(_0x44a0c5){console[_0x18ffb8(0x15b)](_0x44a0c5),_0x2fc617(_0x18ffb8(0x13d)+_0x44a0c5[_0x18ffb8(0x143)]);}}),cmd({'pattern':_0x170a3e(0x149),'desc':_0x170a3e(0x142),'category':_0x170a3e(0x13f),'react':'😫','filename':__filename},async(_0x33fcee,_0x1876fe,_0xc17cb8,{from:_0x15bb18,reply:_0xee066f})=>{const _0x1581fe=_0x170a3e;try{const _0x4c06fd=await _0x33fcee[_0x1581fe(0x14a)](_0x15bb18,{'text':'😭'}),_0x2d9a88=['🥺','😟','😕','😖','😫','🙁','😩','😥','😓','😪','😢','😔','😞','😭','💔','😭','😿'];for(const _0x336d71 of _0x2d9a88){await new Promise(_0x6eece4=>setTimeout(_0x6eece4,0x3e8)),await _0x33fcee[_0x1581fe(0x14d)](_0x15bb18,{'protocolMessage':{'key':_0x4c06fd[_0x1581fe(0x145)],'type':0xe,'editedMessage':{'conversation':_0x336d71}}},{});}}catch(_0x345651){console[_0x1581fe(0x15b)](_0x345651),_0xee066f('❌\x20*Error!*\x20'+_0x345651[_0x1581fe(0x143)]);}}),cmd({'pattern':'shyy','desc':'Displays\x20a\x20dynamic\x20edit\x20msg\x20for\x20fun.','category':_0x170a3e(0x13f),'react':'😳','filename':__filename},async(_0x5cfd31,_0x13a257,_0x4fe9cd,{from:_0x453318,reply:_0x138a01})=>{const _0x32c0ab=_0x170a3e;try{const _0x361884=await _0x5cfd31[_0x32c0ab(0x14a)](_0x453318,{'text':_0x32c0ab(0x156)}),_0x206081=['😳','😊','😶','🙈','🙊','😳','😊','😶','🙈','🙊'];for(const _0x5ccb6e of _0x206081){await new Promise(_0x23b67b=>setTimeout(_0x23b67b,0x3e8)),await _0x5cfd31['relayMessage'](_0x453318,{'protocolMessage':{'key':_0x361884[_0x32c0ab(0x145)],'type':0xe,'editedMessage':{'conversation':_0x5ccb6e}}},{});}}catch(_0x3775a4){console[_0x32c0ab(0x15b)](_0x3775a4),_0x138a01(_0x32c0ab(0x13d)+_0x3775a4[_0x32c0ab(0x143)]);}}),cmd({'pattern':_0x170a3e(0x161),'desc':_0x170a3e(0x142),'category':'tools','react':'🌙','filename':__filename},async(_0x2adc05,_0x574382,_0xe7924c,{from:_0x10f877,reply:_0x1797ef})=>{const _0x491c5e=_0x170a3e;try{const _0x16fb04=await _0x2adc05['sendMessage'](_0x10f877,{'text':'🌙'}),_0x226056=['🌗','🌘','🌑','🌒','🌓','🌔','🌕','🌖','🌗','🌘','🌑','🌒','🌓','🌔','🌕','🌖','🌗','🌘','🌑','🌒','🌓','🌔','🌕','🌖','🌗','🌘','🌑','🌒','🌓','🌔','🌕',_0x491c5e(0x154)];for(const _0x3ad6c8 of _0x226056){await new Promise(_0x1eba41=>setTimeout(_0x1eba41,0x3e8)),await _0x2adc05[_0x491c5e(0x14d)](_0x10f877,{'protocolMessage':{'key':_0x16fb04[_0x491c5e(0x145)],'type':0xe,'editedMessage':{'conversation':_0x3ad6c8}}},{});}}catch(_0x31361e){console[_0x491c5e(0x15b)](_0x31361e),_0x1797ef(_0x491c5e(0x13d)+_0x31361e[_0x491c5e(0x143)]);}}),cmd({'pattern':_0x170a3e(0x14f),'desc':_0x170a3e(0x142),'category':'tools','react':'🙀','filename':__filename},async(_0x4e5dcf,_0x197ed7,_0x4e6e55,{from:_0x419892,reply:_0x1f258d})=>{const _0x22cea6=_0x170a3e;try{const _0x566b9e=await _0x4e5dcf['sendMessage'](_0x419892,{'text':'🙀'}),_0x35a517=['😕','😟','😵','🤔','😖','😲','😦','🤷',_0x22cea6(0x139),'🤷‍♀️'];for(const _0x177123 of _0x35a517){await new Promise(_0x19e7ff=>setTimeout(_0x19e7ff,0x3e8)),await _0x4e5dcf[_0x22cea6(0x14d)](_0x419892,{'protocolMessage':{'key':_0x566b9e[_0x22cea6(0x145)],'type':0xe,'editedMessage':{'conversation':_0x177123}}},{});}}catch(_0x3914f5){console[_0x22cea6(0x15b)](_0x3914f5),_0x1f258d(_0x22cea6(0x13d)+_0x3914f5[_0x22cea6(0x143)]);}}),cmd({'pattern':'kiss','desc':'Displays\x20a\x20dynamic\x20edit\x20msg\x20for\x20fun.','category':_0x170a3e(0x13f),'react':'♥️','filename':__filename},async(_0x5534d6,_0xea351e,_0x4a659,{from:_0x3549d3,reply:_0x38bcdd})=>{const _0x3701e2=_0x170a3e;try{const _0x3d3056=await _0x5534d6[_0x3701e2(0x14a)](_0x3549d3,{'text':'♥️'}),_0x548d62=['🥵','❤️','💋','😫','🤤','😋','🥵','🥶','🙊','😻','🙈','💋','🫂','🫀','👅','👄','💋'];for(const _0x2ae417 of _0x548d62){await new Promise(_0x3260b1=>setTimeout(_0x3260b1,0x3e8)),await _0x5534d6[_0x3701e2(0x14d)](_0x3549d3,{'protocolMessage':{'key':_0x3d3056['key'],'type':0xe,'editedMessage':{'conversation':_0x2ae417}}},{});}}catch(_0x1763fc){console[_0x3701e2(0x15b)](_0x1763fc),_0x38bcdd(_0x3701e2(0x13d)+_0x1763fc[_0x3701e2(0x143)]);}}),cmd({'pattern':'nikal','desc':_0x170a3e(0x142),'category':_0x170a3e(0x13f),'react':'🗿','filename':__filename},async(_0x125191,_0x3f957c,_0xb9d01a,{from:_0x3ae285,reply:_0x30a5f5})=>{const _0x3c01a7=_0x170a3e;try{const _0x19567b=await _0x125191[_0x3c01a7(0x14a)](_0x3ae285,{'text':_0x3c01a7(0x159)}),_0x1c80f3=[_0x3c01a7(0x155),'⠀⠀⠀⣠⣶⡾⠏⠉⠙⠳⢦⡀⠀⠀⠀⢠⠞⠉⠙⠲⡀⠀\x0a\x20⠀⣴⠿⠏⠀⠀⠀⠀⠀\x20\x20⠀\x20\x20⢳⡀⠀⡏⠀⠀⠀\x20\x20\x20⠀\x20\x20⢷\x0a⢠⣟⣋⡀⢀⣀⣀⡀⠀⣀⡀\x20\x20\x20⣧⠀⢸⠀⠀⠀\x20\x20\x20\x20\x20\x20\x20⡇\x0a⢸⣯⡭⠁⠸⣛⣟⠆⡴⣻⡲\x20\x20\x20\x20\x20⣿\x20\x20⣸\x20\x20\x20Lavde\x20\x20\x20⡇\x0a\x20⣟⣿⡭⠀⠀⠀⠀⠀⢱⠀⠀\x20\x20\x20\x20\x20\x20⣿\x20\x20⢹⠀\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20⡇\x0a\x20\x20⠙⢿⣯⠄⠀⠀|__|⠀⠀\x20\x20\x20⡿\x20⠀⡇⠀⠀⠀⠀\x20\x20\x20\x20⡼\x0a⠀⠀⠀⠹⣶⠆⠀⠀⠀⠀⠀⡴⠃⠀\x20\x20\x20⠘⠤⣄⣠⠞⠀\x0a⠀⠀⠀⠀⢸⣷⡦⢤⡤⢤⣞⣁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\x0a⠀⢀⣤⣴⣿⣏⠁⠀⠀⠸⣏⢯⣷⣖⣦⡀⠀⠀⠀⠀⠀⠀\x0a⢀⣾⣽⣿⣿⣿⣿⠛⢲⣶⣾⢉⡷⣿⣿⠵⣿⠀⠀⠀⠀⠀⠀\x0a⣼⣿⠍⠉⣿⡭⠉⠙⢺⣇⣼⡏⠀⠀\x20⠀⣄⢸⠀⠀⠀⠀⠀⠀`',_0x3c01a7(0x157),_0x3c01a7(0x158),_0x3c01a7(0x15d),_0x3c01a7(0x147)];for(const _0x77af75 of _0x1c80f3){await new Promise(_0x40d3fb=>setTimeout(_0x40d3fb,0x5dc)),await _0x125191[_0x3c01a7(0x14d)](_0x3ae285,{'protocolMessage':{'key':_0x19567b[_0x3c01a7(0x145)],'type':0xe,'editedMessage':{'conversation':_0x77af75}}},{});}}catch(_0x61a6ba){console[_0x3c01a7(0x15b)](_0x61a6ba),_0x30a5f5('❌\x20*Error!*\x20'+_0x61a6ba[_0x3c01a7(0x143)]);}});
+const { cmd } = require('../command');
+
+cmd({
+    pattern: "happy",
+    desc: "Displays a dynamic edit msg for fun.",
+    category: "tools",
+    react: "😂",
+    filename: __filename
+},
+async (conn, mek, m, { from, reply }) => {
+    try {
+        const loadingMessage = await conn.sendMessage(from, { text: '😂' });
+        const emojiMessages = [
+            "😃", "😄", "😁", "😊", "😎", "🥳",
+            "😸", "😹", "🌞", "🌈", "😃", "😄",
+            "😁", "😊", "😎", "🥳", "😸", "😹",
+            "🌞", "🌈", "😃", "😄", "😁", "😊"
+        ];
+
+        for (const line of emojiMessages) {
+            await new Promise(resolve => setTimeout(resolve, 1000)); // Delay for 1 second
+            await conn.relayMessage(
+                from,
+                {
+                    protocolMessage: {
+                        key: loadingMessage.key,
+                        type: 14,
+                        editedMessage: {
+                            conversation: line,
+                        },
+                    },
+                },
+                {}
+            );
+        }
+    } catch (e) {
+        console.log(e);
+        reply(`❌ *Error!* ${e.message}`);
+    }
+});
+
+cmd({
+    pattern: "heart",
+    desc: "Displays a dynamic edit msg for fun.",
+    category: "tools",
+    react: "❤️",
+    filename: __filename
+},
+async (conn, mek, m, { from, reply }) => {
+    try {
+        const loadingMessage = await conn.sendMessage(from, { text: '🖤' });
+        const emojiMessages = [
+            "💖", "💗", "💕", "🩷", "💛", "💚",
+            "🩵", "💙", "💜", "🖤", "🩶", "🤍",
+            "🤎", "❤️‍🔥", "💞", "💓", "💘", "💝",
+            "♥️", "💟", "❤️‍🩹", "❤️"
+        ];
+
+        for (const line of emojiMessages) {
+            await new Promise(resolve => setTimeout(resolve, 1000)); // Delay for 1 second
+            await conn.relayMessage(
+                from,
+                {
+                    protocolMessage: {
+                        key: loadingMessage.key,
+                        type: 14,
+                        editedMessage: {
+                            conversation: line,
+                        },
+                    },
+                },
+                {}
+            );
+        }
+    } catch (e) {
+        console.log(e);
+        reply(`❌ *Error!* ${e.message}`);
+    }
+});
+
+cmd({
+    pattern: "angry",
+    desc: "Displays a dynamic edit msg for fun.",
+    category: "tools",
+    react: "🤡",
+    filename: __filename
+},
+async (conn, mek, m, { from, reply }) => {
+    try {
+        const loadingMessage = await conn.sendMessage(from, { text: '👽' });
+        const emojiMessages = [
+            "😡", "😠", "🤬", "😤", "😾", "😡",
+            "😠", "🤬", "😤", "😾"
+        ];
+
+        for (const line of emojiMessages) {
+            await new Promise(resolve => setTimeout(resolve, 1000)); // Delay for 1 second
+            await conn.relayMessage(
+                from,
+                {
+                    protocolMessage: {
+                        key: loadingMessage.key,
+                        type: 14,
+                        editedMessage: {
+                            conversation: line,
+                        },
+                    },
+                },
+                {}
+            );
+        }
+    } catch (e) {
+        console.log(e);
+        reply(`❌ *Error!* ${e.message}`);
+    }
+});
+
+cmd({
+    pattern: "sad",
+    desc: "Displays a dynamic edit msg for fun.",
+    category: "tools",
+    react: "😶",
+    filename: __filename
+},
+async (conn, mek, m, { from, reply }) => {
+    try {
+        const loadingMessage = await conn.sendMessage(from, { text: '😔' });
+        const emojiMessages = [
+            "🥺", "😟", "😕", "😖", "😫", "🙁",
+            "😩", "😥", "😓", "😪", "😢", "😔",
+            "😞", "😭", "💔", "😭", "😿"
+        ];
+
+        for (const line of emojiMessages) {
+            await new Promise(resolve => setTimeout(resolve, 1000)); // Delay for 1 second
+            await conn.relayMessage(
+                from,
+                {
+                    protocolMessage: {
+                        key: loadingMessage.key,
+                        type: 14,
+                        editedMessage: {
+                            conversation: line,
+                        },
+                    },
+                },
+                {}
+            );
+        }
+    } catch (e) {
+        console.log(e);
+        reply(`❌ *Error!* ${e.message}`);
+    }
+});
+
+cmd({
+    pattern: "shy",
+    desc: "Displays a dynamic edit msg for fun.",
+    category: "tools",
+    react: "🧐",
+    filename: __filename
+},
+async (conn, mek, m, { from, reply }) => {
+    try {
+        const loadingMessage = await conn.sendMessage(from, { text: '🧐' });
+        const emojiMessages = [
+            "😳", "😊", "😶", "🙈", "🙊",
+            "😳", "😊", "😶", "🙈", "🙊"
+        ];
+
+        for (const line of emojiMessages) {
+            await new Promise(resolve => setTimeout(resolve, 1000)); // Delay for 1 second
+            await conn.relayMessage(
+                from,
+                {
+                    protocolMessage: {
+                        key: loadingMessage.key,
+                        type: 14,
+                        editedMessage: {
+                            conversation: line,
+                        },
+                    },
+                },
+                {}
+            );
+        }
+    } catch (e) {
+        console.log(e);
+        reply(`❌ *Error!* ${e.message}`);
+    }
+});
+
+cmd({
+    pattern: "moon",
+    desc: "Displays a dynamic edit msg for fun.",
+    category: "tools",
+    react: "🌚",
+    filename: __filename
+},
+async (conn, mek, m, { from, reply }) => {
+    try {
+        const loadingMessage = await conn.sendMessage(from, { text: '🌝' });
+        const emojiMessages = [
+            "🌗", "🌘", "🌑", "🌒", "🌓", "🌔",
+            "🌕", "🌖", "🌗", "🌘", "🌑", "🌒",
+            "🌓", "🌔", "🌕", "🌖", "🌗", "🌘",
+            "🌑", "🌒", "🌓", "🌔", "🌕", "🌖",
+            "🌗", "🌘", "🌑", "🌒", "🌓", "🌔",
+            "🌕", "🌖", "🌝🌚"
+        ];
+
+        for (const line of emojiMessages) {
+            await new Promise(resolve => setTimeout(resolve, 1000)); // Delay for 1 second
+            await conn.relayMessage(
+                from,
+                {
+                    protocolMessage: {
+                        key: loadingMessage.key,
+                        type: 14,
+                        editedMessage: {
+                            conversation: line,
+                        },
+                    },
+                },
+                {}
+            );
+        }
+    } catch (e) {
+        console.log(e);
+        reply(`❌ *Error!* ${e.message}`);
+    }
+});
+
+cmd({
+    pattern: "confused",
+    desc: "Displays a dynamic edit msg for fun.",
+    category: "tools",
+    react: "🤔",
+    filename: __filename
+},
+async (conn, mek, m, { from, reply }) => {
+    try {
+        const loadingMessage = await conn.sendMessage(from, { text: '🤔' });
+        const emojiMessages = [
+            "😕", "😟", "😵", "🤔", "😖", 
+            "😲", "😦", "🤷", "🤷‍♂️", "🤷‍♀️"
+        ];
+
+        for (const line of emojiMessages) {
+            await new Promise(resolve => setTimeout(resolve, 1000)); // Delay for 1 second
+            await conn.relayMessage(
+                from,
+                {
+                    protocolMessage: {
+                        key: loadingMessage.key,
+                        type: 14,
+                        editedMessage: {
+                            conversation: line,
+                        },
+                    },
+                },
+                {}
+            );
+        }
+    } catch (e) {
+        console.log(e);
+        reply(`❌ *Error!* ${e.message}`);
+    }
+});
+
+cmd({
+    pattern: "hot",
+    desc: "Displays a dynamic edit msg for fun.",
+    category: "tools",
+    react: "💋",
+    filename: __filename
+},
+async (conn, mek, m, { from, reply }) => {
+    try {
+        const loadingMessage = await conn.sendMessage(from, { text: '💋' });
+        const emojiMessages = [
+            "🥵", "❤️", "💋", "😫", "🤤", 
+            "😋", "🥵", "🥶", "🙊", "😻", 
+            "🙈", "💋", "🫂", "🫀", "👅", 
+            "👄", "💋"
+        ];
+
+        for (const line of emojiMessages) {
+            await new Promise(resolve => setTimeout(resolve, 1000)); // Delay for 1 second
+            await conn.relayMessage(
+                from,
+                {
+                    protocolMessage: {
+                        key: loadingMessage.key,
+                        type: 14,
+                        editedMessage: {
+                            conversation: line,
+                        },
+                    },
+                },
+                {}
+            );
+        }
+    } catch (e) {
+        console.log(e);
+        reply(`❌ *Error!* ${e.message}`);
+    }
+});
+
+cmd({
+    pattern: "nikal",
+    desc: "Displays a dynamic edit msg for fun.",
+    category: "tools",
+    react: "🗿",
+    filename: __filename
+},
+async (conn, mek, m, { from, reply }) => {
+    try {
+        const loadingMessage = await conn.sendMessage(from, { text: 'ALI-XMD☠️' });
+        
+        // Define the ASCII art messages
+        const asciiMessages = [
+            "⠀⠀⠀⣠⣶⡾⠏⠉⠙⠳⢦⡀⠀⠀⠀⢠⠞⠉⠙⠲⡀⠀\n ⠀⣴⠿⠏⠀⠀⠀⠀⠀     ⢳⡀⠀⡏⠀⠀⠀   ⠀  ⢷\n⢠⣟⣋⡀⢀⣀⣀⡀⠀⣀⡀   ⣧⠀⢸⠀⠀⠀  ⠀    ⡇\n⢸⣯⡭⠁⠸⣛⣟⠆⡴⣻⡲     ⣿  ⣸   Nikal   ⡇\n ⣟⣿⡭⠀⠀⠀⠀⠀⢱⠀⠀      ⣿  ⢹⠀          ⡇\n  ⠙⢿⣯⠄⠀⠀⠀__⠀   ⠀   ⡿ ⠀⡇⠀⠀⠀⠀    ⡼\n⠀⠀⠀⠹⣶⠆⠀⠀⠀⠀⠀⡴⠃⠀   ⠘⠤⣄⣠⠞⠀\n⠀⠀⠀⠀⢸⣷⡦⢤⡤⢤⣞⣁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⢀⣤⣴⣿⣏⠁⠀⠀⠸⣏⢯⣷⣖⣦⡀⠀⠀⠀⠀⠀⠀\n⢀⣾⣽⣿⣿⣿⣿⠛⢲⣶⣾⢉⡷⣿⣿⠵⣿⠀⠀⠀⠀⠀⠀\n⣼⣿⠍⠉⣿⡭⠉⠙⢺⣇⣼⡏⠀⠀ ⠀⣄⢸⠀⠀⠀⠀⠀⠀`", "⠀⠀⠀⣠⣶⡾⠏⠉⠙⠳⢦⡀⠀⠀⠀⢠⠞⠉⠙⠲⡀⠀\n ⠀⣴⠿⠏⠀⠀⠀⠀⠀  ⠀  ⢳⡀⠀⡏⠀⠀⠀   ⠀  ⢷\n⢠⣟⣋⡀⢀⣀⣀⡀⠀⣀⡀   ⣧⠀⢸⠀⠀⠀       ⡇\n⢸⣯⡭⠁⠸⣛⣟⠆⡴⣻⡲     ⣿  ⣸   Lavde   ⡇\n ⣟⣿⡭⠀⠀⠀⠀⠀⢱⠀⠀      ⣿  ⢹⠀          ⡇\n  ⠙⢿⣯⠄⠀⠀|__|⠀⠀   ⡿ ⠀⡇⠀⠀⠀⠀    ⡼\n⠀⠀⠀⠹⣶⠆⠀⠀⠀⠀⠀⡴⠃⠀   ⠘⠤⣄⣠⠞⠀\n⠀⠀⠀⠀⢸⣷⡦⢤⡤⢤⣞⣁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⢀⣤⣴⣿⣏⠁⠀⠀⠸⣏⢯⣷⣖⣦⡀⠀⠀⠀⠀⠀⠀\n⢀⣾⣽⣿⣿⣿⣿⠛⢲⣶⣾⢉⡷⣿⣿⠵⣿⠀⠀⠀⠀⠀⠀\n⣼⣿⠍⠉⣿⡭⠉⠙⢺⣇⣼⡏⠀⠀ ⠀⣄⢸⠀⠀⠀⠀⠀⠀`", "⠀⠀⠀⣠⣶⡾⠏⠉⠙⠳⢦⡀⠀⠀⠀⢠⠞⠉⠙⠲⡀⠀\n ⠀⣴⠿⠏⠀⠀     ⠀   ⢳⡀⠀⡏⠀⠀    ⠀  ⢷\n⢠⣟⣋⡀⢀⣀⣀⡀⠀⣀⡀   ⣧⠀⢸⠀⠀⠀⠀      ⡇\n⢸⣯⡭⠁⠸⣛⣟⠆⡴⣻⡲    ⣿  ⣸   Pehli   ⡇\n ⣟⣿⡭⠀⠀⠀⠀⠀⢱⠀⠀     ⣿  ⢹⠀           ⡇\n  ⠙⢿⣯⠄⠀⠀(P)⠀⠀     ⡿ ⠀⡇⠀⠀⠀⠀    ⡼\n⠀⠀⠀⠹⣶⠆⠀⠀⠀⠀⠀⡴⠃⠀   ⠘⠤⣄⣠⠞⠀\n⠀⠀⠀⠀⢸⣷⡦⢤⡤⢤⣞⣁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⢀⣤⣴⣿⣏⠁⠀⠀⠸⣏⢯⣷⣖⣦⡀⠀⠀⠀⠀⠀⠀\n⢀⣾⣽⣿⣿⣿⣿⠛⢲⣶⣾⢉⡷⣿⣿⠵⣿⠀⠀⠀⠀⠀⠀\n⣼⣿⠍⠉⣿⡭⠉⠙⢺⣇⣼⡏⠀⠀ ⠀⣄⢸⠀⠀⠀⠀⠀⠀`", "⠀⠀⠀⣠⣶⡾⠏⠉⠙⠳⢦⡀⠀⠀⠀⢠⠞⠉⠙⠲⡀⠀\n ⠀⣴⠿⠏⠀⠀     ⠀   ⢳⡀⠀⡏⠀⠀    ⠀  ⢷\n⢠⣟⣋⡀⢀⣀⣀⡀⠀⣀⡀   ⣧⠀⢸⠀   ⠀     ⡇\n⢸⣯⡭⠁⠸⣛⣟⠆⡴⣻⡲    ⣿  ⣸  Fursat  ⡇\n ⣟⣿⡭⠀⠀⠀⠀⠀⢱⠀        ⣿  ⢹⠀          ⡇\n  ⠙⢿⣯⠄⠀⠀⠀__ ⠀  ⠀   ⡿ ⠀⡇⠀⠀⠀⠀    ⡼\n⠀⠀⠀⠹⣶⠆⠀⠀⠀⠀⠀⡴⠃⠀   ⠘⠤⣄⣠⠞⠀\n⠀⠀⠀⠀⢸⣷⡦⢤⡤⢤⣞⣁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⢀⣤⣴⣿⣏⠁⠀⠀⠸⣏⢯⣷⣖⣦⡀⠀⠀⠀⠀⠀⠀\n⢀⣾⣽⣿⣿⣿⣿⠛⢲⣶⣾⢉⡷⣿⣿⠵⣿⠀⠀⠀⠀⠀⠀\n⣼⣿⠍⠉⣿⡭⠉⠙⢺⣇⣼⡏⠀⠀ ⠀⣄⢸⠀⠀⠀⠀⠀⠀`", "⠀⠀⠀⣠⣶⡾⠏⠉⠙⠳⢦⡀⠀⠀⠀⢠⠞⠉⠙⠲⡀⠀\n ⠀⣴⠿⠏⠀⠀⠀⠀⠀      ⢳⡀⠀⡏⠀⠀    ⠀  ⢷\n⢠⣟⣋⡀⢀⣀⣀⡀⠀⣀⡀   ⣧⠀⢸⠀⠀ ⠀      ⡇\n⢸⣯⡭⠁⠸⣛⣟⠆⡴⣻⡲    ⣿  ⣸  Meeee   ⡇\n ⣟⣿⡭⠀⠀⠀⠀⠀⢱⠀⠀       ⣿  ⢹⠀          ⡇\n  ⠙⢿⣯⠄⠀⠀|__| ⠀    ⡿ ⠀⡇⠀⠀⠀⠀    ⡼\n⠀⠀⠀⠹⣶⠆⠀⠀⠀⠀⠀⡴⠃⠀   ⠘⠤⣄⣠⠞⠀\n⠀⠀⠀⠀⢸⣷⡦⢤⡤⢤⣞⣁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⢀⣤⣴⣿⣏⠁⠀⠀⠸⣏⢯⣷⣖⣦⡀⠀⠀⠀⠀⠀⠀\n⢀⣾⣽⣿⣿⣿⣿⠛⢲⣶⣾⢉⡷⣿⣿⠵⣿⠀⠀⠀⠀⠀⠀\n⣼⣿⠍⠉⣿⡭⠉⠙⢺⣇⣼⡏⠀⠀ ⠀⣄⢸⠀⠀⠀⠀⠀⠀`", "⠀⠀⠀⣠⣶⡾⠏⠉⠙⠳⢦⡀⠀⠀⠀⢠⠞⠉⠙⠲⡀⠀\n ⠀⣴⠿⠏⠀⠀⠀⠀   ⠀  ⠀⢳⡀⠀⡏⠀⠀       ⢷\n⢠⣟⣋⡀⢀⣀⣀⡀⠀⣀⡀   ⣧⠀⢸⠀  ⠀       ⡇\n⢸⣯⡭⠁⠸⣛⣟⠆⡴⣻⡲   ⣿  ⣸   Nikal   ⡇\n ⣟⣿⡭⠀⠀⠀⠀⠀⢱⠀       ⣿  ⢹⠀           ⡇\n  ⠙⢿⣯⠄⠀⠀lodu⠀⠀   ⡿ ⠀⡇⠀⠀⠀⠀   ⡼\n⠀⠀⠀⠹⣶⠆⠀⠀⠀⠀⠀  ⡴⠃⠀   ⠘⠤⣄⣠⠞⠀\n⠀⠀⠀⠀⢸⣷⡦⢤⡤⢤⣞⣁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⢀⣤⣴⣿⣏⠁⠀⠀⠸⣏⢯⣷⣖⣦⡀⠀⠀⠀⠀⠀⠀\n⢀⣾⣽⣿⣿⣿⣿⠛⢲⣶⣾⢉⡷⣿⣿⠵⣿⠀⠀⠀⠀⠀⠀\n⣼⣿⠍⠉⣿⡭⠉⠙⢺⣇⣼⡏⠀⠀ ⠀⣄⢸⠀"
+        ];
+
+        // Send the initial loading message
+        for (const asciiMessage of asciiMessages) {
+            await new Promise(resolve => setTimeout(resolve, 500)); // Delay for 500ms second
+            await conn.relayMessage(
+                from,
+                {
+                    protocolMessage: {
+                        key: loadingMessage.key,
+                        type: 14,
+                        editedMessage: {
+                            conversation: asciiMessage,
+                        },
+                    },
+                },
+                {}
+            );
+        }
+    } catch (e) {
+        console.log(e);
+        reply(`❌ *Error!* ${e.message}`);
+    }
+});
+
+// > JawadTechX 

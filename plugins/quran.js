@@ -64,7 +64,7 @@ ${translatedTafsirEnglish.text}`;
         contextInfo: {
           mentionedJid: [m.sender], 
           forwardingScore: 999,  
-          isForwarded: false,   
+          isForwarded: true,   
           forwardedNewsletterMessageInfo: {
             newsletterJid: '120363302677217436@newsletter', 
             newsletterName: ' 𝐐𝐔𝐑𝐀𝐍', 

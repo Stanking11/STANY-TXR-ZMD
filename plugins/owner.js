@@ -29,8 +29,8 @@ async (conn, mek, m, { from }) => {
 
         // Send the owner contact message with image and audio
         await conn.sendMessage(from, {
-            image: { url: 'https://files.catbox.moe/cpja3j.jpg' }, // Image URL from your request
-            caption: `╭━━〔 *STANY-TRX-ZMD* 〕━━┈⊷
+            image: { url: 'https://i.imgur.com/KADOfEq.jpeg' }, // Image URL from your request
+            caption: `╭━━〔 *𝐂𝐀𝐒𝐄𝐘𝐑𝐇𝐎𝐃𝐄𝐒 𝐓𝐄𝐂𝐇* 〕━━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• *Here is the owner details*
 ┃◈┃• *Name* - ${ownerName}
@@ -45,7 +45,7 @@ async (conn, mek, m, { from }) => {
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363302677217436@newsletter',
-                    newsletterName: 'STANY-TECH💖🥰',
+                    newsletterName: 'CASEYRHODES XMD DEVELOPERS🥰💖🥰',
                     serverMessageId: 143
                 }            
             }

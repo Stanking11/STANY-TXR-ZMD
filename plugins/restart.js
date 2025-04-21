@@ -3,7 +3,7 @@ const { sleep } = require('../lib/functions');
 
 cmd({
     pattern: "restart",
-    desc: "Restart the bot STANY-TECH TRX now restarting",
+    desc: "Restart the bot ",
     category: "owner",
     filename: __filename
 },

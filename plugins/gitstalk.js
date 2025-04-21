@@ -3,7 +3,7 @@ const config = require('../config');
 const { cmd, commands } = require('../command');
 
 cmd({
-    pattern: "github",
+    pattern: "githubstalk",
     desc: "Fetch detailed GitHub user profile including profile picture.",
     category: "menu",
     react: "🖥️",
@@ -27,7 +27,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 👥 *Followers*: ${data.followers} | Following: ${data.following}
 📅 *Created At*: ${new Date(data.created_at).toDateString()}
 🔭 *Public Gists*: ${data.public_gists}
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™`;
+> © 𝘚𝘪𝘭𝘷𝘢 𝘚𝘱𝘢𝘳𝘬 𝘔𝘋`;
           const sentMsg = await conn.sendMessage(from,{image:{url: data.avatar_url },caption: userInfo },{quoted:mek })
     } catch (e) {
         console.log(e);
@@ -35,4 +35,4 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
     }
 });
 
-// Mʀ Mᴜᴢᴀᴍɪʟ 
+// 𝘚𝘪𝘭𝘷𝘢 𝘚𝘱𝘢𝘳𝘬 𝘔𝘋
