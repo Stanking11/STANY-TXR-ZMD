@@ -4,17 +4,17 @@ const { cmd } = require('../command');
 const { getRandom } = require('../lib/functions');
 
 var imgmsg = '';
-if (config.LANG === 'SI') imgmsg = 'Please mention a photo!!';
+if (config.LANG === 'SI') imgmsg = 'ඡායාරූපයකට mention දෙන්න!';
 else imgmsg = 'ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴘʜᴏᴛᴏ ғᴏʀ sᴛɪᴄᴋᴇʀ!';
 
 var descg = '';
-if (config.LANG === 'SI') descg = 'converts the replied photo to a sticker.';
+if (config.LANG === 'SI') descg = 'එය ඔබගේ mention දුන් ඡායාරූපය ස්ටිකර් බවට පරිවර්තනය කරයි.';
 else descg = 'ɪᴛ ᴄᴏɴᴠᴇʀᴛs ʏᴏᴜʀ ʀᴇᴘʟɪᴇᴅ ᴘʜᴏᴛᴏ ᴛᴏ sᴛɪᴄᴋᴇʀ.';
 
 cmd({
     pattern: 'sticker',
     react: '🤹‍♀️',
-    alias: ['s', 'ss', 'stic'],
+    alias: ['s', 'stic'],
     desc: descg,
     category: 'convert',
     use: '.sticker <Reply to image>',
@@ -31,7 +31,7 @@ cmd({
 
             let sticker = new Sticker(nameJpg, {
                 pack: pushname, // The pack name
-                author: 'silva spark', // The author name
+                author: '', // The author name
                 type: q.includes('--crop') || q.includes('-c') ? StickerTypes.CROPPED : StickerTypes.FULL,
                 categories: ['🤩', '🎉'], // The sticker category
                 id: '12345', // The sticker id
@@ -48,7 +48,7 @@ cmd({
 
             let sticker = new Sticker(nameWebp, {
                 pack: pushname, // The pack name
-                author: 'silva spark', // The author name
+                author: '', // The author name
                 type: q.includes('--crop') || q.includes('-c') ? StickerTypes.CROPPED : StickerTypes.FULL,
                 categories: ['🤩', '🎉'], // The sticker category
                 id: '12345', // The sticker id
