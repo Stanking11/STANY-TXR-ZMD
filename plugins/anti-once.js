@@ -4,7 +4,7 @@ cmd({
   pattern: "vv2",
   alias: ["wah", "ohh", "oho", "🙂", "nice", "ok"],
   desc: "Owner Only - retrieve quoted message back to user",
-  category: "owner",
+  category: "ownermenu",
   filename: __filename
 }, async (client, message, match, { from, isOwner }) => {
   try {
