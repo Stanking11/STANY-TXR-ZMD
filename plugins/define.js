@@ -1,7 +1,4 @@
-
-
-
-const axios = require('axios');
+                          const axios = require('axios');
                          const {cmd , commands} = require('../command');
 
                          cmd({
@@ -31,7 +28,7 @@ const wordInfo = `
 📝 *Example*: ${example}
 🔗 *Synonyms*: ${synonyms}
 
-*MADE by STANY-TECH*`;
+*🧬©𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷-𝚇𝙼𝙳 𝙱𝚈 ©𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™*`;
 
                                  return reply(wordInfo);
                              } catch (e) {
