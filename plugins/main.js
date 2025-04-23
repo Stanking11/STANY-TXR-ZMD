@@ -13,7 +13,7 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = ` >╭━━━○𝐒𝐓𝐀𝐍𝐘 𝐓𝐗𝐑 𝐙𝐌𝐃○━━━┈⊷
+        let dec = `>╭━━━○𝐒𝐓𝐀𝐍𝐘 𝐓𝐗𝐑 𝐙𝐌𝐃○━━━┈⊷
 > ┃❍⁠⁠⁠⁠╭──────────────
 > ┃❍⁠⁠⁠⁠│ *Usᴇʀ* : ${config.OWNER_NAME}
 > ┃❍⁠⁠⁠⁠│ *ʙᴀɪʟᴇʏs* : 𝐌𝐮𝐥𝐭𝐢 𝐝𝐞𝐯𝐢𝐜𝐞
@@ -90,7 +90,7 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = ` >╭━━〔 *Download Menu* 〕━━┈⊷
+        let dec = `>╭━━〔 *Download Menu* 〕━━┈⊷
 > ┃◈╭─────────────·๏
 > ┃◈┃• facebook
 > ┃◈┃• mediafire
