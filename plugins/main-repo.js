@@ -23,21 +23,22 @@ async (conn, mek, m, { from, reply }) => {
         const data = await response.json();
 
         const message = `
-───────────────
-      STANY TXR ZMD 
-      MADE BY STANY-TECH 
-      NEW VERSION
-      NO BURN 
-      MORDEN BOT 
-──────────────
- ★│BOT NAME:* ${data.name}
- ★│OWNER:* ${data.owner.login}
- ★│STARS:* ${data.stargazers_count}
- ★│FORKS:* ${data.forks_count}
- ★│DESCRIPTION:* ${data.description || 'No description'}
- ★│REPO LINK:* ${data.html_url}
-─────────────────
-
+ᴛʜɪs ɪs* *STANY-TXR-ZMD.*\n sᴜᴘᴘᴏʀᴛ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ *ʙʏ*,
+SUPPORT CHANNEL 
+https://whatsapp.com/channel/0029Vb5RfcrJ3jv4u0wJwd0r
+SUPPORT GROUP 
+https://chat.whatsapp.com/GsxiCVKSuGC0XwyH2Af2Ae
+╔═━━━━════──────➳
+║╔═━━━━━━════─━━─➳
+║║ 🗼 *REPOSITORY:* ${data.html_url}
+║║ 🌟 *STARS:* ${repoInfo.stars}
+║║ 🧧 *FORKS:* ${repoInfo.forks}
+║║ 📅 *RELEASE DATE:* ${releaseDate}
+║║ 🕐 *UPDATE ON:* ${repoInfo.lastUpdate}
+║║ 👨‍💻 *OWNER:* *574N6T3CH*
+║║ 💞 *NAME:* *STANY-TXR-ZMD*
+║║ 🥰 *ENJOY TO USE STANY-TXR-ZMD* 
+╚══━━━━════─━━━━──➳`;
 > *Powered by  ©𝚂𝚃𝙰𝙽𝚈 𝚃𝚉𝚁 𝚉𝙼𝙳*
         `.trim();
 
