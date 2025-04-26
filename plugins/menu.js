@@ -8,13 +8,13 @@ cmd({
     pattern: "txr",
     desc: "menu the bot",
     category: "menu",
-    react: "👑",
+    react: "☠️",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━━〔 *${config.BOT_NAME}* 〕━━━┈⊷
-┃★╭──────────────
+        let dec = `
+━★╭──────────────
 ┃★│ Owner : *${config.BOT_NAME}*
 ┃★│ Baileys : *Multi Device*
 ┃★│ Type : *NodeJs*
@@ -40,20 +40,20 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 *┃◈┃• ✅repo✅*
 *┃◈└───────────┈⊷*
 *╰──────────────┈⊷*
-> ${config.CAPTION}`;
+> ©𝚂𝚃𝙰𝙽𝚈 𝚃𝚇𝚁 𝚉𝙼𝙳 `;
 
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/7jle25.jpg` },
+                image: { url: `https://github.com/Mrhanstz/VORTEX-XMD/raw/refs/heads/main/HansTz/HansTz.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: false,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363380724912615@newsletter',
-                        newsletterName: '⏤͟͟͞͞★͙≛͙⃝͙STANY-TECH-XMD♥᭄ ࿐',
+                        newsletterJid: '120363352087070233@newsletter',
+                        newsletterName: '💫 Vᴏʀᴛᴇx xᴍᴅ 💫',
                         serverMessageId: 143
                     }
                 }
@@ -63,7 +63,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
         // Send audio
         await conn.sendMessage(from, {
-            audio: { url: 'https://files.catbox.moe/eyzssz.mp3' },
+            audio: { url: 'https://github.com/Mrhanstz/VORTEX-XMD/raw/refs/heads/main/HansTz/HansTz.mp3' },
             mimetype: 'audio/mp4',
             ptt: true
         }, { quoted: mek });
@@ -81,49 +81,53 @@ cmd({
     pattern: "dlmenu",
     desc: "menu the bot",
     category: "menu",
-    react: "⤵️",
+    react: "💚",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━〔 *Download Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• facebook
-┃◈┃• mediafire
-┃◈┃• tiktok
-┃◈┃• twitter
-┃◈┃• Insta
-┃◈┃• apk1
-┃◈┃• img
-┃◈┃• play1
-┃◈┃• play2
-┃◈┃• audio
-┃◈┃• video1
-┃◈┃• video2
-┃◈┃• ytmp3
-┃◈┃• ytmp4
-┃◈┃• song1
-┃◈┃• darama
-┃◈┃• gdrive
-┃◈┃• smovie
-┃◈┃• baiscope 
-┃◈┃• tankiller 
-┃◈└───────────┈⊷
-╰──────────────┈⊷
-> ${config.CAPTION}`;
+        let dec = `
+🔥───〔 *Download Menu* 〕─┈⊷
+🔥───────────────
+> ◈┃• facebook
+> ◈┃• mediafire
+> ◈┃• tiktok
+> ◈┃• twitter
+> ◈┃• Insta
+> ◈┃• apk
+> ◈┃• img
+> ◈┃• spotify
+> ◈┃• play
+> ◈┃• play2
+> ◈┃• play3
+> ◈┃• tt2
+> ◈┃• audio
+> ◈┃• video
+> ◈┃• video2
+> ◈┃• ytmp3
+> ◈┃• ytmp4
+> ◈┃• song
+> ◈┃• darama
+> ◈┃• git
+> ◈┃• gdrive
+> ◈┃• smovie
+> ◈┃• baiscope 
+> ◈┃• ginisilia 
+ ───────────────
+> 574N6T3CH`;
 
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/xmo2xp.jpg` },
+                image: { url: `https://github.com/Mrhanstz/VORTEX-XMD/raw/refs/heads/main/HansTz/HansTz.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: false,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363380724912615@newsletter',
-                        newsletterName: '⏤͟͟͞͞★͙≛͙⃝͙STANY-TECH-XMD♥᭄ ࿐',
+                        newsletterJid: '120363352087070233@newsletter',
+                        newsletterName: '💫 Vᴏʀᴛᴇx xᴍᴅ 💫',
                         serverMessageId: 143
                     }
                 }
@@ -143,62 +147,65 @@ cmd({
     pattern: "groupmenu",
     desc: "menu the bot",
     category: "menu",
-    react: "⤵️",
+    react: "🥰",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try
        {
-        let dec = `╭━━〔 *Group Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• grouplink
-┃◈┃• add
-┃◈┃• remove
-┃◈┃• kick
-┃◈┃• promote 
-┃◈┃• demote
-┃◈┃• dismiss 
-┃◈┃• revoke
-┃◈┃• setgoodbye
-┃◈┃• setwelcome
-┃◈┃• delete 
-┃◈┃• getpic
-┃◈┃• ginfo
-┃◈┃• delete 
-┃◈┃• disappear on
-┃◈┃• disappear off
-┃◈┃• disappear 7D,24H
-┃◈┃• allreq
-┃◈┃• updategname
-┃◈┃• updategdesc
-┃◈┃• joinrequests
-┃◈┃• senddm
-┃◈┃• nikal
-┃◈┃• mute
-┃◈┃• unmute
-┃◈┃• lockgc
-┃◈┃• unlockgc
-┃◈┃• invite
-┃◈┃• tag
-┃◈┃• hidetag
-┃◈┃• tagall
-┃◈┃• tagadmins
-┃◈└───────────┈⊷
-╰──────────────┈⊷
-> ${config.CAPTION}`;
+        let dec = `
+🔥───〔 *Group Menu* 〕─┈⊷
+🔥───────────────
+> ◈┃• grouplink
+> ◈┃• kickall
+> ◈┃• kickall2
+> ◈┃• kickall3
+> ◈┃• add
+> ◈┃• remove
+> ◈┃• kick
+> ◈┃• promote 
+> ◈┃• demote
+> ◈┃• dismiss 
+> ◈┃• revoke
+> ◈┃• setgoodbye
+> ◈┃• setwelcome
+> ◈┃• delete 
+> ◈┃• getpic
+> ◈┃• ginfo
+> ◈┃• delete 
+> ◈┃• disappear on
+> ◈┃• disappear off
+> ◈┃• disappear 7D,24H
+> ◈┃• allreq
+> ◈┃• updategname
+> ◈┃• updategdesc
+> ◈┃• joinrequests
+> ◈┃• senddm
+> ◈┃• nikal
+> ◈┃• mute
+> ◈┃• unmute
+> ◈┃• lockgc
+> ◈┃• unlockgc
+> ◈┃• invite
+> ◈┃• tag
+> ◈┃• hidetag
+> ◈┃• tagall
+> ◈┃• tagadmins
+ ───────────────
+> 574N6T3CH`;
 
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/0282zg.jpg` },
+                image: { url: `https://github.com/Mrhanstz/VORTEX-XMD/raw/refs/heads/main/HansTz/HansTz.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: false,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363380724912615@newsletter',
-                        newsletterName: '⏤͟͟͞͞★͙≛͙⃝͙STANY-TECH-XMD♥᭄ ࿐',
+                        newsletterJid: '120363352087070233@newsletter',
+                        newsletterName: '💫 Vᴏʀᴛᴇx xᴍᴅ 💫',
                         serverMessageId: 143
                     }
                 }
@@ -224,37 +231,46 @@ cmd({
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
 
-        let dec = `╭━━〔 *Fun Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• insult
-┃◈┃• hack
-┃◈┃• joke
-┃◈┃• heart 
-┃◈┃• happy 
-┃◈┃• sad
-┃◈┃• angry 
-┃◈┃• shy
-┃◈┃• kiss
-┃◈┃• moon
-┃◈┃• cunfuzed
-┃◈┃• hand
-┃◈┃• nikal
-┃◈└───────────┈⊷
-╰──────────────┈⊷
-> ${config.CAPTION}`;
+        let dec = `
+🔥───〔 *Fun Menu* 〕─┈⊷
+🔥──────────────
+> ◈┃• insult
+> ◈┃• pickup
+> ◈┃• ship
+> ◈┃• character
+> ◈┃• hack
+> ◈┃• joke
+> ◈┃• hrt
+> ◈┃• hpy
+> ◈┃• syd
+> ◈┃• anger
+> ◈┃• shy
+> ◈┃• kiss
+> ◈┃• mon
+> ◈┃• cunfuzed
+> ◈┃• setpp
+> ◈┃• hand
+> ◈┃• nikal
+> ◈┃• hold
+> ◈┃• hug
+> ◈┃• nikal
+> ◈┃• hifi
+> ◈┃• poke
+ ───────────────
+> 574N6T3CH`;
 
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/7jle25.jpg` },
+                image: { url: `https://github.com/Mrhanstz/VORTEX-XMD/raw/refs/heads/main/HansTz/HansTz.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: false,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363380724912615@newsletter',
-                        newsletterName: '⏤͟͟͞͞★͙≛͙⃝͙STANY-TECH-XMD♥᭄ ࿐',
+                        newsletterJid: '120363352087070233@newsletter',
+                        newsletterName: '💫 Vᴏʀᴛᴇx xᴍᴅ 💫',
                         serverMessageId: 143
                     }
                 }
@@ -279,38 +295,41 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━〔 *Other Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• fact
-┃◈┃• font
-┃◈┃• define
-┃◈┃• news
-┃◈┃• movie
-┃◈┃• weather
-┃◈┃• srepo
-┃◈┃• insult
-┃◈┃• save
-┃◈┃• wikipedia
-┃◈┃• gpass
-┃◈┃• githubstalk
-┃◈┃• yts
-┃◈┃• ytv
-┃◈└───────────┈⊷
-╰──────────────┈⊷
-> ${config.CAPTION}`;
+        let dec = `
+🔥───〔 *Other Menu* 〕─┈⊷
+🔥───────────────
+> ◈┃• vv/vv2
+> ◈┃• pair
+> ◈┃• pair2
+> ◈┃• fact
+> ◈┃• font
+> ◈┃• define
+> ◈┃• news
+> ◈┃• movie
+> ◈┃• weather
+> ◈┃• srepo
+> ◈┃• insult
+> ◈┃• save
+> ◈┃• wikipedia
+> ◈┃• gpass
+> ◈┃• githubstalk
+> ◈┃• yts
+> ◈┃• ytv
+ ───────────────
+> 574N6T3CH`;
 
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/4r8auq.jpg` },
+                image: { url: `https://github.com/Mrhanstz/VORTEX-XMD/raw/refs/heads/main/HansTz/HansTz.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: false,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363380724912615@newsletter',
-                        newsletterName: '⏤͟͟͞͞★͙≛͙⃝͙STANY-TECH-XMD♥᭄ ࿐',
+                        newsletterJid: '120363352087070233@newsletter',
+                        newsletterName: '💫 Vᴏʀᴛᴇx xᴍᴅ 💫',
                         serverMessageId: 143
                     }
                 }
@@ -335,33 +354,34 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━〔 *Main Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• ping
-┃◈┃• alive
-┃◈┃• runtime
-┃◈┃• uptime 
-┃◈┃• repo
-┃◈┃• owner
-┃◈┃• menu
-┃◈┃• menu2
-┃◈┃• restart
-┃◈└───────────┈⊷
-╰──────────────┈⊷
-> ${config.CAPTION}`;
+        let dec = `
+🔥───〔 *Main Menu* 〕─┈⊷
+🔥───────────────
+> ◈┃• ping
+> ◈┃• live 
+> ◈┃• alive
+> ◈┃• runtime
+> ◈┃• uptime 
+> ◈┃• repo
+> ◈┃• owner
+> ◈┃• menu
+> ◈┃• menu2
+> ◈┃• restart
+ ───────────────
+> 574N6T3CH`;
 
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/7jle25.jpg` },
+               image: { url: `https://github.com/Mrhanstz/VORTEX-XMD/raw/refs/heads/main/HansTz/HansTz.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: false,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363380724912615@newsletter',
-                        newsletterName: '⏤͟͟͞͞★͙≛͙⃝͙STANY-TECH-XMD♥᭄ ࿐',
+                        newsletterJid: '120363352087070233@newsletter',
+                        newsletterName: '💫 Vᴏʀᴛᴇx xᴍᴅ 💫',
                         serverMessageId: 143
                     }
                 }
@@ -386,41 +406,41 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━〔 *Owner Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• owner
-┃◈┃• menu
-┃◈┃• menu2
-┃◈┃• listcmd
-┃◈┃• allmenu
-┃◈┃• repo
-┃◈┃• block
-┃◈┃• unblock
-┃◈┃• fullpp
-┃◈┃• setpp
-┃◈┃• restart
-┃◈┃• shutdown
-┃◈┃• updatecmd
-┃◈┃• alive
-┃◈┃• ping 
-┃◈┃• gjid
-┃◈┃• jid
-┃◈└───────────┈⊷
-╰──────────────┈⊷
-> ${config.CAPTION}`;
+        let dec = `
+🔥───〔 *Owner Menu* 〕─┈⊷
+🔥───────────────
+> ◈┃• owner
+> ◈┃• menu
+> ◈┃• menu2
+> ◈┃• listcmd
+> ◈┃• allmenu
+> ◈┃• repo
+> ◈┃• block
+> ◈┃• unblock
+> ◈┃• fullpp
+> ◈┃• setpp
+> ◈┃• restart
+> ◈┃• shutdown
+> ◈┃• updatecmd
+> ◈┃• alive
+> ◈┃• ping 
+> ◈┃• gjid
+> ◈┃• jid
+ ───────────────
+> 574N6T3CH`;
 
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/7jle25.jpg` },
+                image: { url: `https://github.com/Mrhanstz/VORTEX-XMD/raw/refs/heads/main/HansTz/HansTz.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: false,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363380724912615@newsletter',
-                        newsletterName: '⏤͟͟͞͞★͙≛͙⃝͙STANY-TECH-XMD♥᭄ ࿐',
+                        newsletterJid: '120363352087070233@newsletter',
+                        newsletterName: '💫 Vᴏʀᴛᴇx xᴍᴅ 💫',
                         serverMessageId: 143
                     }
                 }
@@ -445,31 +465,31 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━〔 *Convert Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• sticker
-┃◈┃• sticker2
-┃◈┃• fancy
-┃◈┃• take
-┃◈┃• tomp3
-┃◈┃• tts
-┃◈┃• trt
-┃◈└───────────┈⊷
-╰──────────────┈⊷
-> ${config.CAPTION}`;
+        let dec = `
+ 🔥──〔 *Convert Menu* 〕─┈⊷
+ 🔥──────────────
+> ◈┃• sticker
+> ◈┃• sticker2
+> ◈┃• fancy
+> ◈┃• take
+> ◈┃• tomp3
+> ◈┃• tts
+> ◈┃• trt
+ ───────────────
+> 574N6T3CH`;
 
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/7jle25.jpg` },
+                image: { url: `https://github.com/Mrhanstz/VORTEX-XMD/raw/refs/heads/main/HansTz/HansTz.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: false,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363380724912615@newsletter',
-                        newsletterName: '⏤͟͟͞͞★͙≛͙⃝͙STANY-TECH-XMD♥᭄ ࿐',
+                        newsletterJid: '120363352087070233@newsletter',
+                        newsletterName: '💫 Vᴏʀᴛᴇx xᴍᴅ 💫',
                         serverMessageId: 143
                     }
                 }
@@ -495,34 +515,50 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-          let dec = `╭━━〔 *Anime Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
-
-┃◈┃• dog
-┃◈┃• king
-┃◈┃• animegirl
-┃◈┃• animegirl
-┃◈┃• animegirl1
-┃◈┃• animegirl2
-┃◈┃• animegirl3
-┃◈┃• animegirl4
-┃◈┃• animegirl5
-┃◈└───────────┈⊷
-╰──────────────┈⊷
-> ${config.CAPTION}`;
+          let dec = `
+🔥━━〔 *Anime Menu* 〕─┈⊷
+🔥──────────────
+> ◈┃• fack
+> ◈┃• dog
+> ◈┃• awoo
+> ◈┃• garl
+> ◈┃• waifu
+> ◈┃• neko
+> ◈┃• megnumin
+> ◈┃• neko
+> ◈┃• maid
+> ◈┃• loli
+> ◈┃• animegirl
+> ◈┃• animegirl
+> ◈┃• animegirl1
+> ◈┃• animegirl2
+> ◈┃• animegirl3
+> ◈┃• animegirl4
+> ◈┃• animegirl5
+> ◈┃• anime1
+> ◈┃• anime1
+> ◈┃• anime2
+> ◈┃• anime3
+> ◈┃• anime4
+> ◈┃• anime5
+> ◈┃• animenews
+> ◈┃• foxgirl
+> ◈┃• naruto
+ ───────────────
+> 574N6T3CH`;
 
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/7jle25.jpg` },
+                image: { url: `https://github.com/Mrhanstz/VORTEX-XMD/raw/refs/heads/main/HansTz/HansTz.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: false,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363380724912615@newsletter',
-                        newsletterName: '⏤͟͟͞͞★͙≛͙⃝͙STANY-TECH-XMD♥᭄ ࿐',
+                        newsletterJid: '120363352087070233@newsletter',
+                        newsletterName: '💫 Vᴏʀᴛᴇx xᴍᴅ 💫',
                         serverMessageId: 143
                     }
                 }
@@ -548,31 +584,31 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━〔 *Ai Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• ai
-┃◈┃• gpt
-┃◈┃• meta
-┃◈┃• blackbox
-┃◈┃• gpt4
-┃◈┃• bing
-┃◈┃• copilot
-┃◈└───────────┈⊷
-╰──────────────┈⊷
-> ${config.CAPTION}`;
+        let dec = `
+🔥━━〔 *Ai Menu* 〕─┈⊷
+🔥────────────
+> ◈┃• ai
+> ◈┃• gpt
+> ◈┃• meta
+> ◈┃• blackbox
+> ◈┃• gpt4
+> ◈┃• bing
+> ◈┃• copilot
+ ─────────────
+> 574N6T3CH`;
 
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/7jle25.jpg` },
+                image: { url: `https://github.com/Mrhanstz/VORTEX-XMD/raw/refs/heads/main/HansTz/HansTz.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: false,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363380724912615@newsletter',
-                        newsletterName: '⏤͟͟͞͞★͙≛͙⃝͙STANY-TECH-XMD♥᭄ ࿐',
+                        newsletterJid: '120363352087070233@newsletter',
+                        newsletterName: '💫 Vᴏʀᴛᴇx xᴍᴅ 💫',
                         serverMessageId: 143
                     }
                 }
