@@ -15,7 +15,7 @@ cmd({
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
         let dec = `
-━〔 *STANY TXR ZMD* 〕────
+> ━〔𝗦𝗧𝗔𝗡𝗬-𝗧𝗫𝗥-𝗭𝗠𝗗〕────
 🔥───────────────
 > ◈┃• Owner : *${config.OWNER_NAME}*
 > ◈┃• Baileys : *Multi Device*
@@ -27,7 +27,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
  ────────────────
 ─────────────────
 
-───〔 *Download Menu* 〕┈⊷
+🔥───〔 *Download Menu* 〕┈⊷
 🔥───────────────
 > ◈┃ facebook
 > ◈┃ mediafire
@@ -56,7 +56,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
  ───────────────
  
 
-───〔 *Group Menu* 〕───
+🔥───〔 *Group Menu* 〕───
 🔥───────────────
 > ◈┃ grouplink
 > ◈┃ kickall
@@ -96,7 +96,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
  ───────────────
 
 
-───〔 *Owner Menu* 〕───
+🔥───〔 *Owner Menu* 〕───
 🔥───────────────
 > ◈┃ owner
 > ◈┃ menu
@@ -118,7 +118,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 > ◈┃ jid
  ───────────────
 
-───〔 *Fun Menu* 〕━───
+🔥───〔 *Fun Menu* 〕━───
 🔥───────────────
 > ◈┃ insult
 > ◈┃ hack
@@ -144,7 +144,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 > ◈┃ poke
  ───────────────
 
-───〔  Convert Menu 〕───
+🔥───〔  Convert Menu 〕───
 🔥───────────────
 > ◈┃ sticker
 > ◈┃ sticker2
@@ -156,7 +156,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
  ───────────────
 
 
-───〔 *Ai Menu* 〕━────
+🔥───〔 *Ai Menu* 〕━────
 🔥───────────────
 > ◈┃ ai
 > ◈┃ gpt
@@ -167,7 +167,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 > ◈┃ copilot
  ───────────────
 
-───〔 *Main Menu* 〕━───
+🔥───〔 *Main Menu* 〕━───
 🔥───────────────
 > ◈┃ ping
 > ◈┃ ping2
@@ -183,7 +183,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 > ◈┃ restart
  ───────────────
 
-───〔 *Anime Menu* 〕━──
+🔥───〔 *Anime Menu* 〕━──
 🔥───────────────
 > ◈┃ fack
 > ◈┃ dog
@@ -213,7 +213,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 > ◈┃ naruto
  ───────────────
 
-───〔  Other Menu 〕────
+🔥───〔  Other Menu 〕────
 🔥───────────────
 > ◈┃ fact
 > ◈┃ pair
