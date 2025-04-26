@@ -5,56 +5,55 @@ const { runtime } = require('../lib/functions');
 const axios = require('axios');
 
 cmd({
-    pattern: "txr",
+    pattern: "menu",
     desc: "menu the bot",
     category: "menu",
-    react: "🤣",
+    react: "👑",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
         let dec = `╭━━━〔 *${config.BOT_NAME}* 〕━━━┈⊷
 ┃★╭──────────────
-┃★│ Owner : *${config.OWNER_NAME}*
-┃★│ Baileys : *⌨︎Multi Device*
-┃★│ Type : *☁︎NodeJs*
-┃★│ Platform : *♲︎Heroku*
+┃★│ Owner : *${config.BOT_NAME}*
+┃★│ Baileys : *Multi Device*
+┃★│ Type : *NodeJs*
+┃★│ Platform : *Heroku*
 ┃★│ Mode : *[${config.MODE}]*
 ┃★│ Prifix : *[${config.PREFIX}]*
-┃★│ Version : *1.0.0☯︎*
+┃★│ Version : *v 1.0.0*
 ┃★╰──────────────
 ╰━━━━━━━━━━━━━━━┈⊷
-╭━━〔 *☟︎𝗠𝗲𝗻𝘂 𝗟𝗶𝘀𝘁☟︎* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• aimenu
-┃◈┃• anmiemenu
-┃◈┃• convertmenu
-┃◈┃• funmenu
-┃◈┃• dlmenu
-┃◈┃• listcmd
-┃◈┃• mainmenu
-┃◈┃• groupmenu
-┃◈┃• allmenu
-┃◈┃• ownermenu
-┃◈┃• othermenu
-┃◈┃• logo <text>
-┃◈┃• repo
-┃◈└───────────┈⊷
-╰──────────────┈⊷
-> ${config.DESCRIPTION}`;
+*╭━━〔 Menu List 〕━━┈⊷*
+*┃◈╭─────────────·๏*
+*┃◈┃• ❤️‍🔥aimenu❤️‍🔥*
+*┃◈┃• 🫀anmiemenu🫀*
+*┃◈┃• 👥convertmenu👥*
+*┃◈┃• 🤹🏻funmenu🤹🏻*
+*┃◈┃• 📸dlmenu📸*
+*┃◈┃• 👻listcmd👻*
+*┃◈┃• 🤌🏻mainmenu🤌🏻*
+*┃◈┃• 🧑🏻groupmenu🧒🏻*
+*┃◈┃• 👑allmenu👑*
+*┃◈┃• 💀ownermenu💀*
+*┃◈┃• 🌐othermenu🌐*
+*┃◈┃• ✅repo✅*
+*┃◈└───────────┈⊷*
+*╰──────────────┈⊷*
+> ${config.CAPTION}`;
 
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/rmxujw.jpeg` },
+                image: { url: `https://files.catbox.moe/7jle25.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: false,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363297843078852@newsletter',
-                        newsletterName: '𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™',
+                        newsletterJid: '120363380724912615@newsletter',
+                        newsletterName: '⏤͟͟͞͞★͙≛͙⃝͙STANY-TECH-XMD♥᭄ ࿐',
                         serverMessageId: 143
                     }
                 }
@@ -64,7 +63,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
         // Send audio
         await conn.sendMessage(from, {
-            audio: { url: 'https://github.com/JawadYTX/KHAN-DATA/raw/refs/heads/main/autovoice/menunew.m4a' },
+            audio: { url: 'https://github.com/ANSAR-PANHWAR/PANHWAR-DATA/raw/refs/heads/main/autovoice/panhwar.m4a' },
             mimetype: 'audio/mp4',
             ptt: true
         }, { quoted: mek });
@@ -87,48 +86,44 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━〔 *𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗠𝗲𝗻𝘂* 〕━━┈⊷
+        let dec = `╭━━〔 *Download Menu* 〕━━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• facebook
 ┃◈┃• mediafire
 ┃◈┃• tiktok
 ┃◈┃• twitter
 ┃◈┃• Insta
-┃◈┃• apk
+┃◈┃• apk1
 ┃◈┃• img
-┃◈┃• spotify
-┃◈┃• play
+┃◈┃• play1
 ┃◈┃• play2
-┃◈┃• play3
-┃◈┃• tt2
 ┃◈┃• audio
-┃◈┃• video
+┃◈┃• video1
 ┃◈┃• video2
 ┃◈┃• ytmp3
 ┃◈┃• ytmp4
-┃◈┃• song
+┃◈┃• song1
 ┃◈┃• darama
-┃◈┃• git
 ┃◈┃• gdrive
 ┃◈┃• smovie
 ┃◈┃• baiscope 
-┃◈┃• ginisilia 
+┃◈┃• tankiller 
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
-> ${config.DESCRIPTION}`;
+> ${config.CAPTION}`;
 
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/rmxujw.jpeg` },
+                image: { url: `https://files.catbox.moe/xmo2xp.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: false,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363358310754973@newsletter',
-                        newsletterName: '𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™',
+                        newsletterJid: '120363380724912615@newsletter',
+                        newsletterName: '⏤͟͟͞͞★͙≛͙⃝͙STANY-TECH-XMD♥᭄ ࿐',
                         serverMessageId: 143
                     }
                 }
@@ -154,12 +149,9 @@ cmd({
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try
        {
-        let dec = `╭━━〔 *𝗚𝗿𝗼𝘂𝗽 𝗠𝗲𝗻𝘂* 〕━━┈⊷
+        let dec = `╭━━〔 *Group Menu* 〕━━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• grouplink
-┃◈┃• kickall
-┃◈┃• kickall2
-┃◈┃• kickall3
 ┃◈┃• add
 ┃◈┃• remove
 ┃◈┃• kick
@@ -193,20 +185,20 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• tagadmins
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
-> ${config.DESCRIPTION}`;
+> ${config.CAPTION}`;
 
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/rmxujw.jpeg` },
+                image: { url: `https://files.catbox.moe/0282zg.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: false,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363297843078852@newsletter',
-                        newsletterName: '𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™',
+                        newsletterJid: '120363380724912615@newsletter',
+                        newsletterName: '⏤͟͟͞͞★͙≛͙⃝͙STANY-TECH-XMD♥᭄ ࿐',
                         serverMessageId: 143
                     }
                 }
@@ -232,46 +224,37 @@ cmd({
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
 
-        let dec = `╭━━〔 *𝗙𝘂𝗻 𝗠𝗲𝗻𝘂* 〕━━┈⊷
+        let dec = `╭━━〔 *Fun Menu* 〕━━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• insult
-┃◈┃• pickup
-┃◈┃• ship
-┃◈┃• character
 ┃◈┃• hack
 ┃◈┃• joke
-┃◈┃• hrt
-┃◈┃• hpy
-┃◈┃• syd
-┃◈┃• anger
+┃◈┃• heart 
+┃◈┃• happy 
+┃◈┃• sad
+┃◈┃• angry 
 ┃◈┃• shy
 ┃◈┃• kiss
-┃◈┃• mon
+┃◈┃• moon
 ┃◈┃• cunfuzed
-┃◈┃• setpp
 ┃◈┃• hand
 ┃◈┃• nikal
-┃◈┃• hold
-┃◈┃• hug
-┃◈┃• nikal
-┃◈┃• hifi
-┃◈┃• poke
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
-> ${config.DESCRIPTION}`;
+> ${config.CAPTION}`;
 
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/rmxujw.jpeg` },
+                image: { url: `https://files.catbox.moe/7jle25.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: false,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363297843078852@newsletter',
-                        newsletterName: '𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™',
+                        newsletterJid: '120363380724912615@newsletter',
+                        newsletterName: '⏤͟͟͞͞★͙≛͙⃝͙STANY-TECH-XMD♥᭄ ࿐',
                         serverMessageId: 143
                     }
                 }
@@ -296,13 +279,10 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━〔 *𝗢𝘁𝗵𝗲𝗿 𝗠𝗲𝗻𝘂* 〕━━┈⊷
+        let dec = `╭━━〔 *Other Menu* 〕━━┈⊷
 ┃◈╭─────────────·๏
-┃◈┃• vv
-┃◈┃• pair
-┃◈┃• pair2
 ┃◈┃• fact
-┃◈┃• fancy
+┃◈┃• font
 ┃◈┃• define
 ┃◈┃• news
 ┃◈┃• movie
@@ -317,20 +297,20 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• ytv
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
-> ${config.DESCRIPTION}`;
+> ${config.CAPTION}`;
 
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/rmxujw.jpeg` },
+                image: { url: `https://files.catbox.moe/4r8auq.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: false,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363297843078852@newsletter',
-                        newsletterName: '𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™',
+                        newsletterJid: '120363380724912615@newsletter',
+                        newsletterName: '⏤͟͟͞͞★͙≛͙⃝͙STANY-TECH-XMD♥᭄ ࿐',
                         serverMessageId: 143
                     }
                 }
@@ -355,10 +335,9 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━〔 *𝗠𝗮𝗶𝗻 𝗠𝗲𝗻𝘂* 〕━━┈⊷
+        let dec = `╭━━〔 *Main Menu* 〕━━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• ping
-┃◈┃• live 
 ┃◈┃• alive
 ┃◈┃• runtime
 ┃◈┃• uptime 
@@ -369,20 +348,20 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• restart
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
-> ${config.DESCRIPTION}`;
+> ${config.CAPTION}`;
 
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/rmxujw.jpeg` },
+                image: { url: `https://files.catbox.moe/7jle25.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: false,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363297843078852@newsletter',
-                        newsletterName: '𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™',
+                        newsletterJid: '120363380724912615@newsletter',
+                        newsletterName: '⏤͟͟͞͞★͙≛͙⃝͙STANY-TECH-XMD♥᭄ ࿐',
                         serverMessageId: 143
                     }
                 }
@@ -407,7 +386,7 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━〔 *𝗢𝘄𝗻𝗲𝗿 𝗠𝗲𝗻𝘂* 〕━━┈⊷
+        let dec = `╭━━〔 *Owner Menu* 〕━━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• owner
 ┃◈┃• menu
@@ -428,20 +407,20 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• jid
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
-> ${config.DESCRIPTION}`;
+> ${config.CAPTION}`;
 
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/rmxujw.jpeg` },
+                image: { url: `https://files.catbox.moe/7jle25.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: false,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363297843078852@newsletter',
-                        newsletterName: '𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™',
+                        newsletterJid: '120363380724912615@newsletter',
+                        newsletterName: '⏤͟͟͞͞★͙≛͙⃝͙STANY-TECH-XMD♥᭄ ࿐',
                         serverMessageId: 143
                     }
                 }
@@ -466,7 +445,7 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━〔 *𝗖𝗼𝗻𝘃𝗲𝗿𝘁 𝗠𝗲𝗻𝘂* 〕━━┈⊷
+        let dec = `╭━━〔 *Convert Menu* 〕━━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• sticker
 ┃◈┃• sticker2
@@ -477,20 +456,20 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• trt
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
-> ${config.DESCRIPTION}`;
+> ${config.CAPTION}`;
 
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/rmxujw.jpeg` },
+                image: { url: `https://files.catbox.moe/7jle25.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: false,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363297843078852@newsletter',
-                        newsletterName: '𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™',
+                        newsletterJid: '120363380724912615@newsletter',
+                        newsletterName: '⏤͟͟͞͞★͙≛͙⃝͙STANY-TECH-XMD♥᭄ ࿐',
                         serverMessageId: 143
                     }
                 }
@@ -516,18 +495,11 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-          let dec = `╭━━〔 *𝗔𝗻𝗶𝗺𝗲 𝗠𝗲𝗻𝘂* 〕━━┈⊷
+          let dec = `╭━━〔 *Anime Menu* 〕━━┈⊷
 ┃◈╭─────────────·๏
-┃◈┃• fack
+
 ┃◈┃• dog
-┃◈┃• awoo
-┃◈┃• garl
-┃◈┃• waifu
-┃◈┃• neko
-┃◈┃• megnumin
-┃◈┃• neko
-┃◈┃• maid
-┃◈┃• loli
+┃◈┃• king
 ┃◈┃• animegirl
 ┃◈┃• animegirl
 ┃◈┃• animegirl1
@@ -535,31 +507,22 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• animegirl3
 ┃◈┃• animegirl4
 ┃◈┃• animegirl5
-┃◈┃• anime1
-┃◈┃• anime1
-┃◈┃• anime2
-┃◈┃• anime3
-┃◈┃• anime4
-┃◈┃• anime5
-┃◈┃• animenews
-┃◈┃• foxgirl
-┃◈┃• naruto
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
-> ${config.DESCRIPTION}`;
+> ${config.CAPTION}`;
 
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/rmxujw.jpeg` },
+                image: { url: `https://files.catbox.moe/7jle25.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: false,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363297843078852@newsletter',
-                        newsletterName: '𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™',
+                        newsletterJid: '120363380724912615@newsletter',
+                        newsletterName: '⏤͟͟͞͞★͙≛͙⃝͙STANY-TECH-XMD♥᭄ ࿐',
                         serverMessageId: 143
                     }
                 }
@@ -585,7 +548,7 @@ cmd({
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
-        let dec = `╭━━〔 *𝗔𝗶 𝗠𝗲𝗻𝘂* 〕━━┈⊷
+        let dec = `╭━━〔 *Ai Menu* 〕━━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• ai
 ┃◈┃• gpt
@@ -596,20 +559,20 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• copilot
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
-> ${config.DESCRIPTION}`;
+> ${config.CAPTION}`;
 
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/rmxujw.jpeg` },
+                image: { url: `https://files.catbox.moe/7jle25.jpg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: false,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363297843078852@newsletter',
-                        newsletterName: '𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™',
+                        newsletterJid: '120363380724912615@newsletter',
+                        newsletterName: '⏤͟͟͞͞★͙≛͙⃝͙STANY-TECH-XMD♥᭄ ࿐',
                         serverMessageId: 143
                     }
                 }
