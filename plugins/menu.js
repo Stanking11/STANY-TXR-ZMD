@@ -1,15 +1,14 @@
-const config = require('../config')
+const config = require('../config');
 const { cmd, commands } = require('../command');
-const os = require("os")
-const {runtime} = require('../lib/functions')
-const axios = require('axios')
+const os = require("os");
+const { runtime } = require('../lib/functions');
+const axios = require('axios');
 
 cmd({
-    pattern: "stan",
-    alias: "allmenu",
+    pattern: "txr",
     desc: "menu the bot",
     category: "menu",
-    react: "✌️",
+    react: "🤣",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
@@ -17,15 +16,78 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         let dec = `╭━━━〔 *${config.BOT_NAME}* 〕━━━┈⊷
 ┃★╭──────────────
 ┃★│ Owner : *${config.OWNER_NAME}*
-┃★│ Baileys : *Multi Device*
-┃★│ Type : *NodeJs*
-┃★│ Platform : *Heroku*
+┃★│ Baileys : *⌨︎Multi Device*
+┃★│ Type : *☁︎NodeJs*
+┃★│ Platform : *♲︎Heroku*
 ┃★│ Mode : *[${config.MODE}]*
 ┃★│ Prifix : *[${config.PREFIX}]*
-┃★│ Version : *1.0.0 †★‡*
+┃★│ Version : *1.0.0☯︎*
 ┃★╰──────────────
 ╰━━━━━━━━━━━━━━━┈⊷
-╭━━〔 *Download Menu* 〕━━┈⊷
+╭━━〔 *☟︎𝗠𝗲𝗻𝘂 𝗟𝗶𝘀𝘁☟︎* 〕━━┈⊷
+┃◈╭─────────────·๏
+┃◈┃• aimenu
+┃◈┃• anmiemenu
+┃◈┃• convertmenu
+┃◈┃• funmenu
+┃◈┃• dlmenu
+┃◈┃• listcmd
+┃◈┃• mainmenu
+┃◈┃• groupmenu
+┃◈┃• allmenu
+┃◈┃• ownermenu
+┃◈┃• othermenu
+┃◈┃• logo <text>
+┃◈┃• repo
+┃◈└───────────┈⊷
+╰──────────────┈⊷
+> ${config.DESCRIPTION}`;
+
+        await conn.sendMessage(
+            from,
+            {
+                image: { url: `https://files.catbox.moe/rmxujw.jpeg` },
+                caption: dec,
+                contextInfo: {
+                    mentionedJid: [m.sender],
+                    forwardingScore: 999,
+                    isForwarded: false,
+                    forwardedNewsletterMessageInfo: {
+                        newsletterJid: '120363297843078852@newsletter',
+                        newsletterName: '𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™',
+                        serverMessageId: 143
+                    }
+                }
+            },
+            { quoted: mek }
+        );
+
+        // Send audio
+        await conn.sendMessage(from, {
+            audio: { url: 'https://github.com/JawadYTX/KHAN-DATA/raw/refs/heads/main/autovoice/menunew.m4a' },
+            mimetype: 'audio/mp4',
+            ptt: true
+        }, { quoted: mek });
+        
+    } catch (e) {
+        console.log(e);
+        reply(`${e}`);
+    }
+});
+
+
+// dlmenu
+
+cmd({
+    pattern: "dlmenu",
+    desc: "menu the bot",
+    category: "menu",
+    react: "⤵️",
+    filename: __filename
+}, 
+async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
+    try {
+        let dec = `╭━━〔 *𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗠𝗲𝗻𝘂* 〕━━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• facebook
 ┃◈┃• mediafire
@@ -34,43 +96,65 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• Insta
 ┃◈┃• apk
 ┃◈┃• img
-┃◈┃• tt2
-┃◈┃• pins
-┃◈┃• apk2
-┃◈┃• fb2
-┃◈┃• pinterest 
 ┃◈┃• spotify
 ┃◈┃• play
 ┃◈┃• play2
 ┃◈┃• play3
-┃◈┃• play4
-┃◈┃• play5
-┃◈┃• play6
-┃◈┃• play7
-┃◈┃• play8
-┃◈┃• adult
-┃◈┃• play10
+┃◈┃• tt2
 ┃◈┃• audio
 ┃◈┃• video
 ┃◈┃• video2
-┃◈┃• video3
-┃◈┃• video4
-┃◈┃• video5
-┃◈┃• video6
-┃◈┃• video7
-┃◈┃• video8
-┃◈┃• video9
-┃◈┃• video10
 ┃◈┃• ytmp3
 ┃◈┃• ytmp4
 ┃◈┃• song
 ┃◈┃• darama
+┃◈┃• git
 ┃◈┃• gdrive
-┃◈┃• ssweb
-┃◈┃• tiks
+┃◈┃• smovie
+┃◈┃• baiscope 
+┃◈┃• ginisilia 
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
-╭━━〔 *Group Menu* 〕━━┈⊷
+> ${config.DESCRIPTION}`;
+
+        await conn.sendMessage(
+            from,
+            {
+                image: { url: `https://files.catbox.moe/rmxujw.jpeg` },
+                caption: dec,
+                contextInfo: {
+                    mentionedJid: [m.sender],
+                    forwardingScore: 999,
+                    isForwarded: false,
+                    forwardedNewsletterMessageInfo: {
+                        newsletterJid: '120363358310754973@newsletter',
+                        newsletterName: '𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™',
+                        serverMessageId: 143
+                    }
+                }
+            },
+            { quoted: mek }
+        );
+
+    } catch (e) {
+        console.log(e);
+        reply(`${e}`);
+    }
+});
+
+// group menu
+
+cmd({
+    pattern: "groupmenu",
+    desc: "menu the bot",
+    category: "menu",
+    react: "⤵️",
+    filename: __filename
+}, 
+async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
+    try
+       {
+        let dec = `╭━━〔 *𝗚𝗿𝗼𝘂𝗽 𝗠𝗲𝗻𝘂* 〕━━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• grouplink
 ┃◈┃• kickall
@@ -103,108 +187,58 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• lockgc
 ┃◈┃• unlockgc
 ┃◈┃• invite
-┃◈┃• tag @member
+┃◈┃• tag
 ┃◈┃• hidetag
 ┃◈┃• tagall
 ┃◈┃• tagadmins
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
-╭━━〔 *Reactions Menu* 〕━━┈⊷
+> ${config.DESCRIPTION}`;
+
+        await conn.sendMessage(
+            from,
+            {
+                image: { url: `https://files.catbox.moe/rmxujw.jpeg` },
+                caption: dec,
+                contextInfo: {
+                    mentionedJid: [m.sender],
+                    forwardingScore: 999,
+                    isForwarded: false,
+                    forwardedNewsletterMessageInfo: {
+                        newsletterJid: '120363297843078852@newsletter',
+                        newsletterName: '𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™',
+                        serverMessageId: 143
+                    }
+                }
+            },
+            { quoted: mek }
+        );
+
+    } catch (e) {
+        console.log(e);
+        reply(`${e}`);
+    }
+});
+
+// fun menu
+
+cmd({
+    pattern: "funmenu",
+    desc: "menu the bot",
+    category: "menu",
+    react: "😎",
+    filename: __filename
+}, 
+async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
+    try {
+
+        let dec = `╭━━〔 *𝗙𝘂𝗻 𝗠𝗲𝗻𝘂* 〕━━┈⊷
 ┃◈╭─────────────·๏
-┃◈┃• bully @tag
-┃◈┃• cuddle @tag
-┃◈┃• cry @tag
-┃◈┃• hug @tag
-┃◈┃• awoo @tag
-┃◈┃• kiss @tag
-┃◈┃• lick @tag
-┃◈┃• pat @tag
-┃◈┃• smug @tag
-┃◈┃• bonk @tag
-┃◈┃• yeet @tag
-┃◈┃• blush @tag
-┃◈┃• smile @tag
-┃◈┃• wave @tag
-┃◈┃• highfive @tag
-┃◈┃• handhold @tag
-┃◈┃• nom @tag
-┃◈┃• bite @tag
-┃◈┃• glomp @tag
-┃◈┃• slap @tag
-┃◈┃• kill @tag
-┃◈┃• happy @tag
-┃◈┃• wink @tag
-┃◈┃• poke @tag
-┃◈┃• dance @tag
-┃◈┃• cringe @tag
-┃◈└───────────┈⊷
-╰──────────────┈⊷
-╭━━〔 *Logo List* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• neonlight
-┃◈┃• blackpink
-┃◈┃• dragonball
-┃◈┃• 3dcomic
-┃◈┃• america
-┃◈┃• naruto
-┃◈┃• sadgirl
-┃◈┃• clouds
-┃◈┃• futuristic
-┃◈┃• 3dpaper
-┃◈┃• eraser
-┃◈┃• sunset
-┃◈┃• leaf
-┃◈┃• galaxy
-┃◈┃• sans
-┃◈┃• boom
-┃◈┃• hacker
-┃◈┃• devilwings
-┃◈┃• nigeria
-┃◈┃• bulb
-┃◈┃• angelwings
-┃◈┃• zodiac
-┃◈┃• luxury
-┃◈┃• paint
-┃◈┃• frozen
-┃◈┃• castle
-┃◈┃• tatoo
-┃◈┃• valorant
-┃◈┃• bear
-┃◈┃• typography
-┃◈┃• birthday
-┃◈└───────────┈⊷
-╰──────────────┈⊷
-╭━━〔 *Owner Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• owner
-┃◈┃• menu
-┃◈┃• mpesa
-┃◈┃• vv/vv2
-┃◈┃• listcmd
-┃◈┃• allmenu
-┃◈┃• repo
-┃◈┃• block
-┃◈┃• unblock
-┃◈┃• fullpp
-┃◈┃• setpp
-┃◈┃• restart
-┃◈┃• shutdown
-┃◈┃• updatecmd
-┃◈┃• alive
-┃◈┃• ping 
-┃◈┃• gjid
-┃◈┃• jid
-┃◈└───────────┈⊷
-╰──────────────┈⊷
-╭━━〔 *Fun Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• shapar
-┃◈┃• rate
 ┃◈┃• insult
-┃◈┃• hack
+┃◈┃• pickup
 ┃◈┃• ship
 ┃◈┃• character
-┃◈┃• pickup 
+┃◈┃• hack
 ┃◈┃• joke
 ┃◈┃• hrt
 ┃◈┃• hpy
@@ -224,41 +258,106 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• poke
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
-╭━━〔 *Convert Menu* 〕━━┈⊷
+> ${config.DESCRIPTION}`;
+
+        await conn.sendMessage(
+            from,
+            {
+                image: { url: `https://files.catbox.moe/rmxujw.jpeg` },
+                caption: dec,
+                contextInfo: {
+                    mentionedJid: [m.sender],
+                    forwardingScore: 999,
+                    isForwarded: false,
+                    forwardedNewsletterMessageInfo: {
+                        newsletterJid: '120363297843078852@newsletter',
+                        newsletterName: '𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™',
+                        serverMessageId: 143
+                    }
+                }
+            },
+            { quoted: mek }
+        );
+
+    } catch (e) {
+        console.log(e);
+        reply(`${e}`);
+    }
+});
+
+// other menu
+
+cmd({
+    pattern: "othermenu",
+    desc: "menu the bot",
+    category: "menu",
+    react: "🤖",
+    filename: __filename
+}, 
+async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
+    try {
+        let dec = `╭━━〔 *𝗢𝘁𝗵𝗲𝗿 𝗠𝗲𝗻𝘂* 〕━━┈⊷
 ┃◈╭─────────────·๏
-┃◈┃• sticker
-┃◈┃• sticker2
-┃◈┃• emojimix
+┃◈┃• vv
+┃◈┃• pair
+┃◈┃• pair2
+┃◈┃• fact
 ┃◈┃• fancy
-┃◈┃• take
-┃◈┃• tomp3
-┃◈┃• tts
-┃◈┃• trt
-┃◈┃• base64
-┃◈┃• unbase64
-┃◈┃• binary
-┃◈┃• dbinary
-┃◈┃• tinyurl
-┃◈┃• urldecode
-┃◈┃• urlencode
-┃◈┃• url
-┃◈┃• repeat 
-┃◈┃• ask
-┃◈┃• readmore
+┃◈┃• define
+┃◈┃• news
+┃◈┃• movie
+┃◈┃• weather
+┃◈┃• srepo
+┃◈┃• insult
+┃◈┃• save
+┃◈┃• wikipedia
+┃◈┃• gpass
+┃◈┃• githubstalk
+┃◈┃• yts
+┃◈┃• ytv
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
-╭━━〔 *Ai Menu* 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• ai
-┃◈┃• gpt
-┃◈┃• deepseek
-┃◈└───────────┈⊷
-╰──────────────┈⊷
-╭━━〔 *Main Menu * 〕━━┈⊷
+> ${config.DESCRIPTION}`;
+
+        await conn.sendMessage(
+            from,
+            {
+                image: { url: `https://files.catbox.moe/rmxujw.jpeg` },
+                caption: dec,
+                contextInfo: {
+                    mentionedJid: [m.sender],
+                    forwardingScore: 999,
+                    isForwarded: false,
+                    forwardedNewsletterMessageInfo: {
+                        newsletterJid: '120363297843078852@newsletter',
+                        newsletterName: '𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™',
+                        serverMessageId: 143
+                    }
+                }
+            },
+            { quoted: mek }
+        );
+
+    } catch (e) {
+        console.log(e);
+        reply(`${e}`);
+    }
+});
+
+// main menu
+
+cmd({
+    pattern: "mainmenu",
+    desc: "menu the bot",
+    category: "menu",
+    react: "🗿",
+    filename: __filename
+}, 
+async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
+    try {
+        let dec = `╭━━〔 *𝗠𝗮𝗶𝗻 𝗠𝗲𝗻𝘂* 〕━━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• ping
-┃◈┃• ping2
-┃◈┃• speed
 ┃◈┃• live 
 ┃◈┃• alive
 ┃◈┃• runtime
@@ -270,11 +369,156 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• restart
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
-╭━━〔 *Anime Menu* 〕━━┈⊷
+> ${config.DESCRIPTION}`;
+
+        await conn.sendMessage(
+            from,
+            {
+                image: { url: `https://files.catbox.moe/rmxujw.jpeg` },
+                caption: dec,
+                contextInfo: {
+                    mentionedJid: [m.sender],
+                    forwardingScore: 999,
+                    isForwarded: false,
+                    forwardedNewsletterMessageInfo: {
+                        newsletterJid: '120363297843078852@newsletter',
+                        newsletterName: '𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™',
+                        serverMessageId: 143
+                    }
+                }
+            },
+            { quoted: mek }
+        );
+
+    } catch (e) {
+        console.log(e);
+        reply(`${e}`);
+    }
+});
+
+// owner menu
+
+cmd({
+    pattern: "ownermenu",
+    desc: "menu the bot",
+    category: "menu",
+    react: "🔰",
+    filename: __filename
+}, 
+async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
+    try {
+        let dec = `╭━━〔 *𝗢𝘄𝗻𝗲𝗿 𝗠𝗲𝗻𝘂* 〕━━┈⊷
+┃◈╭─────────────·๏
+┃◈┃• owner
+┃◈┃• menu
+┃◈┃• menu2
+┃◈┃• listcmd
+┃◈┃• allmenu
+┃◈┃• repo
+┃◈┃• block
+┃◈┃• unblock
+┃◈┃• fullpp
+┃◈┃• setpp
+┃◈┃• restart
+┃◈┃• shutdown
+┃◈┃• updatecmd
+┃◈┃• alive
+┃◈┃• ping 
+┃◈┃• gjid
+┃◈┃• jid
+┃◈└───────────┈⊷
+╰──────────────┈⊷
+> ${config.DESCRIPTION}`;
+
+        await conn.sendMessage(
+            from,
+            {
+                image: { url: `https://files.catbox.moe/rmxujw.jpeg` },
+                caption: dec,
+                contextInfo: {
+                    mentionedJid: [m.sender],
+                    forwardingScore: 999,
+                    isForwarded: false,
+                    forwardedNewsletterMessageInfo: {
+                        newsletterJid: '120363297843078852@newsletter',
+                        newsletterName: '𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™',
+                        serverMessageId: 143
+                    }
+                }
+            },
+            { quoted: mek }
+        );
+
+    } catch (e) {
+        console.log(e);
+        reply(`${e}`);
+    }
+});
+
+// convert menu
+
+cmd({
+    pattern: "convertmenu",
+    desc: "menu the bot",
+    category: "menu",
+    react: "🥀",
+    filename: __filename
+}, 
+async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
+    try {
+        let dec = `╭━━〔 *𝗖𝗼𝗻𝘃𝗲𝗿𝘁 𝗠𝗲𝗻𝘂* 〕━━┈⊷
+┃◈╭─────────────·๏
+┃◈┃• sticker
+┃◈┃• sticker2
+┃◈┃• fancy
+┃◈┃• take
+┃◈┃• tomp3
+┃◈┃• tts
+┃◈┃• trt
+┃◈└───────────┈⊷
+╰──────────────┈⊷
+> ${config.DESCRIPTION}`;
+
+        await conn.sendMessage(
+            from,
+            {
+                image: { url: `https://files.catbox.moe/rmxujw.jpeg` },
+                caption: dec,
+                contextInfo: {
+                    mentionedJid: [m.sender],
+                    forwardingScore: 999,
+                    isForwarded: false,
+                    forwardedNewsletterMessageInfo: {
+                        newsletterJid: '120363297843078852@newsletter',
+                        newsletterName: '𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™',
+                        serverMessageId: 143
+                    }
+                }
+            },
+            { quoted: mek }
+        );
+
+    } catch (e) {
+        console.log(e);
+        reply(`${e}`);
+    }
+});
+
+
+// anmie menu 
+
+cmd({
+    pattern: "animemenu",
+    desc: "menu the bot",
+    category: "menu",
+    react: "🧚",
+    filename: __filename
+}, 
+async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
+    try {
+          let dec = `╭━━〔 *𝗔𝗻𝗶𝗺𝗲 𝗠𝗲𝗻𝘂* 〕━━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• fack
-┃◈┃• truth
-┃◈┃• dare
 ┃◈┃• dog
 ┃◈┃• awoo
 ┃◈┃• garl
@@ -302,53 +546,20 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• naruto
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
-╭━━〔* Other Menu * 〕━━┈⊷
-┃◈╭─────────────·๏
-┃◈┃• timenow
-┃◈┃• date
-┃◈┃• count
-┃◈┃• calculate
-┃◈┃• countx
-┃◈┃• flip
-┃◈┃• coinflip
-┃◈┃• rcolor
-┃◈┃• roll
-┃◈┃• fact
-┃◈┃• cpp
-┃◈┃• rw
-┃◈┃• pair
-┃◈┃• pair2
-┃◈┃• pair3
-┃◈┃• fancy
-┃◈┃• logo <text>
-┃◈┃• define
-┃◈┃• news
-┃◈┃• movie
-┃◈┃• weather
-┃◈┃• srepo
-┃◈┃• insult
-┃◈┃• save
-┃◈┃• wikipedia
-┃◈┃• gpass
-┃◈┃• githubstalk
-┃◈┃• yts
-┃◈┃• ytv
-┃◈└───────────┈⊷
-╰──────────────┈⊷
 > ${config.DESCRIPTION}`;
 
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://files.catbox.moe/7jle25.jpg` },
+                image: { url: `https://files.catbox.moe/rmxujw.jpeg` },
                 caption: dec,
                 contextInfo: {
                     mentionedJid: [m.sender],
                     forwardingScore: 999,
                     isForwarded: false,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363302677217436@newsletter',
-                        newsletterName: 'CASEYRHODES XMD 💖🦄',
+                        newsletterJid: '120363297843078852@newsletter',
+                        newsletterName: '𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™',
                         serverMessageId: 143
                     }
                 }
@@ -356,15 +567,59 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
             { quoted: mek }
         );
 
-        // Send audio
-        await conn.sendMessage(from, {
-            audio: { url: 'https://files.catbox.moe/o3dyfy.mp3' },
-            mimetype: 'audio/mp4',
-            ptt: true
-        }, { quoted: mek });
-        
     } catch (e) {
         console.log(e);
         reply(`${e}`);
     }
 });
+
+
+// ai menu 
+
+cmd({
+    pattern: "aimenu",
+    desc: "menu the bot",
+    category: "menu",
+    react: "🤖",
+    filename: __filename
+}, 
+async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
+    try {
+        let dec = `╭━━〔 *𝗔𝗶 𝗠𝗲𝗻𝘂* 〕━━┈⊷
+┃◈╭─────────────·๏
+┃◈┃• ai
+┃◈┃• gpt
+┃◈┃• meta
+┃◈┃• blackbox
+┃◈┃• gpt4
+┃◈┃• bing
+┃◈┃• copilot
+┃◈└───────────┈⊷
+╰──────────────┈⊷
+> ${config.DESCRIPTION}`;
+
+        await conn.sendMessage(
+            from,
+            {
+                image: { url: `https://files.catbox.moe/rmxujw.jpeg` },
+                caption: dec,
+                contextInfo: {
+                    mentionedJid: [m.sender],
+                    forwardingScore: 999,
+                    isForwarded: false,
+                    forwardedNewsletterMessageInfo: {
+                        newsletterJid: '120363297843078852@newsletter',
+                        newsletterName: '𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™',
+                        serverMessageId: 143
+                    }
+                }
+            },
+            { quoted: mek }
+        );
+
+    } catch (e) {
+        console.log(e);
+        reply(`${e}`);
+    }
+});
+
