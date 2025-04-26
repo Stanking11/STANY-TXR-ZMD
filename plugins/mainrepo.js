@@ -23,19 +23,20 @@ async (conn, mek, m, { from, reply }) => {
         const data = await response.json();
 
         const message = `
-ᴛʜɪs ɪs* *STANY-TXR-ZMD.*\n sᴜᴘᴘᴏʀᴛ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ *ʙʏ*,  https://whatsapp.com/channel/0029Vb5RfcrJ3jv4u0wJwd0
-╔═━━━━════──────➳
-║╔═━━━━━━════─━━─➳
-║║ 🗼 *REPOSITORY:* ${data.html_url}
-║║ 🌟 *STARS:* ${repoInfo.stars}
-║║ 🧧 *FORKS:* ${repoInfo.forks}
-║║ 📅 *RELEASE DATE:* ${releaseDate}
-║║ 🕐 *UPDATE ON:* ${repoInfo.lastUpdate}
-║║ 👨‍💻 *OWNER:* *STANLEY*
-║║ 💞 *NAME:* *STANY-TXR-ZMD*
-║║ 🥰 *ENJOY TO USE STANY-TXR-ZMD 
-╚══━━━━════─━━━━──➳
-╚══━━━━════─━━━━──➳`;
+───────────────
+■STANY TXR ZMD 
+■MADE BY STANY-TECH 
+■NEW VERSION
+■NO BURN 
+■MORDEN BOT 
+──────────────
+★│BOT NAME:* ${data.name}
+★│OWNER:* ${data.owner.login}
+★│STARS:* ${data.stargazers_count}
+★│FORKS:* ${data.forks_count}
+★│DESCRIPTION:* ${data.description || 'They Fear Me'}
+★│REPO LINK:* ${data.html_url}
+─────────────────
 
 > *Powered by  ©𝚂𝚃𝙰𝙽𝚈 𝚃𝚉𝚁 𝚉𝙼𝙳*
         `.trim();
