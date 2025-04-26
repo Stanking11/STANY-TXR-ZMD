@@ -10,7 +10,7 @@ cmd({
 async (conn,mek, m, { from, body, isGroup, isAdmins, isBotAdmins, reply, sender }) => {
     try {
     
-        const badWords = ["wtf", "mia", "x","fuck","mbwa","matako","pakaya","ponnaya","hutto","lol", "Kuma", "msenge" ]
+        const badWords = ["msenge", "Kuma", "x","fuck","mbwa","matako","Shoga","ponnaya","hutto","lol", "Kuma", "msenge" ]
         if (!isGroup || isAdmins || !isBotAdmins) return; // Skip if not in group, or sender is admin, or bot is not admin
       
         const lowerCaseMessage = body.toLowerCase();
@@ -61,7 +61,7 @@ cmd({
             await conn.sendMessage(from, { delete: mek.key }, { quoted: mek });
 
             // Warn the user
-            await conn.sendMessage(from, { text: `⚠️ Hi members Am STANY-TECH-XMD Links are not allowed in this group avoid sending link if you want to stay here.\n@${sender.split('@')[0]} has been removed by order of 574N6T3CH. 🚫`, mentions: [sender] }, { quoted: mek });
+            await conn.sendMessage(from, { text: ` > ⚠️ Hi members Am STANY-TXR-ZMD Links are not allowed in this group avoid sending link if you want to stay here.\n@${sender.split('@')[0]} has been removed by order of 574N6T3CH.🚫`, mentions: [sender] }, { quoted: mek });
 
             // Remove the user from the group
             await conn.groupParticipantsUpdate(from, [sender], 'remove');
