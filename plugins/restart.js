@@ -4,7 +4,7 @@ const { sleep } = require('../lib/functions');
 cmd({
     pattern: "restart",
     desc: "Restart the bot ",
-    category: "owner",
+    category: "ownermenu",
     filename: __filename
 },
 async (conn, mek, m, {
