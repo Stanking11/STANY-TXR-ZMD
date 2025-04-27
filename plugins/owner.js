@@ -30,7 +30,7 @@ async (conn, mek, m, { from }) => {
         // Send the owner contact message with image and audio
         await conn.sendMessage(from, {
             image: { url: 'https://files.catbox.moe/cpja3j.jpg' }, // Image URL from your request
-            caption: `╭━━〔 *STANY-TRX-ZMD* 〕━━┈⊷
+            caption: `╭━━〔 *STANY-TXR-ZMD* 〕━━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• *Here is the owner details*
 ┃◈┃• *Name* - ${ownerName}
@@ -42,7 +42,7 @@ async (conn, mek, m, { from }) => {
             contextInfo: {
                 mentionedJid: [`${ownerNumber.replace('+', '')}@s.whatsapp.net`], 
                 forwardingScore: 999,
-                isForwarded: true,
+                isForwarded: false,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363302677217436@newsletter',
                     newsletterName: 'STANY-TECH💖🥰',
