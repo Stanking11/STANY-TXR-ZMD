@@ -15,7 +15,7 @@
 
   
 
-<p align="centre"><img src="https://files.catbox.moe/7jle25.jpg" width="900" heigh="590"
+<p align="centre"><img src="https://files.catbox.moe/7jle25.jpg" width="400" heigh="590"
 
 
 
