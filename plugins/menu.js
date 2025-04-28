@@ -14,7 +14,9 @@ cmd({
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
         let dec = `
-━★╭──────────────
+     ©𝗦𝗧𝗔𝗡𝗬-𝗧𝗫𝗥-𝗭𝗠𝗗™
+     
+╭──────────────
 ┃★│ Owner : *${config.BOT_NAME}*
 ┃★│ Baileys : *Multi Device*
 ┃★│ Type : *NodeJs*
