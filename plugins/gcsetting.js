@@ -8,7 +8,7 @@ const { cmd, commands } = require('../command')
 cmd({
     pattern: "leave",
     alias: ["left", "leftgc", "leavegc"],
-    desc: "Leave the group",
+    desc: "Leave the group because all your nonsense fuck😡",
     react: "🎉",
     category: "owner",
     filename: __filename
