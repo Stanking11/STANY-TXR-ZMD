@@ -3,7 +3,7 @@ const { cmd, commands } = require('../command')
 
 cmd({
 pattern: "delete",
-react: "❌",
+react: "🫧",
 alias: ["del"],
 desc: "delete message",
 category: "group",
@@ -23,6 +23,6 @@ const key = {
         await conn.sendMessage(m.chat, { delete: key })
 } catch(e) {
 console.log(e);
-reply('💫 Nexus xᴍᴅ 💫 successful..👨‍💻✅')
+reply('successful..👨‍💻✅')
 } 
 })
