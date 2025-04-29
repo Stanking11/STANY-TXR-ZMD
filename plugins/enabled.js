@@ -79,6 +79,32 @@ async (conn, mek, m, { from, args, isOwner, reply }) => {
     await conn.sendPresenceUpdate(status === "on" ? "available" : "unavailable", from);
     return reply(`Bot is now ${status === "on" ? "online" : "offline"}.`);
 });
+
+//--------------------------------------------
+//   CUSTOM-REACT COMMANDS
+//--------------------------------------------
+cmd({
+    pattern: "custom-react",
+    alias: ["customreact"],
+    desc: "Enable or disable the customreact feature",
+    category: "settings",
+    filename: __filename
+},    
+async (conn, mek, m, { from, args, isOwner, reply }) => {
+    if (!isOwner) return reply("*📛 ᴏɴʟʏ ᴛʜᴇ ᴏᴡɴᴇʀ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ!*");
+
+    const status = args[0]?.toLowerCase();
+    // Check the argument for enabling or disabling the anticall feature
+    if (args[0] === "on") {
+        config.CUSTOM_REACT = "true";
+        await reply("*autoreact feature is now enabled.*");
+    } else if (args[0] === "off") {
+        config.CUSTOM_REACT = "false";
+        await reply("customreact feature is now disabled.");
+    } else {
+        await reply(`*🫟 ᴇxᴀᴍᴘʟᴇ: .CUSTOM-ʀᴇᴀᴄᴛ ᴏɴ*`);
+    }
+});
 //--------------------------------------------
 //  AUTO_RECORDING COMMANDS
 //--------------------------------------------
