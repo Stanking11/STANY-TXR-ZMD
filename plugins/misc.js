@@ -10,7 +10,7 @@ cmd({
     pattern: "antidelete",
     alias: ['antidel', 'ad'],
     desc: "Sets up the Antidelete",
-    category: "misc",
+    category: "main",
     filename: __filename
 },
 async (conn, mek, m, { from, reply, q, text, isCreator, fromMe }) => {
