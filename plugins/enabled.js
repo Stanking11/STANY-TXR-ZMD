@@ -306,6 +306,32 @@ async (conn, mek, m, { from, args, isOwner, reply }) => {
 });
 
 //--------------------------------------------
+//   OWNER-REACT COMMANDS
+//--------------------------------------------
+cmd({
+    pattern: "owner-react",
+    alias: ["ownerreact"],
+    desc: "Enable or disable the ownerreact feature",
+    category: "settings",
+    filename: __filename
+},    
+async (conn, mek, m, { from, args, isOwner, reply }) => {
+    if (!isOwner) return reply("*📛 ᴏɴʟʏ ᴛʜᴇ ᴏᴡɴᴇʀ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ!*");
+
+    const status = args[0]?.toLowerCase();
+    // Check the argument for enabling or disabling the anticall feature
+    if (args[0] === "on") {
+        config.AUTO_REACT = "true";
+        await reply("*ownereact feature is now enabled.*");
+    } else if (args[0] === "off") {
+        config.AUTO_REACT = "false";
+        await reply("autoreact feature is now disabled.");
+    } else {
+        await reply(`*🫟 ᴇxᴀᴍᴘʟᴇ: .OWNER-ʀᴇᴀᴄᴛ ᴏɴ*`);
+    }
+});
+
+//--------------------------------------------
 //   AUTO-REACT COMMANDS
 //--------------------------------------------
 cmd({
