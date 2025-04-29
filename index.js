@@ -258,3 +258,43 @@ ${this.getActiveFeatures()}
 
 // Error Handling
 process.on('uncaughtException', (err)
+    const { 
+    processMessage,
+    security,
+    presence,
+    commands,
+    notifyOwner,
+    handleReconnect
+} = require('./functions');
+
+// In your connection handler
+conn.ev.on('messages.upsert', async ({ messages }) => {
+    const m = await processMessage(messages[0], conn);
+    if (!m) return;
+
+    // Security checks
+    await security.handleAntiLink(m, conn);
+    await security.handleAntiBadWord(m, conn);
+    await security.handleAntiTag(m, conn);
+
+    // Command handling
+    if (m.isCommand) {
+        await commands.execute(m, conn);
+    }
+
+    // Auto-read messages
+    if (config.AUTO_READ === '1') {
+        await conn.readMessages([m.key]);
+    }
+});
+
+// Handle calls
+conn.ev.on('call', call => security.handleAntiCall(call, conn));
+
+// Handle message deletions
+conn.ev.on('messages.update', updates => {
+    updates.forEach(update => security.handleAntiDelete(update, conn));
+});
+
+// Initialize presence
+presence.setPresence(conn);
