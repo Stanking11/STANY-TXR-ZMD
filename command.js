@@ -1,21 +1,9 @@
-var commands = [];
-
-function cmd(info, func) {
-    var data = info;
-    data.function = func;
-    if (!data.dontAddCommandList) data.dontAddCommandList = false;
-    if (!info.desc) info.desc = '';
-    if (!data.fromMe) data.fromMe = false;
-    if (!info.category) data.category = 'misc';
-    if(!info.filename) data.filename = "Not Provided";
-    commands.push(data);
-    return data;
-}
 module.exports = {
-    cmd,
-    AddCommand:cmd,
-    Function:cmd,
-    Module:cmd,
-    commands,
+    OWNER_NUMBER: '255750638502@s.whatsapp.net', // heelo made up by STANY-TECH 
+    BOT_NAME: 'Stany Tech',
+    PREFIX: '!',
+    ANTICALL: true,
+    ANTIDELETE: true,
+    ANTITAG: true,
+    ANTISTICKER: true
 };
-
