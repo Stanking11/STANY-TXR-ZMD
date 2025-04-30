@@ -66,16 +66,15 @@
       "description": "Block bot tagging (1=Yes, 2=No)",
       "required": false,
       "value": "1"
-      "ANTIBOT": {
+    "ANTIBOT": {
   "description": "Enable bot detection (1=Yes, 2=No)",
   "required": false,
   "value": "1"
-},
-"ANTIBOT_KICK": {
+   },
+  "ANTIBOT_KICK": {
   "description": "Kick detected bots (1=Yes, 2=No)",
   "required": false,
   "value": "1"
-},
     },
     "ANTISTICKER": {
       "description": "Block stickers (1=Yes, 2=No)",
