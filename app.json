@@ -1,4 +1,4 @@
-{
+ {
   "name": "STANY-TXR-ZMD",
   "description": "JavaScript WhatsApp Bot by ©𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷",
   "keywords": ["whatsapp-bot", "stany-tech", "automation"],
@@ -51,11 +51,6 @@
       "description": "Filter bad words (1=Yes, 2=No)",
       "required": false,
       "value": "1"
-    },
-    "ANTIBADWORD_KICK": {
-      "description": "Kick users who use bad words (1=Yes, 2=No)",
-      "required": false,
-      "value": "2"
     },
     "ANTIDELETE": {
       "description": "Prevent message deletion (1=Yes, 2=No)",
@@ -112,15 +107,14 @@
       "required": false,
       "value": "nude,sex,porn,fuck,bitch"
     }
-    
   },
 
-     "buildpacks": [
-        {
-            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
-        }
-     ],
-  "stack": "heroku-24"
-}
-  
-
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ]
+ }
