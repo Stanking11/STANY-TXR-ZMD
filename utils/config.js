@@ -34,6 +34,9 @@ module.exports = {
       enabled: process.env.ANTIBOT === '1',
       kick: process.env.ANTIBOT_KICK === '1'
     }
+    security: {
+  // ...
+  cooldown: 3000 // 3 second cooldown
   },
   owner: {
     number: process.env.OWNER_NUMBER,
