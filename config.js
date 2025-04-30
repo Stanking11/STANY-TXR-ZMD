@@ -1,8 +1,19 @@
 module.exports = {
-    SESSION_ID: process.env.SESSION_ID || 'STANY_TXR',
-    OWNER_NUMBER: process.env.OWNER_NUMBER || '255794481386',
-    PREFIX: process.env.PREFIX || '.',
-    ANTICALL: process.env.ANTICALL || '1',
-    ANTILINK: process.env.ANTILINK || '1',
-    // Add all other environment variables here
+    // Basic configuration
+    OWNER_NUMBER: "255695758502@s.whatsapp.net", // king stany tech tz
+    PREFIX: "!",
+    
+    // Security features
+    ANTICALL: true,
+    ANTIDELETE: true,
+    ANTITAG: true,
+    ANTISTICKER: true,
+    
+    // Advanced settings
+    AUTO_READ: "1",
+    
+    // Anti-bot protection (add these new entries)
+    ANTIBOT_RATE_LIMIT: 5,
+    ANTIBOT_SUSPICIOUS_THRESHOLD: 3,
+    AUTO_BLOCK_VIOLATORS: true
 };
