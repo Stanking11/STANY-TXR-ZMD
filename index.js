@@ -23,6 +23,13 @@ async function startBot() {
     if (qr) qrcode.generate(qr, { small: true });
     if (connection === 'close') startBot().catch(console.error);
   });
+  bot.ev.on('messages.upsert', async ({ messages }) => {
+  const msg = messages[0];
+  if (!msg.message) return;
+  
+  // Pass to command handler
+  commandHandler.handleCommand(bot, msg).catch(console.error);
+});
 
   // Message handler
   bot.ev.on('messages.upsert', async ({ messages }) => {
