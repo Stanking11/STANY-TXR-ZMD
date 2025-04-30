@@ -1,9 +1,77 @@
-const { Boom } = require('@whiskeysockets/baileys')
-const qrcode = require('qrcode-terminal')
-const axios = require('axios')
-const moment = require('moment-timezone')
-const cron = require('node-cron')
+const { Boom } = require('@whiskeysockets/baileys');
+const qrcode = require('qrcode-terminal');
+const axios = require('axios');
+const cron = require('node-cron');
+const config = require('./utils/config');
+const { handleAntiFeatures } = require('./handlers/antiFeatures');
+const { handleCommand } = require('./handlers/commandHandler');
 
+async function startBot() {
+  const bot = Boom({
+    sessionId: config.session.id,
+    printQRInTerminal: config.session.options.printQRInTerminal,
+    browser: config.session.browser,
+    markOnlineOnConnect: config.session.options.markOnlineOnConnect
+  });
+
+  // Connection handlers
+  bot.ev.on('connection.update', ({ connection, qr }) => {
+    if (connection === 'open') {
+      bot.sendPresenceUpdate(config.features.presence);
+      console.log(`${config.session.browser[0]} is now ${config.features.presence}!`);
+    }
+    if (qr) qrcode.generate(qr, { small: true });
+    if (connection === 'close') startBot().catch(console.error);
+  });
+
+  // Message handler
+  bot.ev.on('messages.upsert', async ({ messages }) => {
+    const msg = messages[0];
+    if (!msg.message || msg.key.fromMe) return;
+
+    const chat = await bot.getChatById(msg.key.remoteJid);
+    const isGroup = chat.isGroup;
+    const user = msg.key.participant || msg.key.remoteJid;
+
+    if (config.features.autoRead) await bot.readMessages([msg.key]);
+    
+    await handleAntiFeatures(bot, msg, isGroup, user, config);
+    
+    const body = (msg.message.conversation || '').toLowerCase();
+    if (body.startsWith(config.features.prefix)) {
+      const [cmd, ...args] = body.slice(config.features.prefix.length).split(' ');
+      handleCommand(bot, msg, cmd, args, isGroup, user, config);
+    }
+  });
+
+  // Anti-call handler
+  if (config.security.antiCall) {
+    bot.ev.on('call', async (call) => {
+      await bot.sendMessage(call.from, { text: '🚫 Calls are not allowed!' });
+      await bot.rejectCall(call.id);
+    });
+  }
+
+  console.log(`${config.session.browser[0]} initialized successfully!`);
+}
+
+// Validation
+if (!config.session.id || !config.owner.number) {
+  console.error('Missing required environment variables!');
+  process.exit(1);
+}
+
+// Keep-alive and startup
+cron.schedule('*/5 * * * *', () => {
+  axios.get('https://api.heroku.com/apps')
+    .then(() => console.log('Keep-alive ping sent'))
+    .catch(() => console.log('Keep-alive ping failed'));
+});
+
+startBot().catch(err => {
+  console.error('Bot startup error:', err);
+  process.exit(1);
+});
 // Environment variables from your app.json
 const {
   SESSION_ID,
