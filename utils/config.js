@@ -1,48 +1,37 @@
-// utils/config.js
 module.exports = {
-  session: {
-    id: process.env.SESSION_ID,
-    browser: [process.env.BOT_NAME || '𝚂𝚃𝙰𝙽𝚈-𝚃𝚇𝚁-𝚉𝙼𝙳', 'Chrome', '121.0.6167.160'],
-    options: {
-      printQRInTerminal: false,
-      markOnlineOnConnect: true
-    }
-  },
-  features: {
-    prefix: process.env.PREFIX || '.',
-    presence: ['typing', 'recording', 'online'][Number(process.env.PRESENCE_MODE || '1') - 1],
-    autoRead: process.env.AUTO_READ === '1',
-    mode: process.env.MODE === '1' ? 'public' : 'private'
-  },
-  security: {
-    antiCall: process.env.ANTICALL === '1',
-    antiLink: {
-      enabled: process.env.ANTILINK === '1',
-      kick: process.env.ANTILINK_KICK === '1'
+    meta: {
+        name: process.env.BOT_NAME || 'STANY-TXR-ZMD',
+        version: process.env.BOT_VERSION || '1.0.0',
+        browser: [process.env.BOT_NAME || 'SecureBot', 'Chrome', '121.0.6167.160'],
+        owner: process.env.OWNER_NUMBER || '1234567890'
     },
-    antiBadWord: {
-      enabled: process.env.ANTIBADWORD === '1',
-      kick: process.env.ANTIBADWORD_KICK === '1',
-      list: (process.env.BAD_WORDS_LIST || 'nude,sex,porn,fuck,bitch').split(',').map(w => w.trim().toLowerCase())
+    session: {
+        id: process.env.SESSION_ID,
+        encryption: process.env.SESSION_ENCRYPTION || 'md_aes'
     },
-    antiSticker: {
-      enabled: process.env.ANTISTICKER === '1',
-      kick: process.env.ANTISTICKER_KICK === '1'
+    behavior: {
+        presence: process.env.PRESENCE_MODE || 'online',
+        prefix: process.env.PREFIX || '.',
+        autoRead: process.env.AUTO_READ === 'true',
+        maxFileSize: parseInt(process.env.MAX_FILE_SIZE) || 15 // MB
     },
-    antiDelete: process.env.ANTIDELETE === '1',
-    antiBot: {
-      enabled: process.env.ANTIBOT === '1',
-      kick: process.env.ANTIBOT_KICK === '1'
-    }
     security: {
-  // ...
-  cooldown: 3000 // 3 second cooldown
-  },
-  owner: {
-    number: process.env.OWNER_NUMBER,
-    alive: {
-      image: process.env.ALIVE_IMG,
-      message: process.env.LIVE_MSG || '> STANY-TXR AM ONLINE BY MY HANDSOME CREATOR⚡'
+        antiCall: process.env.ANTICALL === 'true',
+        antiLink: process.env.ANTILINK === 'true',
+        antiSticker: process.env.ANTISTICKER === 'true',
+        antiBotTag: process.env.ANTI_BOT_TAG === 'true',
+        maxMentions: parseInt(process.env.MAX_MENTIONS) || 3
+    },
+    messages: {
+        antiCall: '🚫 Voice calls are not permitted!',
+        botTagWarning: '⚠️ Bot tagging is prohibited!',
+        linkWarning: '🔗 Links are not allowed here!'
+    },
+    debug: {
+        qr: process.env.DEBUG_QR === 'true',
+        logging: process.env.DEBUG_LOG === 'true'
+    },
+    validateEnvironment: () => {
+        return !!process.env.SESSION_ID && !!process.env.OWNER_NUMBER;
     }
-  }
 };
