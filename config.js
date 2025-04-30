@@ -1,28 +1,35 @@
 module.exports = {
   name: 'Stany Tech',
-  version: '2.0.1',
+  version: '3.1.0',
   prefix: '#',
-  owner: ['255612285041'], // STANY-TXR-ZMD 
-  allowedGroups: [], // Add group IDs if needed
-  maxTagLimit: 5,
+  owner: ['255615490076'], // Your number with country code
+  
   features: {
     antiCall: true,
     antiDelete: true,
     antiTag: true,
-    antiSticker: true
-  module.exports = {
-  // ... previous config
-  features: {
-    // ... existing features
-    antiLink: true,
+    antiSticker: true,
+    antiLink: true
   },
-  antiLinkSettings: {
+
+  antiLink: {
     allowedDomains: ['wa.me', 'stanytech.com'],
     action: 'warn', // warn | delete | kick
-    warnMessage: "⚠️ Links are not allowed!",
-    kickMessage: "🚫 Removed for sending links",
+    warnMessage: "⚠️ *Warning*: Links are not allowed here!",
+    kickMessage: "🚫 User removed for sending links",
     maxWarnings: 3,
-    exemptRoles: ['admin', 'owner'],
-    checkAdmins: true
+    checkAdmins: true,
+    exemptGroups: ['12036300000-1581234@g.us'] // Group IDs
+  },
+
+  antiTag: {
+    maxTags: 3,
+    deleteMessage: true,
+    warnMessage: "⚠️ Please don't tag the bot unnecessarily!"
+  },
+
+  antiSticker: {
+    deleteSticker: true,
+    warnMessage: "⚠️ Stickers are not allowed here!"
   }
-  }
+}
