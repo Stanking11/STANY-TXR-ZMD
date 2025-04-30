@@ -33,12 +33,6 @@
       "required": true,
       "value": "."
     },
-
-    // Security Module
-    "SECURITY_LEVEL": {
-      "description": "Security preset (1=Basic, 2=Strict, 3=Paranoid)",
-      "value": "2"
-    },
     "ANTICALL": {
       "description": "Block calls (1=Yes, 2=No)",
       "value": "1"
@@ -82,37 +76,7 @@
     "ANTIBOT_KICK": {
       "description": "Kick detected bots (1=Yes, 2=No)",
       "value": "1"
-    },
-
-    // Performance & Monitoring
-    "REQUEST_TIMEOUT": {
-      "description": "API timeout in milliseconds",
-      "value": "30000"
-    },
-    "MAX_MEMORY": {
-      "description": "Max memory allocation (MB)",
-      "value": "512"
-    },
-    "LOG_LEVEL": {
-      "description": "Logging level (error|warn|info|debug)",
-      "value": "info"
-    },
-
-    // Advanced Features
-    "DATABASE_URL": {
-      "description": "PostgreSQL connection URI",
-      "required": false
-    },
-    "REDIS_URL": {
-      "description": "Redis connection URL",
-      "required": false
-    },
-    "MONITORING_KEY": {
-      "description": "Sentry/LogDNA integration key",
-      "required": false
-    },
-
-    // Branding & Customization
+    }, 
     "BOT_NAME": {
       "description": "Display name",
       "value": "𝚂𝚃𝙰𝙽𝚈-𝚃𝚇𝚁-𝚉𝙼𝙳"
