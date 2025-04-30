@@ -33,32 +33,67 @@
       "value": "1"
     },
     "ANTICALL": {
-      "description": "Enable anti-call (1=Yes, 2=No)",
+      "description": "Block incoming calls (1=Yes, 2=No)",
       "required": false,
       "value": "1"
     },
     "ANTILINK": {
-      "description": "Block links (1=Yes, 2=No)",
+      "description": "Block links in messages (1=Yes, 2=No)",
       "required": false,
       "value": "1"
+    },
+    "ANTILINK_KICK": {
+      "description": "Kick users who send links (1=Yes, 2=No)",
+      "required": false,
+      "value": "2"
     },
     "ANTIBADWORD": {
-      "description": "Block bad words (1=Yes, 2=No)",
+      "description": "Filter bad words (1=Yes, 2=No)",
       "required": false,
       "value": "1"
     },
+    "ANTIBADWORD_KICK": {
+      "description": "Kick users who use bad words (1=Yes, 2=No)",
+      "required": false,
+      "value": "2"
+    },
     "ANTIDELETE": {
-      "description": "Enable anti-delete (1=Yes, 2=No)",
+      "description": "Prevent message deletion (1=Yes, 2=No)",
       "required": false,
       "value": "1"
     },
     "ANTITAG": {
-      "description": "Enable anti-tag (1=Yes, 2=No)",
+      "description": "Block bot tagging (1=Yes, 2=No)",
       "required": false,
       "value": "1"
+      "ANTIBOT": {
+  "description": "Enable bot detection (1=Yes, 2=No)",
+  "required": false,
+  "value": "1"
+},
+"ANTIBOT_KICK": {
+  "description": "Kick detected bots (1=Yes, 2=No)",
+  "required": false,
+  "value": "1"
+},
     },
     "ANTISTICKER": {
       "description": "Block stickers (1=Yes, 2=No)",
+      "required": false,
+      "value": "1"
+    },
+    "ANTISTICKER_KICK": {
+      "description": "Kick users who send stickers (1=Yes, 2=No)",
+      "required": false,
+      "value": "2"
+    },
+    "ANTIBOT": {
+      "description": "Enable bot detection (1=Yes, 2=No)",
+      "required": false,
+      "value": "1"
+    },
+    "ANTIBOT_KICK": {
+      "description": "Kick detected bots (1=Yes, 2=No)",
       "required": false,
       "value": "1"
     },
