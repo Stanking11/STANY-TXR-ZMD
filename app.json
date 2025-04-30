@@ -1,110 +1,136 @@
- {
+{
   "name": "STANY-TXR-ZMD",
-  "description": "JavaScript WhatsApp Bot by ©𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷",
-  "keywords": ["whatsapp-bot", "stany-tech", "automation"],
+  "description": "Enterprise-Grade WhatsApp Bot by ©𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷",
+  "keywords": ["whatsapp-bot", "stany-tech", "automation", "enterprise"],
   "logo": "https://files.catbox.moe/srobdn.jpg",
   "repository": "https://github.com/Stanking11/STANY-TXR-ZMD",
-  "success_url": "/",
+  "success_url": "/deploy",
   "stack": "heroku-24",
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
   
   "env": {
+    "NODE_ENV": {
+      "description": "Application environment (production/staging)",
+      "value": "production"
+    },
     "SESSION_ID": {
-      "description": "Session identifier for authentication",
-      "required": true
+      "description": "Encrypted session identifier",
+      "required": true,
+      "generator": "secret"
     },
     "OWNER_NUMBER": {
-      "description": "Bot owner's WhatsApp number",
+      "description": "Admin number in international format",
       "required": true,
       "value": "255794481386"
     },
     "PREFIX": {
-      "description": "Bot command prefix",
+      "description": "Command prefix",
       "required": true,
       "value": "."
     },
-    "PRESENCE_MODE": {
-      "description": "Bot presence mode (1=typing, 2=recording, 3=online)",
-      "required": false,
-      "value": "1"
-    },
-    "AUTO_READ": {
-      "description": "Auto-read messages (1=Yes, 2=No)",
-      "required": false,
-      "value": "1"
+
+    // Security Module
+    "SECURITY_LEVEL": {
+      "description": "Security preset (1=Basic, 2=Strict, 3=Paranoid)",
+      "value": "2"
     },
     "ANTICALL": {
-      "description": "Block incoming calls (1=Yes, 2=No)",
-      "required": false,
+      "description": "Block calls (1=Yes, 2=No)",
       "value": "1"
     },
     "ANTILINK": {
-      "description": "Block links in messages (1=Yes, 2=No)",
-      "required": false,
+      "description": "Block links (1=Yes, 2=No)",
       "value": "1"
     },
     "ANTILINK_KICK": {
-      "description": "Kick users who send links (1=Yes, 2=No)",
-      "required": false,
+      "description": "Kick link senders (1=Yes, 2=No)",
       "value": "2"
     },
     "ANTIBADWORD": {
       "description": "Filter bad words (1=Yes, 2=No)",
-      "required": false,
       "value": "1"
+    },
+    "ANTIBADWORD_KICK": {
+      "description": "Kick bad word users (1=Yes, 2=No)",
+      "value": "2"
     },
     "ANTIDELETE": {
       "description": "Prevent message deletion (1=Yes, 2=No)",
-      "required": false,
       "value": "1"
     },
     "ANTITAG": {
       "description": "Block bot tagging (1=Yes, 2=No)",
-      "required": false,
       "value": "1"
     },
     "ANTISTICKER": {
       "description": "Block stickers (1=Yes, 2=No)",
-      "required": false,
       "value": "1"
     },
     "ANTISTICKER_KICK": {
-      "description": "Kick users who send stickers (1=Yes, 2=No)",
-      "required": false,
+      "description": "Kick sticker senders (1=Yes, 2=No)",
       "value": "2"
     },
     "ANTIBOT": {
-      "description": "Enable bot detection (1=Yes, 2=No)",
-      "required": false,
+      "description": "Bot detection (1=Yes, 2=No)",
       "value": "1"
     },
     "ANTIBOT_KICK": {
       "description": "Kick detected bots (1=Yes, 2=No)",
-      "required": false,
       "value": "1"
     },
+
+    // Performance & Monitoring
+    "REQUEST_TIMEOUT": {
+      "description": "API timeout in milliseconds",
+      "value": "30000"
+    },
+    "MAX_MEMORY": {
+      "description": "Max memory allocation (MB)",
+      "value": "512"
+    },
+    "LOG_LEVEL": {
+      "description": "Logging level (error|warn|info|debug)",
+      "value": "info"
+    },
+
+    // Advanced Features
+    "DATABASE_URL": {
+      "description": "PostgreSQL connection URI",
+      "required": false
+    },
+    "REDIS_URL": {
+      "description": "Redis connection URL",
+      "required": false
+    },
+    "MONITORING_KEY": {
+      "description": "Sentry/LogDNA integration key",
+      "required": false
+    },
+
+    // Branding & Customization
     "BOT_NAME": {
-      "description": "Display name for the bot",
-      "required": false,
+      "description": "Display name",
       "value": "𝚂𝚃𝙰𝙽𝚈-𝚃𝚇𝚁-𝚉𝙼𝙳"
     },
     "ALIVE_IMG": {
-      "description": "Image URL for alive message",
-      "required": false,
+      "description": "Status image URL",
       "value": "https://files.catbox.moe/0ydsic.jpeg"
     },
     "LIVE_MSG": {
-      "description": "Custom alive message",
-      "required": false,
+      "description": "Custom status message",
       "value": "> STANY-TXR AM ONLINE BY MY HANDSOME CREATOR⚡"
     },
     "MODE": {
-      "description": "Bot operation mode (1=public, 2=private)",
-      "required": false,
+      "description": "Operation mode (1=public, 2=private)",
       "value": "1"
     },
     "BAD_WORDS_LIST": {
-      "description": "Comma-separated banned words (optional)",
-      "required": false,
+      "description": "Comma-separated banned words",
       "value": "nude,sex,porn,fuck,bitch"
     }
   },
@@ -114,7 +140,32 @@
       "url": "heroku/nodejs"
     },
     {
-      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "heroku/python"
     }
-  ]
- }
+  ],
+
+  "addons": [
+    {
+      "plan": "heroku-postgresql:hobby-dev",
+      "as": "DATABASE"
+    },
+    {
+      "plan": "heroku-redis:hobby-dev",
+      "as": "REDIS"
+    },
+    {
+      "plan": "logdna:quaco"
+    }
+  ],
+
+  "environments": {
+    "test": {
+      "scripts": {
+        "test": "npm run test"
+      }
+    }
+  }
+}
