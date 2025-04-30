@@ -10,5 +10,19 @@ module.exports = {
     antiDelete: true,
     antiTag: true,
     antiSticker: true
+  module.exports = {
+  // ... previous config
+  features: {
+    // ... existing features
+    antiLink: true,
+  },
+  antiLinkSettings: {
+    allowedDomains: ['wa.me', 'stanytech.com'],
+    action: 'warn', // warn | delete | kick
+    warnMessage: "⚠️ Links are not allowed!",
+    kickMessage: "🚫 Removed for sending links",
+    maxWarnings: 3,
+    exemptRoles: ['admin', 'owner'],
+    checkAdmins: true
   }
-}
+  }
