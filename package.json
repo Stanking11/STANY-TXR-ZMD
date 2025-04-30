@@ -1,12 +1,21 @@
 {
-  "name": "stany-tech-bot",
-  "version": "1.0.0",
+  "name": "stany-txr-zmd",
+  "version": "3.0.0",
+  "description": "Advanced WhatsApp Bot by STANY-TECH",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
+  "author": "STANY-TECH",
+  "license": "MIT",
   "dependencies": {
-    "@whiskeysockets/baileys": "^6.2.0",
-    "pino": "^8.15.1"
+    "@whiskeysockets/baileys": "^6.4.0",
+    "axios": "^1.6.2",
+    "qrcode-terminal": "^0.12.0",
+    "moment-timezone": "^1.4.3",
+    "node-cron": "^3.0.2",
+    "sharp": "^0.33.2"
   }
 }
