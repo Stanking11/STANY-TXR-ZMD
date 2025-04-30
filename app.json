@@ -1,100 +1,110 @@
 {
   "name": "STANY-TXR-ZMD",
-  "description": "Enterprise-Grade WhatsApp Bot by ©𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷",
-  "keywords": ["whatsapp-bot", "stany-tech", "automation", "enterprise"],
+  "description": "JavaScript WhatsApp Bot by ©𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷",
+  "keywords": ["whatsapp-bot", "stany-tech", "automation"],
   "logo": "https://files.catbox.moe/srobdn.jpg",
   "repository": "https://github.com/Stanking11/STANY-TXR-ZMD",
-  "success_url": "/deploy",
+  "success_url": "/",
   "stack": "heroku-24",
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "free"
-    }
-  },
   
   "env": {
-    "NODE_ENV": {
-      "description": "Application environment (production/staging)",
-      "value": "production"
-    },
     "SESSION_ID": {
-      "description": "Encrypted session identifier",
-      "required": true,
-      "generator": "secret"
+      "description": "Session identifier for authentication",
+      "required": true
     },
     "OWNER_NUMBER": {
-      "description": "Admin number in international format",
+      "description": "Bot owner's WhatsApp number",
       "required": true,
       "value": "255794481386"
     },
     "PREFIX": {
-      "description": "Command prefix",
+      "description": "Bot command prefix",
       "required": true,
       "value": "."
     },
+    "PRESENCE_MODE": {
+      "description": "Bot presence mode (1=typing, 2=recording, 3=online)",
+      "required": false,
+      "value": "1"
+    },
+    "AUTO_READ": {
+      "description": "Auto-read messages (1=Yes, 2=No)",
+      "required": false,
+      "value": "1"
+    },
     "ANTICALL": {
-      "description": "Block calls (1=Yes, 2=No)",
+      "description": "Block incoming calls (1=Yes, 2=No)",
+      "required": false,
       "value": "1"
     },
     "ANTILINK": {
-      "description": "Block links (1=Yes, 2=No)",
+      "description": "Block links in messages (1=Yes, 2=No)",
+      "required": false,
       "value": "1"
     },
     "ANTILINK_KICK": {
-      "description": "Kick link senders (1=Yes, 2=No)",
+      "description": "Kick users who send links (1=Yes, 2=No)",
+      "required": false,
       "value": "2"
     },
     "ANTIBADWORD": {
       "description": "Filter bad words (1=Yes, 2=No)",
+      "required": false,
       "value": "1"
-    },
-    "ANTIBADWORD_KICK": {
-      "description": "Kick bad word users (1=Yes, 2=No)",
-      "value": "2"
     },
     "ANTIDELETE": {
       "description": "Prevent message deletion (1=Yes, 2=No)",
+      "required": false,
       "value": "1"
     },
     "ANTITAG": {
       "description": "Block bot tagging (1=Yes, 2=No)",
+      "required": false,
       "value": "1"
     },
     "ANTISTICKER": {
       "description": "Block stickers (1=Yes, 2=No)",
+      "required": false,
       "value": "1"
     },
     "ANTISTICKER_KICK": {
-      "description": "Kick sticker senders (1=Yes, 2=No)",
+      "description": "Kick users who send stickers (1=Yes, 2=No)",
+      "required": false,
       "value": "2"
     },
     "ANTIBOT": {
-      "description": "Bot detection (1=Yes, 2=No)",
+      "description": "Enable bot detection (1=Yes, 2=No)",
+      "required": false,
       "value": "1"
     },
     "ANTIBOT_KICK": {
       "description": "Kick detected bots (1=Yes, 2=No)",
+      "required": false,
       "value": "1"
-    }, 
+    },
     "BOT_NAME": {
-      "description": "Display name",
+      "description": "Display name for the bot",
+      "required": false,
       "value": "𝚂𝚃𝙰𝙽𝚈-𝚃𝚇𝚁-𝚉𝙼𝙳"
     },
     "ALIVE_IMG": {
-      "description": "Status image URL",
+      "description": "Image URL for alive message",
+      "required": false,
       "value": "https://files.catbox.moe/0ydsic.jpeg"
     },
     "LIVE_MSG": {
-      "description": "Custom status message",
+      "description": "Custom alive message",
+      "required": false,
       "value": "> STANY-TXR AM ONLINE BY MY HANDSOME CREATOR⚡"
     },
     "MODE": {
-      "description": "Operation mode (1=public, 2=private)",
+      "description": "Bot operation mode (1=public, 2=private)",
+      "required": false,
       "value": "1"
     },
     "BAD_WORDS_LIST": {
-      "description": "Comma-separated banned words",
+      "description": "Comma-separated banned words (optional)",
+      "required": false,
       "value": "nude,sex,porn,fuck,bitch"
     }
   },
@@ -105,31 +115,6 @@
     },
     {
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-    },
-    {
-      "url": "heroku/python"
     }
-  ],
-
-  "addons": [
-    {
-      "plan": "heroku-postgresql:hobby-dev",
-      "as": "DATABASE"
-    },
-    {
-      "plan": "heroku-redis:hobby-dev",
-      "as": "REDIS"
-    },
-    {
-      "plan": "logdna:quaco"
-    }
-  ],
-
-  "environments": {
-    "test": {
-      "scripts": {
-        "test": "npm run test"
-      }
-    }
-  }
+  ]
 }
