@@ -1,4 +1,4 @@
-// handlers/antiFeatures.js
+// STANY-TXR-ZMD MADE BY STANY-TECH TZ 
 module.exports = {
   handleAntiFeatures: async (bot, msg, isGroup, user, config) => {
     const message = msg.message;
