@@ -1,4 +1,4 @@
-// handlers/commandHandler.js
+// Stanking11
 const { getCommand, getCommandsByCategory } = require('../utils/command');
 const config = require('../utils/config');
 const { antiSpam } = require('./antiSpam');
