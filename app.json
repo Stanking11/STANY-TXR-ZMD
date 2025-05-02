@@ -2,185 +2,146 @@
   "name": "STANY-TXR-ZMD",
   "description": "Javascript WhatsApp bot made by ©𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷 ",
   "keywords": ["STANY-TXR-ZMD"],
-  
-  
   "logo": "https://files.catbox.moe/srobdn.jpg",
   "repository": "https://github.com/Stanking11/STANY-TXR-ZMD",
   "succes_url": "/",
-
   "stack": "container",
   "env": {
     "SESSION_ID": {
       "description": "Put the session-id here.",
       "required": true,
       "value": ""
-    },  
-    
+    },
     "ALIVE_IMG": {
       "description": "paste your image url if you don't have you can use this public url.",
       "required": false,
       "value": "https://files.catbox.moe/0ydsic.jpeg"
-    }, 
-    
+    },
     "LIVE_MSG": {
       "description": "paste your alive message hear.",
       "required": false,
       "value": "> STANY-TXR AM ONLINE BY MY HANDSOME CREATOR⚡"
     },
-    
     "PREFIX": {
       "description": "paste your bot prefix note! Don't apply null prefix.",
       "required": false,
       "value": "."
     },
-    
     "MODE": {
       "description": "select your bot work type public-private-inbox-group.",
       "required": false,
       "value": "public"
-      
     },
-    
-    
     "ALWAYS_ONLINE": {
-      "description": "Make it true if want always online.",
+      "description": "Type 1 for true and 2 for false",
       "required": false,
-      "value": "false"  
-    },    
-  
+      "value": "2"
+    },
     "AUTO_VOICE": {
-      "description": "Make it true if want automatic voice reply .",
+      "description": "Type 1 for true and 2 for false",
       "required": false,
-      "value": "false"
-    }, 
-
+      "value": "2"
+    },
     "AUTO_REPLY": {
-      "description": "Make it true if you want automatic reply.",
+      "description": "Type 1 for true and 2 for false",
       "required": false,
-      "value": "false"
-    }, 
-
+      "value": "2"
+    },
     "AUTO_STICKER": {
-      "description": "Make it true if you want automatic sticker.",
+      "description": "Type 1 for true and 2 for false",
       "required": false,
-      "value": "false"
-    }, 
-
-
+      "value": "2"
+    },
     "AUTO_STATUS_SEEN": {
-      "description": "Make it true for automatic status seen.",
+      "description": "Type 1 for true and 2 for false",
       "required": true,
-      "value": "true"
-    }, 
-
+      "value": "1"
+    },
     "AUTO_STATUS_REPLY": {
-      "description": "Make it true for auto reply msg on status seen.",
+      "description": "Type 1 for true and 2 for false",
       "required": true,
-      "value": "false"
-    }, 
-
+      "value": "2"
+    },
     "AUTO_STATUS__MSG": {
       "description": "Type custom message on status reply",
       "required": true,
       "value": "*🎉👀 𝙹𝚄𝚂𝚃 𝙽𝙾𝚆 𝚂𝙴𝙴𝙽 𝙱𝚈 𝚂𝚃𝙰𝙽𝚈-𝚃𝚇𝚁-𝚉𝙼𝙳🤩🥳😍*"
-    }, 
-
+    },
     "OWNER_NAME": {
       "description": "Type Bot Owner Name.",
       "required": false,
       "value": " ©𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷🫅"
-}, 
-
+    },
     "OWNER_NUMBER": {
       "description": "put the owner number for bot.",
       "required": false,
       "value": "255794481386"
- },
-
+    },
     "BOT_NAME": {
       "description": "Type here the bot name.",
       "required": false,
       "value": "𝚂𝚃𝙰𝙽𝚈-𝚃𝚇𝚁-𝚉𝙼𝙳"
-
-      }, 
-
-    "ANTI_LINK": {
-      "description": "Make it true if you want bot auto remove group link.",
-      "required": true,
-      "value": "true"
-      
     },
-    
+    "ANTI_LINK": {
+      "description": "Type 1 for true and 2 for false",
+      "required": true,
+      "value": "1"
+    },
     "ANTI_BAD": {
-      "description": "Make it true if you want bot auto delete bad words.",
+      "description": "Type 1 for true and 2 for false",
       "required": false,
-      "value": "false"
-    }, 
-
-     "DESCRIPTION": {
+      "value": "2"
+    },
+    "DESCRIPTION": {
       "description": "add caption for menu and other",
       "required": false,
       "value": "*©𝚂𝚃𝙰𝙽𝚈-𝚃𝚇𝚁-𝚉𝙼𝙳*"
     },
-
-      "DELETE_LINKS": {
-      "description": "remove links from group automatically without removing member",
+    "DELETE_LINKS": {
+      "description": "Type 1 for true and 2 for false",
       "required": false,
-      "value": "true"
+      "value": "1"
     },
-    
     "AUTO_RECORDING": {
-      "description": "Make it true if you want auto recoding.",
+      "description": "Type 1 for true and 2 for false",
       "required": false,
-      "value": "false"
+      "value": "2"
     },
-
     "AUTO_TYPING": {
-      "description": "Make it true if you want auto typing.",
+      "description": "Type 1 for true and 2 for false",
       "required": false,
-      "value": "true"
+      "value": "1"
     },
-
     "AUTO_REACT": {
-      "description": "Make it true if you want react on every message.",
+      "description": "Type 1 for true and 2 for false",
       "required": false,
-      "value": "false"
+      "value": "2"
     },
-
     "OWNER_REACT": {
-      "description": "Make it true if you only want react on Owner Massages.",
+      "description": "Type 1 for true and 2 for false",
       "required": false,
-      "value": "true"
-      
-    }, 
-    
+      "value": "1"
+    },
     "CUSTOM_REACT": {
-      "description": "Make it true if you want custom reactions.",
+      "description": "Type 1 for true and 2 for false",
       "required": false,
-      "value": "true"
-      
-    }, 
-    
+      "value": "1"
+    },
     "CUSTOM_REACT_EMOJIS": {
       "description": "put here custom react react emojis.",
       "required": false,
       "value": "💝,💖,💗,❤️‍🔥,❤️‍🩹,❤️,🩷,🧡,💛,💚,💙,🩵,💜,🤎,🖤,🩶,🤍"
-    }, 
-
-
+    },
     "READ_MESSAGE": {
-      "description": "Make it true if you want bot read your all sms just now.",
+      "description": "Type 1 for true and 2 for false",
       "required": false,
-      "value": "false"
+      "value": "2"
     }
-
-},
-
-     "buildpacks": [
-        {
-            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
-        }
-     ],
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ],
   "stack": "heroku-24"
 }
-  
