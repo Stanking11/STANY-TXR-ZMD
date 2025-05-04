@@ -1,22 +1,20 @@
-version: '3.8'
+FROM node:lts-buster
 
-services:
-  bot:
-    image: stany-tech-bot
-    container_name: stany-tech-bot
-    restart: unless-stopped
-    volumes:
-      - ./sessions:/app/sessions
-    environment:
-      - NODE_ENV=production
-      - OWNER_NUMBER=${OWNER_NUMBER}
-      - PREFIX=!
-      - ANTICALL=true
-      - ANTIDELETE=true
-      - ANTITAG=true
-      - ANTISTICKER=true
-    logging:
-      driver: json-file
-      options:
-        max-size: "10m"
-        max-file: "3"
+RUN apt-get update && \
+  apt-get install -y \
+  ffmpeg \
+  imagemagick \
+  webp && \
+  apt-get upgrade -y && \
+  rm -rf /var/lib/apt/lists/*
+
+COPY package.json .
+
+RUN npm install && npm install -g qrcode-terminal pm2
+
+COPY . .
+
+EXPOSE 3000
+
+
+CMD ["pm2-runtime", "start", "index.js"]
