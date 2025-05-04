@@ -61,7 +61,7 @@ cmd({
             await conn.sendMessage(from, { delete: mek.key }, { quoted: mek });
 
             // Warn the user
-            await conn.sendMessage(from, { text: ` > ⚠️ Hi members Am STANY-TXR-ZMD Links are not allowed in this group avoid sending link if you want to stay here.\n@${sender.split('@')[0]} has been removed by order of 574N6T3CH.🚫`, mentions: [sender] }, { quoted: mek });
+            await conn.sendMessage(from, { text: ` > 😌Hi members Am STANY-TXR-ZMD Links🔗🖇️ are not allowed in this group avoid sending link if you want to stay here.\n@${sender.split('@')[0]} has been removed by order of 574N6T3CH.🚫`, mentions: [sender] }, { quoted: mek });
 
             // Remove the user from the group
             await conn.groupParticipantsUpdate(from, [sender], 'remove');
