@@ -21,14 +21,14 @@ async (conn, mek, m, { from, quoted, reply }) => {
 
         // Send the ping result
         await conn.sendMessage(from, { 
-            text: `*STANY TXR ZMD SPEED: ${ping}M/s*`, 
+            text: ` > STANY TXR ZMD SPEED: ${ping}M/s*`, 
             contextInfo: {
                 mentionedJid: [m.sender],
                 forwardingScore: 999,
                 isForwarded: false,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363352087070233@newsletter',
-                    newsletterName: 'TXRS-ZMD SPEED ',
+                    newsletterJid: '120363382023564830@newsletter',
+                    newsletterName: 'STANY TXR ZMD PING SPEED 💯',
                     serverMessageId: 143
                 }
             }
@@ -45,7 +45,7 @@ cmd({
     pattern: "ping2",
     desc: "Check bot's response time.",
     category: "main",
-    react: "🎃",
+    react: "💗",
     filename: __filename
 },
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
@@ -54,7 +54,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         const message = await conn.sendMessage(from, { text: '> *SPEED...*' })
         const endTime = Date.now()
         const ping = endTime - startTime
-        await conn.sendMessage(from, { text: `*STANY TXR ZMD 😌😌 SPEED : ${ping}M/s*` }, { quoted: message })
+        await conn.sendMessage(from, { text: ` > STANY TXR ZMD SPEED : ${ping}M/s*` }, { quoted: message })
     } catch (e) {
         console.log(e)
         reply(`${e}`)
