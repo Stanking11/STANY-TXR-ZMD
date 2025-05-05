@@ -28,9 +28,9 @@
       "value": "."
     },
     "MODE": {
-      "description": "select your bot work type public-private-inbox-group.",
+      "description": "select your bot work type private=1 public=2.",
       "required": false,
-      "value": "public"
+      "value": "1"
     },
     "ALWAYS_ONLINE": {
       "description": "Type 1 for true and 2 for false",
@@ -45,7 +45,7 @@
     "AUTO_REPLY": {
       "description": "Type 1 for true and 2 for false",
       "required": false,
-      "value": "2"
+      "value": "1"
     },
     "AUTO_STICKER": {
       "description": "Type 1 for true and 2 for false",
@@ -120,7 +120,7 @@
     "OWNER_REACT": {
       "description": "Type 1 for true and 2 for false",
       "required": false,
-      "value": "1"
+      "value": "2"
     },
     "CUSTOM_REACT": {
       "description": "Type 1 for true and 2 for false",
