@@ -2,6 +2,17 @@
 
 
 
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&size=85&pause=100000000&color=FFFF00&lines=true&vCenter=true&width=815&height=100&lines=𝐒𝐓𝐀𝐍𝐘-𝐓𝐗𝐑-𝐙𝐌𝐃)](https://git.io/typing-svg) 
+  
+
+
+
+
+
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&size=50&pause=4800color=RRGGBB&lines=true&vCenter=true&width=815&height=100&lines=DEVELOPER-STANLEY+🇹🇿+𝟮𝟬𝟮𝟱)](https://git.io/typing-svg) 
+
   
 
 > **CURRENT BOT VERSION ➜ `1.0.0 ⚡`**
