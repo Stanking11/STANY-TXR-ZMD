@@ -39,7 +39,7 @@ DONT FORGET TO FORK 🍴 & STAR 🌟 REPO😇
 
 `FORK 🍴 AND STAR ⭐ IF YOU LIKE THIS BOT`
 
-  <a href="https://github.com/Stanking11/STANY-TXR-ZMD/fork"><img title="TXR-ZMD" src="https://img.shields.io/badge/FORK-STANY%20ZMD-BOTh?color=indigo&style=for-the-badge&logo=stackshare"></a>
+  <a href="https://github.com/Stanking11/STANY-TXR-ZMD/fork"><img title="TXR-ZMD" src="https://img.shields.io/badge/FORK-STANY%20ZMD-BOTh?color=indigo&style=for-the-badge&logo=github"></a>
   
 ### 2. 𐃁GET SESSION ID𐃁 
 
@@ -48,14 +48,14 @@ DONT FORGET TO FORK 🍴 & STAR 🌟 REPO😇
 
 > **1. PAIR CODE SESSION ID**
 
-<a href='https://stany-tech-o4bs.onrender.com/pair' target="_blank">
+<a href='https://stanley-pair-web-e91afd55f471.herokuapp.com/pair' target="_blank">
   <img alt='Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-orange?style=for-the-badge&logo=opencv&logoColor=black'/>
 </a>
 <br> 
 
 > **2. PAIR CODE SESSION ID**
 
-<a href='https://stanley-pair-web-e91afd55f471.herokuapp.com/pair' target="_blank">
+<a href='https://stany-tech-o4bs.onrender.com/pair' target="_blank">
   <img alt='Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-darkpink?style=for-the-badge&logo=opencv&logoColor=black'/>
 </a>
 <br> 
