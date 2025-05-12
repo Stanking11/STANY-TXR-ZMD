@@ -1,14 +1,11 @@
 {
-  "name": "STANY-TXR-ZMD",
-  "description": "Javascript WhatsApp bot made by ©𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷 ",
-  "keywords": ["STANY-TXR-ZMD"],
-  
-  
-  "logo": "https://files.catbox.moe/srobdn.jpg",
-  "repository": "https://github.com/Stanking11/STANY-TXR-ZMD",
-  "succes_url": "/",
+  "name": "STANY-TECH",
+  "description": "Javascript WhatsApp bot made by Stanley technology",
+  "logo": "https://files.catbox.moe/4r8auq.jpg",
+  "keywords": ["STANY TXR ZMD"],
+  "success_url": "/",
 
-  "stack": "container",
+    "stack": "container",
   "env": {
     "SESSION_ID": {
       "description": "Put the session-id here.",
@@ -16,18 +13,12 @@
       "value": ""
     },  
     
-    "ALIVE_IMG": {
-      "description": "paste your image url if you don't have you can use this public url.",
+    "STICKER_NAME": {
+      "description": "type your sticker pack name.",
       "required": false,
-      "value": "https://files.catbox.moe/0ydsic.jpeg"
+      "value": "𓆩ု᪳STANY-TECHှ᪳𓆪"
     }, 
-    
-    "LIVE_MSG": {
-      "description": "paste your alive message hear.",
-      "required": false,
-      "value": "> STANY-TXR AM ONLINE BY MY HANDSOME CREATOR⚡"
-    },
-    
+      
     "PREFIX": {
       "description": "paste your bot prefix note! Don't apply null prefix.",
       "required": false,
@@ -73,61 +64,55 @@
       "value": "true"
     }, 
 
+    "AUTO_STATUS_REACT": {
+      "description": "make it true for automatic status reaction or like.",
+      "required": true,
+      "value": "true"
+    }, 
+
     "AUTO_STATUS_REPLY": {
       "description": "Make it true for auto reply msg on status seen.",
       "required": true,
       "value": "false"
     }, 
 
-    "AUTO_STATUS__MSG": {
+    "AUTO_STATUS_MSG": {
       "description": "Type custom message on status reply",
       "required": true,
-      "value": "*🎉👀 𝙹𝚄𝚂𝚃 𝙽𝙾𝚆 𝚂𝙴𝙴𝙽 𝙱𝚈 𝚂𝚃𝙰𝙽𝚈-𝚃𝚇𝚁-𝚉𝙼𝙳🤩🥳😍*"
-    }, 
-
-    "OWNER_NAME": {
-      "description": "Type Bot Owner Name.",
-      "required": false,
-      "value": " ©𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷🫅"
-}, 
-
-    "OWNER_NUMBER": {
-      "description": "put the owner number for bot.",
-      "required": false,
-      "value": "255794481386"
- },
+      "value": "*SEEN YOUR STATUS JUST NOW STANY-TECH*"
+   
+     }, 
 
     "BOT_NAME": {
       "description": "Type here the bot name.",
       "required": false,
-      "value": "𝚂𝚃𝙰𝙽𝚈-𝚃𝚇𝚁-𝚉𝙼𝙳"
+      "value": "𓆩ု᪳STANY TXR ZMDှ᪳𓆪"
 
       }, 
-
-    "ANTI_LINK": {
-      "description": "Make it true if you want bot auto remove group link.",
-      "required": true,
-      "value": "true"
-      
-    },
     
-    "ANTI_BAD": {
+    "ALIVE_IMG": {
+      "description": "put here the bot Menu url if you don't have you can use this public url.",
+      "required": true,
+      "value": "https://files.catbox.moe/7jle25.jpg" 
+      },
+
+    "DELETE_LINK": {
+      "description": "Make it true if you want bot auto remove group link.",
+      "required": false,
+      "value": "false"
+    }, 
+    
+    "ANTI_LINK_KICK": {
+      "description": "Make it true if you want bot auto remove group link.",
+      "required": false,
+      "value": "false"
+    }, 
+    
+    "ANTI_BAD_WORD": {
       "description": "Make it true if you want bot auto delete bad words.",
       "required": false,
       "value": "false"
     }, 
-
-     "DESCRIPTION": {
-      "description": "add caption for menu and other",
-      "required": false,
-      "value": "*©𝚂𝚃𝙰𝙽𝚈-𝚃𝚇𝚁-𝚉𝙼𝙳*"
-    },
-
-      "DELETE_LINKS": {
-      "description": "remove links from group automatically without removing member",
-      "required": false,
-      "value": "true"
-    },
     
     "AUTO_RECORDING": {
       "description": "Make it true if you want auto recoding.",
@@ -138,7 +123,7 @@
     "AUTO_TYPING": {
       "description": "Make it true if you want auto typing.",
       "required": false,
-      "value": "true"
+      "value": "false"
     },
 
     "AUTO_REACT": {
@@ -146,27 +131,25 @@
       "required": false,
       "value": "false"
     },
-
-    "OWNER_REACT": {
-      "description": "Make it true if you only want react on Owner Massages.",
-      "required": false,
-      "value": "true"
-      
-    }, 
     
     "CUSTOM_REACT": {
       "description": "Make it true if you want custom reactions.",
       "required": false,
-      "value": "true"
+      "value": "false"
       
     }, 
     
     "CUSTOM_REACT_EMOJIS": {
       "description": "put here custom react react emojis.",
       "required": false,
-      "value": "💝,💖,💗,❤️‍🔥,❤️‍🩹,❤️,🩷,🧡,💛,💚,💙,🩵,💜,🤎,🖤,🩶,🤍"
+      "value": "💝,💖,💗,❤️‍🩹,❤️,🧡,💛,💚,💙,💜,🤎,🖤,🤍"
     }, 
-
+    
+    "ANTI_DEL_PATH": {
+      "description": "change it to -same- if you want to resend deleted message in same chat",
+      "required": false,
+      "value": "log"
+    }, 
 
     "READ_MESSAGE": {
       "description": "Make it true if you want bot read your all sms just now.",
