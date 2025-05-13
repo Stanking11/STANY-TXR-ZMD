@@ -1,11 +1,14 @@
 {
   "name": "STANY-TRX-ZMD",
-  "description": "Jᴀᴠᴀsᴄʀɪᴘᴛ Wʜᴀᴛsᴀᴘᴘ Bᴏᴛ Mᴀᴅᴇ Bʏ 𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™",
+  "description": "Javascript WhatsApp bot made by STANLEY TECHNOLOGY.",
+  "keywords": ["Nexus-XMD"],
+  
+  
   "logo": "https://files.catbox.moe/rmxujw.jpeg",
-  "keywords": ["𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™"],
-  "success_url": "/",
+  "repository": "https://github.com/Stanking11/STANY-TXR-ZMD",
+  "succes_url": "/",
 
-    "stack": "container",
+  "stack": "container",
   "env": {
     "SESSION_ID": {
       "description": "Put the session-id here.",
@@ -13,12 +16,18 @@
       "value": ""
     },  
     
-    "STICKER_NAME": {
-      "description": "type your sticker pack name.",
+    "ALIVE_IMG": {
+      "description": "paste your image url if you don't have you can use this public url.",
       "required": false,
-      "value": "STANY-TRX"
+      "value": "https://files.catbox.moe/rmxujw.jpeg"
     }, 
-      
+    
+    "LIVE_MSG": {
+      "description": "paste your alive message hear.",
+      "required": false,
+      "value": "> STANY-TRX-ZMD IS ACTIVE AND ALIVE⚡"
+    },
+    
     "PREFIX": {
       "description": "paste your bot prefix note! Don't apply null prefix.",
       "required": false,
@@ -48,7 +57,7 @@
     "AUTO_REPLY": {
       "description": "Make it true if you want automatic reply.",
       "required": false,
-      "value": "true"
+      "value": "false"
     }, 
 
     "AUTO_STICKER": {
@@ -70,25 +79,23 @@
       "value": "false"
     }, 
 
-    "AUTO_STATUS_MSG": {
+    "AUTO_STATUS__MSG": {
       "description": "Type custom message on status reply",
       "required": true,
-      "value": "*Jᴜsᴛ Nᴏᴡ Sᴛᴀᴛᴜs Sᴇᴇɴ Bʏ ᯽𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷 𝚃𝚁𝚇᯽*"
-   
-     }, 
-    
+      "value": "*🎉👀JUST NOW🔥*"
+    }, 
+
     "OWNER_NAME": {
       "description": "Type Bot Owner Name.",
       "required": false,
-      "value": "𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™"
+      "value": "STANY-TECH"
 }, 
 
     "OWNER_NUMBER": {
       "description": "put the owner number for bot.",
       "required": false,
-      "value": "255756738502"
-
-    }, 
+      "value": "255750638502"
+ },
 
     "BOT_NAME": {
       "description": "Type here the bot name.",
@@ -100,7 +107,7 @@
     "ANTI_LINK": {
       "description": "Make it true if you want bot auto remove group link.",
       "required": true,
-      "value": "true"
+      "value": "false"
       
     },
     
@@ -113,13 +120,13 @@
      "DESCRIPTION": {
       "description": "add caption for menu and other",
       "required": false,
-      "value": "*© ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™*"
+      "value": "*©STANY-TECH*"
     },
 
       "DELETE_LINKS": {
       "description": "remove links from group automatically without removing member",
       "required": false,
-      "value": "true"
+      "value": "false"
     },
     
     "AUTO_RECORDING": {
@@ -139,6 +146,13 @@
       "required": false,
       "value": "false"
     },
+
+    "OWNER_REACT": {
+      "description": "Make it true if you only want react on Owner Massages.",
+      "required": false,
+      "value": "false"
+      
+    }, 
     
     "CUSTOM_REACT": {
       "description": "Make it true if you want custom reactions.",
@@ -150,14 +164,9 @@
     "CUSTOM_REACT_EMOJIS": {
       "description": "put here custom react react emojis.",
       "required": false,
-      "value": "💝,💖,💗,❤️‍🩹,❤️,🧡,💛,💚,💙,💜,🤎,🖤,🤍,💘,💞,💕,❣️,💔,❤️‍🔥,💐,🌸,💮,🪷,🏵️,🌹,🌺,🌻,🌼,🌷,🎉,🪀,🎉"
+      "value": "💝,💖,💗,❤️‍🔥,❤️‍🩹,❤️,🩷,🧡,💛,💚,💙,🩵,💜,🤎,🖤,🩶,🤍"
     }, 
-    
-    "READ_CMD": {
-      "description": "make it true if want mark commands as read.",
-      "required": false,
-      "value": "false"
-    }, 
+
 
     "READ_MESSAGE": {
       "description": "Make it true if you want bot read your all sms just now.",
