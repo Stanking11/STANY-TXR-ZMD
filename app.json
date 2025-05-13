@@ -1,8 +1,8 @@
 {
-  "name": "STANY-TECH",
-  "description": "Javascript WhatsApp bot made by Stanley technology",
-  "logo": "https://files.catbox.moe/4r8auq.jpg",
-  "keywords": ["STANY TXR ZMD"],
+  "name": "STANY-TRX-ZMD",
+  "description": "Jᴀᴠᴀsᴄʀɪᴘᴛ Wʜᴀᴛsᴀᴘᴘ Bᴏᴛ Mᴀᴅᴇ Bʏ 𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™",
+  "logo": "https://files.catbox.moe/rmxujw.jpeg",
+  "keywords": ["𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™"],
   "success_url": "/",
 
     "stack": "container",
@@ -16,7 +16,7 @@
     "STICKER_NAME": {
       "description": "type your sticker pack name.",
       "required": false,
-      "value": "𓆩ု᪳STANY-TECHှ᪳𓆪"
+      "value": "STANY-TRX"
     }, 
       
     "PREFIX": {
@@ -48,7 +48,7 @@
     "AUTO_REPLY": {
       "description": "Make it true if you want automatic reply.",
       "required": false,
-      "value": "false"
+      "value": "true"
     }, 
 
     "AUTO_STICKER": {
@@ -64,12 +64,6 @@
       "value": "true"
     }, 
 
-    "AUTO_STATUS_REACT": {
-      "description": "make it true for automatic status reaction or like.",
-      "required": true,
-      "value": "true"
-    }, 
-
     "AUTO_STATUS_REPLY": {
       "description": "Make it true for auto reply msg on status seen.",
       "required": true,
@@ -79,40 +73,54 @@
     "AUTO_STATUS_MSG": {
       "description": "Type custom message on status reply",
       "required": true,
-      "value": "*SEEN YOUR STATUS JUST NOW STANY-TECH*"
+      "value": "*Jᴜsᴛ Nᴏᴡ Sᴛᴀᴛᴜs Sᴇᴇɴ Bʏ ᯽𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷 𝚃𝚁𝚇᯽*"
    
      }, 
+    
+    "OWNER_NAME": {
+      "description": "Type Bot Owner Name.",
+      "required": false,
+      "value": "𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™"
+}, 
+
+    "OWNER_NUMBER": {
+      "description": "put the owner number for bot.",
+      "required": false,
+      "value": "255756738502"
+
+    }, 
 
     "BOT_NAME": {
       "description": "Type here the bot name.",
       "required": false,
-      "value": "𓆩ု᪳STANY TXR ZMDှ᪳𓆪"
+      "value": "STANY-TRX-ZMD"
 
       }, 
-    
-    "ALIVE_IMG": {
-      "description": "put here the bot Menu url if you don't have you can use this public url.",
-      "required": true,
-      "value": "https://files.catbox.moe/7jle25.jpg" 
-      },
 
-    "DELETE_LINK": {
+    "ANTI_LINK": {
       "description": "Make it true if you want bot auto remove group link.",
-      "required": false,
-      "value": "false"
-    }, 
+      "required": true,
+      "value": "true"
+      
+    },
     
-    "ANTI_LINK_KICK": {
-      "description": "Make it true if you want bot auto remove group link.",
-      "required": false,
-      "value": "false"
-    }, 
-    
-    "ANTI_BAD_WORD": {
+    "ANTI_BAD": {
       "description": "Make it true if you want bot auto delete bad words.",
       "required": false,
       "value": "false"
     }, 
+
+     "DESCRIPTION": {
+      "description": "add caption for menu and other",
+      "required": false,
+      "value": "*© ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝚂𝚃𝙰𝙽𝚈-𝚃𝙴𝙲𝙷™*"
+    },
+
+      "DELETE_LINKS": {
+      "description": "remove links from group automatically without removing member",
+      "required": false,
+      "value": "true"
+    },
     
     "AUTO_RECORDING": {
       "description": "Make it true if you want auto recoding.",
@@ -123,7 +131,7 @@
     "AUTO_TYPING": {
       "description": "Make it true if you want auto typing.",
       "required": false,
-      "value": "false"
+      "value": "true"
     },
 
     "AUTO_REACT": {
@@ -142,13 +150,13 @@
     "CUSTOM_REACT_EMOJIS": {
       "description": "put here custom react react emojis.",
       "required": false,
-      "value": "💝,💖,💗,❤️‍🩹,❤️,🧡,💛,💚,💙,💜,🤎,🖤,🤍"
+      "value": "💝,💖,💗,❤️‍🩹,❤️,🧡,💛,💚,💙,💜,🤎,🖤,🤍,💘,💞,💕,❣️,💔,❤️‍🔥,💐,🌸,💮,🪷,🏵️,🌹,🌺,🌻,🌼,🌷,🎉,🪀,🎉"
     }, 
     
-    "ANTI_DEL_PATH": {
-      "description": "change it to -same- if you want to resend deleted message in same chat",
+    "READ_CMD": {
+      "description": "make it true if want mark commands as read.",
       "required": false,
-      "value": "log"
+      "value": "false"
     }, 
 
     "READ_MESSAGE": {
